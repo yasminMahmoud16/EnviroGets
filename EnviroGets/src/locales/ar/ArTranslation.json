@@ -1,0 +1,124 @@
+{
+  "navbar": {
+    "logo":"نقاء البيئة",
+    "Home": "الرئيسية",
+    "About": " عن المكتب",
+    "TargetAudience": " الجمهور المستهدف",
+    "OurServices": "مجالات العمل",
+    "ContactUs": "تواصل معنا",
+    "Clients": "عملاؤنا",
+    "Certifications": "إعتماداتنا",
+    "ConsulationRequest": "طلب استشاراة"
+  },
+  "navbarPath": {
+    "Home": "/",
+    "About": "about",
+    "TargetAudience": "audience",
+    "OurServices": "services",
+    "ContactUs": "contact",
+    "Clients": "clients",
+    "clientsDetails": "clients-Details",
+    "Certifications": "certifications"
+  },
+  "footer": {
+    "terms": "شروط الاستخدام",
+    "PrivacyPolicy": "سياسة الخصوصية",
+    "Contact": "تواصل معنا",
+    "description": "مكتب نقاء البيئة   جميع الحقوق محفوظة"
+  },
+  "home": {
+    "subTitleHero": "رؤية 2030 — شريكك البيئي الموثوق",
+    "titleHero1": "نحمي البيئة",
+    "titleHero2": "نحمي البيئة",
+    "descriptionHero": "خدمات بيئية متكاملة تجمع بين الخبرة التقنية والالتزام البيئي  لتحقيق مستقبل مستدام يليق بالمملكة العربية السعودية.",
+    "buttonHero1": "تعرف علينا",
+    "buttonHero2": "اكتشف خدماتنا ",
+    "SatisfiedCustomer": "عميل راضٍ",
+    "ProfessionalExperience": "سنة خبرة",
+    "ExecutedProjects": "مشروع منجز"
+  },
+
+
+
+  "contact": {
+    "mainTitle": "تواصل معنا",
+    "main": "الرئيسية",
+    "title": "إتصل بنا",
+    "description": "لا تتردد في الاتصال بنا، نحن سعداء بالإجابة على استفساراتك",
+    "name": {
+      "label": "الإسم",
+      "required": "الاسم مطلوب",
+      "min": "الاسم يجب ألا يقل عن 3 أحرف",
+      "max": "الاسم طويل جدًا"
+    },
+    "reason": {
+      "label": "سبب التواصل",
+      "required": "سبب التواصل مطلوب"
+    },
+    "email": {
+      "label": "البريد الإلكتروني",
+      "required": "البريد الإلكتروني مطلوب",
+      "invalid": "البريد الإلكتروني غير صحيح"
+    },
+    "phone": {
+      "label": "رقم الجوال",
+      "required": "رقم الجوال مطلوب",
+      "invalid": "رقم الجوال غير صحيح"
+    },
+    "message": {
+      "label": "الرسالة",
+      "required": "الرسالة مطلوبة",
+      "min": "الرسالة قصيرة جدًا"
+    },
+    "button": "إرسال"
+  },
+  "contactInfo": {
+    "successMessage": "فريقنا مستعد لتسخير خبراته وإمكانياته لخدمتك بأكمل وجه. الرجاء إكمال الاستفسارات ومشاركة بعض التفاصيل للرد عليكم بأقرب وقت.",
+    "complaints": {
+      "title": "للشكاوى والاستفسارات",
+      "phones": [
+        "+96653 133 8566",
+        "+96658 010 8442"
+      ]
+    },
+    "email": {
+      "title": "البريد الإلكتروني",
+      "emails": [
+        "Purity@geters-ksa.com",
+        "info@epco.sa",
+        "Purity@geters-ksa.com"
+      ]
+    },
+    "headOffice": {
+      "title": "المقر الرئيسي",
+      "address": "Al Rabwah District, Riyadh, Saudi Arabia",
+      "phones": [
+        "+96653 133 8566",
+        "+96658 010 8442"
+      ]
+    },
+    "easternRegion": {
+      "title": "المنطقة الشرقية",
+      "address": "Dammam, Saudi Arabia",
+      "phone": "+96653 613 8233",
+      "email": "info@epco.sa"
+    },
+    "workingHours": {
+      "title": "أوقات العمل الرسمية",
+      "days": "من الأحد إلى الخميس",
+      "hours": "من الساعة 8:00 ص إلى الساعة 4:00 م"
+    },
+    "social": {
+      "title": "تابعنا على",
+      "map": "تواجــدنا الــجغــرافـــي"
+    }
+  },
+
+
+  "certifications":{
+        "mainTitle": "إعتــــمــاداتـــــــنــا",
+    "main": "الرئيسية",
+    "title": "معتمدون ومرخّصون",
+    "description": "نحمل أعلى اعتمادات الجودة البيئية المعترف بها محلياً ودولياً"
+  }
+}

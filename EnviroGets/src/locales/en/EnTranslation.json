@@ -1,0 +1,120 @@
+{
+  "navbar": {
+    "logo":"Neqaa Al-Biah",
+    "Home": "Home",
+    "About": "AboutUs",
+    "TargetAudience": "Target Audience",
+    "OurServices": "Our Services",
+    "ContactUs": "Contact Us",
+    "Clients": "Clients",
+    "Certifications": "Certifications",
+    "ConsulationRequest": "Consulation Request"
+  },
+  "navbarPath": {
+    "Home": "/",
+    "About": "about",
+    "TargetAudience": "audience",
+    "OurServices": "services",
+    "ContactUs": "contact",
+    "Clients": "clients",
+    "clientsDetails": "clients-Details",
+    "Certifications": "certifications"
+  },
+  "footer": {
+    "terms": "Terms",
+    "PrivacyPolicy": "Privacy Policy",
+    "Contact": "Contact Us",
+    "description": "Neqaa Al-Biah Office. All rights reserved"
+  },
+  "home": {
+    "subTitleHero": "Towards Vision 2030 — Your Reliable Environmental Partner",
+    "titleHero1": "Protect Environment",
+    "titleHero2": "Build our Future",
+    "descriptionHero": "Integrated environmental services combining technical expertise and environmental commitment to achieve a sustainable future for the Kingdom of Saudi Arabia.",
+    "buttonHero1": "Our Services",
+    "buttonHero2": "About us",
+    "SatisfiedCustomer": "Satisfied Customer",
+    "ProfessionalExperience": "Professional Experience",
+    "ExecutedProjects": "Executed Projects"
+  },
+
+
+
+  "contact": {
+    "mainTitle": "Contact Us",
+    "main": "Home",
+    "title": "Get in Touch",
+    "description": "Feel free to contact us. We are happy to answer your inquiries.",
+    "name": {
+      "label": "Name",
+      "required": "Name is required",
+      "min": "Name must be at least 3 characters",
+      "max": "Name must not exceed 50 characters"
+    },
+    "reason": {
+      "label": "Reason for Contact",
+      "required": "Reason for contact is required"
+    },
+    "email": {
+      "label": "Email Address",
+      "required": "Email address is required",
+      "invalid": "Please enter a valid email address"
+    },
+    "phone": {
+      "label": "Phone Number",
+      "required": "Phone number is required",
+      "invalid": "Please enter a valid phone number"
+    },
+    "message": {
+      "label": "Message",
+      "required": "Message is required",
+      "min": "Message must be at least 10 characters"
+    },
+    "button": "Send"
+  },
+  "contactInfo": {
+    "successMessage": "Our team is ready to leverage our expertise and resources to best serve your needs. Please complete your inquiry and share a few details below, and we will get back to you shortly.",
+    "complaints": {
+      "title": "Feedback and Inquiries",
+      "phone1": "+96653 133 8566",
+      "phone2": "+96658 010 8442"
+    },
+    "email": {
+      "title": "Email",
+      "emails": [
+        "Purity@geters-ksa.com",
+        "info@epco.sa",
+        "Purity@geters-ksa.com"
+      ]
+    },
+    "headOffice": {
+      "title": "Corporate Headquarter",
+      "address": "Al Rabwah District, Riyadh, Saudi Arabia",
+      "phone1": "+96653 133 8566",
+      "phone2": "+96658 010 8442"
+    },
+    "easternRegion": {
+      "title": "Eastern Province",
+      "address": "Dammam, Saudi Arabia",
+      "phone": "+96653 613 8233",
+      "email": "info@epco.sa"
+    },
+    "workingHours": {
+      "title": "Business Hours",
+      "days": "Friday – Saturday: Closed",
+      "hours": "Sunday – Thursday: 8:00 AM – 4:00 PM"
+    },
+    "social": {
+      "title": "Follow us",
+      "map": "Our Geographic Presence"
+    }
+  },
+
+  
+  "certifications":{
+        "mainTitle": "Certifications",
+    "main": "Home",
+    "title": "Our Credentials",
+    "description": "Our compliance and certifications reflect our commitment to the highest environmental standards"
+  }
+}
