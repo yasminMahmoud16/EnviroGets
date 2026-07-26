@@ -1,19 +1,17 @@
 import { Outlet } from "react-router";
-import Navbar from "../Common/Navbar/Navbar.jsx";
 import Footer from "../Common/Footer/Footer.jsx";
+import NavbarCom from "../Common/Navbar/NavbarCom.jsx";
 
 export default function RouterLayout() {
     return (
       <>
-        <div className="min-h-screen flex flex-col">
-          <Navbar />
 
-          <main className="flex-1">
+          {/* <main className="relative "> */}
+          <NavbarCom />
             <Outlet />
-          </main>
+          {/* </main> */}
 
           <Footer />
-        </div>
       </>
     );
 }

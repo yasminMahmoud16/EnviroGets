@@ -1,14 +1,36 @@
 {
   "navbar": {
-    "logo":"نقاء البيئة",
-    "Home": "الرئيسية",
-    "About": " عن المكتب",
-    "TargetAudience": " الجمهور المستهدف",
-    "OurServices": "مجالات العمل",
-    "ContactUs": "تواصل معنا",
-    "Clients": "عملاؤنا",
-    "Certifications": "إعتماداتنا",
-    "ConsulationRequest": "طلب استشاراة"
+    "logo":"إنفــــايروجيتــــس",
+    "slogan":"للإستشارات والخدمات البيئية",
+  "links": [
+      {
+        "title": "تواصل معنا",
+        "path": "/contact"
+      },
+            {
+        "title": "عملاؤنا",
+        "path": "/clients"
+      },
+            {
+        "title": "إعتماداتنا",
+        "path": "/certifications"
+      },
+        {
+        "title": "الاقسام",
+        "path": "/sections"
+      },
+
+      {
+        "title": "من نحن",
+        "path": "/about"
+      },      {
+        "title": "الرئيسية",
+        "path": "/"
+      }
+    
+
+
+    ]
   },
   "navbarPath": {
     "Home": "/",
@@ -28,14 +50,7 @@
   },
   "home": {
     "subTitleHero": "رؤية 2030 — شريكك البيئي الموثوق",
-    "titleHero1": "نحمي البيئة",
-    "titleHero2": "نحمي البيئة",
-    "descriptionHero": "خدمات بيئية متكاملة تجمع بين الخبرة التقنية والالتزام البيئي  لتحقيق مستقبل مستدام يليق بالمملكة العربية السعودية.",
-    "buttonHero1": "تعرف علينا",
-    "buttonHero2": "اكتشف خدماتنا ",
-    "SatisfiedCustomer": "عميل راضٍ",
-    "ProfessionalExperience": "سنة خبرة",
-    "ExecutedProjects": "مشروع منجز"
+    "titleHero1":"نحو بيئة مستدامة بمعايير سعودية وحلول علمية"
   },
 
 

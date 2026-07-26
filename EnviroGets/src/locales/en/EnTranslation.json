@@ -1,14 +1,36 @@
 {
   "navbar": {
-    "logo":"Neqaa Al-Biah",
-    "Home": "Home",
-    "About": "AboutUs",
-    "TargetAudience": "Target Audience",
-    "OurServices": "Our Services",
-    "ContactUs": "Contact Us",
-    "Clients": "Clients",
-    "Certifications": "Certifications",
-    "ConsulationRequest": "Consulation Request"
+    "logo":"EnviroGets",
+    "slogan":"For Environmental Consulting and Services",
+    "links": [
+      {
+        "title": "Contact Us",
+        "path": "/contact"
+      },
+            {
+        "title": "Our Clients",
+        "path": "/clients"
+      },
+            {
+        "title": "Certifications",
+        "path": "/certifications"
+      },
+        {
+        "title": "Sections",
+        "path": "/sections"
+      },
+
+      {
+        "title": "AboutUs",
+        "path": "/about"
+      },      {
+        "title": "Home",
+        "path": "/"
+      }
+    
+
+
+    ]
   },
   "navbarPath": {
     "Home": "/",
