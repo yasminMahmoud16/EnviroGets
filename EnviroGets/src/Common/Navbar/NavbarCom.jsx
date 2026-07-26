@@ -23,13 +23,16 @@ export default function NavbarCom() {
   return (
     <>
       <Navbar
+        dir="rtl"
         fluid
         className="absolute top-0 left-0 z-50 w-full bg-transparent dark:bg-transparent "
       >
         <NavbarToggle />
-        <NavbarCollapse className="mt-2 md:mt-0   bg-white/10 backdrop-blur-md md:bg-transparent
-
- rounded-md ">
+        <NavbarCollapse
+          className="mt-2 md:mt-0   bg-white/10 backdrop-blur-md md:bg-transparent
+md:dark:bg-transparent md:dark:backdrop-blur-none
+ rounded-md "
+        >
           {links.map((link, index) => (
             <NavbarLink
               as={NavLink}
@@ -73,7 +76,7 @@ export default function NavbarCom() {
 
         <NavbarBrand href="/" className="hidden md:flex">
           <div
-            className={`w-30 lg:w-full flex flex-col gap-1 ${isArabic ? "items-start" : "items-start"} mr-3 `}
+            className={` flex flex-col gap-1 ${isArabic ? "items-start" : "items-end"}  `}
           >
             <h2 className={` text-sm  lg:text-2xl font-bold dark:text-white `}>
               {t("navbar.logo")}
@@ -82,11 +85,14 @@ export default function NavbarCom() {
               {t("navbar.slogan")}
             </p>
           </div>
-          <img
-            src={logo}
-            className="mr-1 h-10 lg:mr-3 lg:h-14"
-            alt={t("navbar.logo")}
-          />
+
+          <div className="w-10 lg:w-25 lg:h-20 flex items-center justify-center">
+            <img
+              src={logo}
+              className="mr-1 w-full  lg:mr-0 lg:h-14"
+              alt={t("navbar.logo")}
+            />
+          </div>
         </NavbarBrand>
       </Navbar>
     </>

@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import Footer from "../Common/Footer/Footer.jsx";
+// import Footer from "../Common/Footer/Footer.jsx";
 import NavbarCom from "../Common/Navbar/NavbarCom.jsx";
 
 export default function RouterLayout() {
@@ -11,7 +11,7 @@ export default function RouterLayout() {
             <Outlet />
           {/* </main> */}
 
-          <Footer />
+          {/* <Footer /> */}
       </>
     );
 }

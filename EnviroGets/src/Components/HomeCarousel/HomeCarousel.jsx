@@ -35,9 +35,9 @@ useEffect(() => {
 
   return (
     <>
-      <div className="relative w-full h-[70dvh] md:h-[85dvh] lg:h-dvh  ">
+      <div className="relative w-full    ">
         <Swiper
-          // style={{ height: "100%" }}
+          style={{ height: "100%" }}
           className="rounded-b-2xl w-full h-full"
           key={i18n.language}
           dir={i18n.language === "ar" ? "rtl" : "ltr"}
@@ -88,33 +88,32 @@ useEffect(() => {
           </SwiperSlide>
         </Swiper>
         <div
-          className="absolute inset-0 z-[2] 
+          className="absolute inset-0 z-[2] rounded-bl-2xl
     bg-[linear-gradient(to_left,rgba(69,143,155,0.75)_0%,rgba(69,143,155,0.45)_45%,rgba(69,143,155,0.15)_100%)]"
         ></div>
 
         <div
           className={`absolute   ${
-            isArabic ? "top-30 md:top-65 xl:top-55" : "top-5  xl:gap-4"
-          } z-10 max-w-[95%] md:max-w-xl px-4 md:px-9 flex flex-col gap-1 md:gap-8`}
+            isArabic ? "" : "   font-roboto"
+          } top-10 md:top-20 xl:top-30 z-10  px-4 md:px-9 flex flex-col gap-1 md:gap-4 lg:gap-8`}
         >
-          <div className=" flex flex-col gap-2 w-3xs md:w-2xl ">
+          <div className=" flex flex-col gap-2 w-3xs  lg:w-2xl ">
             <h1
               className={`${
                 isArabic
-                  ? "text-3xl  md:text-5xl tracking-normal "
-                  : "font-RobotoCondensed text-sm md:text-2xl xl:text-4xl "
-              } text-white dark:text-white leading-[1.65] font-black  `}
+                  ? "text-sm md:text-2xl lg:text-5xl tracking-normal font-black  leading-[1.65]"
+                  : "font-roboto text-sm md:text-2xl xl:text-4xl leading-tight font-bold"
+              } text-white dark:text-white    `}
             >
               {t("home.titleHero1")}
             </h1>
-
           </div>
 
           <div
-            className="flex items-center justify-center w-35  xl:w-60 xl:h-30  rounded-2xl xl:rounded-3xl border border-white bg-linear-to-b from-[#f5f6f800] via-[#c3c3c559] to-[#cbcccdae] 
+            className="flex items-center justify-center w-20 h-10 lg:w-35  xl:w-60 xl:h-30  rounded-2xl xl:rounded-3xl border border-white bg-linear-to-b from-[#f5f6f800] via-[#c3c3c559] to-[#cbcccdae] 
           text-xs xl:text-xl   shadow p-2"
           >
-            <img src={hero} alt="" className="p-2 object-contain" />
+            <img src={hero} alt="" className="md:p-2 object-contain" />
           </div>
 
           {/* bg-white/10 backdrop-blur-md */}
