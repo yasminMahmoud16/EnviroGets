@@ -49,15 +49,38 @@
     "description": "Neqaa Al-Biah Office. All rights reserved"
   },
   "home": {
-    "subTitleHero": "Towards Vision 2030 — Your Reliable Environmental Partner",
-    "titleHero1": "Protect Environment",
-    "titleHero2": "Build our Future",
-    "descriptionHero": "Integrated environmental services combining technical expertise and environmental commitment to achieve a sustainable future for the Kingdom of Saudi Arabia.",
-    "buttonHero1": "Our Services",
-    "buttonHero2": "About us",
-    "SatisfiedCustomer": "Satisfied Customer",
-    "ProfessionalExperience": "Professional Experience",
-    "ExecutedProjects": "Executed Projects"
+    "titleHero1":"Delivering Environmental Excellence Through Science, Integrity and Innovation",
+    "homeInfo":[
+      {
+        "num":"10,000",
+        "text":"Customer Served Annually "
+      },
+      {
+        "num":"500",
+        "text":"Retail "
+      },
+      {
+        "num":"15",
+        "text":"City"
+      }
+    ],
+        "homeCards":[
+      {
+        "image":"card1.png",
+        "title":"Sustainable Environmental Solutions",
+        "text":"Delivering science-based solutions that protect natural resources and promote long-term environmental sustainability."
+      },
+      {
+        "image":"card2.png",
+        "title":"Environmental Consulting & Compliance",
+        "text":" Supporting organizations in meeting environmental regulations and achieving sustainable operational practices."
+      },
+      {
+        "image":"card3.png",
+        "title":"Environmental Testing & Monitoring",
+        "text":"Providing accurate testing and monitoring services for air, water, and soil using advanced technologies."
+      }
+    ]
   },
 
 
