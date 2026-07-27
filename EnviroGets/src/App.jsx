@@ -2,6 +2,7 @@ import { createHashRouter, RouterProvider } from "react-router";
 import "./App.css";
 import RouterLayout from "./Layout/RouterLayout.jsx";
 import Home from "./Pages/Home/Home.jsx";
+import Sections from "./Pages/Sections/Sections.jsx";
 
 // pages
 
@@ -11,9 +12,14 @@ const router = createHashRouter([
     element: <RouterLayout />,
     children: [
       { index: true, element: <Home /> },
+      { path: "sections", element: <Sections /> },
+      // { path: "laboratories", element: <Laboratories /> },
+      // { path: "environmental-consulting", element: <environmentalConsulting /> },
+      // { path: "soil-studies", element: <soilStudies /> },
+      // { path: "air-quality", element: <airQuality /> },
+
+      
       // { path: "about", element: <About /> },
-      // { path: "services", element: <Services /> },
-      // { path: "services/:id", element: <ServicesWithId /> },
       // { path: "audience", element: <Audience /> },
       // { path: "contact", element: <Contact /> },
       // { path: "clients", element: <Clients /> },

@@ -82,6 +82,57 @@
       }
     ]
   },
+  "sections": {
+    "title":"الأقسام",
+    "list":[
+      {
+        "id":1,
+        "text":"من نحن",
+        "path":"/about"
+      },
+      {
+        "id":2,
+        "text":"المختبر المتنقل",
+        "path":"/laboratories"
+      },
+      {
+        "id":3,
+        "text":"الاستشارات والإدارة البيئية ",
+        "path":"/environmental-consulting"
+      },
+      {
+        "id":4,
+        "text":"مختبر مراقبة الهواء والضوضاء",
+        "path":"/environmental-consulting"
+      },
+      {
+        "id":5,
+        "text":"مختبر المياه والتربة",
+        "path":"/laboratories"
+      },
+      {
+        "id":6,
+        "text":"أهداف دراسة التربة",
+        "path":"/soil-studies"
+      },
+      {
+        "id":7,
+        "text":"أنواع التحاليل المنفذة على عينات التربة",
+        "path":"/soil-studies"
+      },
+      {
+        "id":8,
+        "text":"مراقبة جودة الهواء",
+        "path":"/air-quality"
+      },
+      {
+        "id":9,
+        "text":"اهداف مراقبة جودة الهواء",
+        "path":"/air-quality"
+      }
+    ]
+
+  },
 
 
 

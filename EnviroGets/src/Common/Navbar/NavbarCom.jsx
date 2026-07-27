@@ -7,7 +7,6 @@ import {
   Navbar,
   NavbarBrand,
   NavbarCollapse,
-  NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
 import LangSwitchIcon from "../../Components/LangSwitchIcon/LangSwitchIcon.jsx";
@@ -34,14 +33,14 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
  rounded-md "
         >
           {links.map((link, index) => (
-            <NavbarLink
+            <NavLink
               as={NavLink}
               key={index}
-              href={link.path}
+              to={link.path}
               className="border-none text-sm lg:text-xl font-medium text-white dark:text-white duration-300 transition-all ease-in-out hover:bg-[#458F9B]! md:hover:text-[#165761]! md:hover:bg-transparent!"
             >
               {link.title}
-            </NavbarLink>
+            </NavLink>
           ))}
 
           <div className=" hidden md:block ">
