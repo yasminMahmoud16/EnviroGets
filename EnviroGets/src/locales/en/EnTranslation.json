@@ -83,7 +83,59 @@
     ]
   },
 
+  "sections": {
+    "title":"Sections",
+        "image":"landingEnglish.png",
 
+    "list":[
+      {
+        "id":1,
+        "text":"About US",
+        "path":"/about"
+      },
+      {
+        "id":2,
+        "text":"Mobile Laboratory",
+        "path":"/laboratories"
+      },
+      {
+        "id":3,
+        "text":"Environmental Consulting & Management",
+        "path":"/environmental-consulting"
+      },
+      {
+        "id":4,
+        "text":"Air & Noise Monitoring Laboratory",
+        "path":"/environmental-consulting"
+      },
+      {
+        "id":5,
+        "text":"Water and soil laboratory",
+        "path":"/laboratories"
+      },
+      {
+        "id":6,
+        "text":"Objectives of Soil Investigation ",
+        "path":"/soil-studies"
+      },
+      {
+        "id":7,
+        "text":"Types of Analyses Performed on Soil Samples",
+        "path":"/soil-studies"
+      },
+      {
+        "id":8,
+        "text":"Air quality Monitoring",
+        "path":"/air-quality"
+      },
+      {
+        "id":9,
+        "text":"Purpose of air quality Monitoring",
+        "path":"/air-quality"
+      }
+    ]
+
+  },
 
   "contact": {
     "mainTitle": "Contact Us",
