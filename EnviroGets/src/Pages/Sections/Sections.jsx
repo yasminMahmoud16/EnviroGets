@@ -11,14 +11,7 @@ export default function Sections() {
 
     return (
       <>
-        {/* <div
-          className="absolute inset-0 -z-10 bg-cover bg-position-[center_-1rem]
-    lg:bg-position-[center_-250px]  bg-no-repeat "
-          style={{
-            backgroundImage: `url(${bgSections})`,
-            // backgroundPosition: "center -250px",
-          }}
-        > */}
+
 
         <section
           className="relative bg-cover bg-position-[center_-1rem]
@@ -42,7 +35,6 @@ export default function Sections() {
           </div>
         </section>
 
-        {/* </div> */}
       </>
     );
 }
