@@ -1,57 +1,42 @@
-import {  useState } from "react";
-import { useTranslation } from "react-i18next";
-import ArticleList from "../../Common/ArticleList/ArticleList.jsx";
-import ArticleDescription from "../../Common/ArticleDescription/ArticleDescription.jsx";
-import ArticleSubNav from "../../Common/ArticleSubNav/ArticleSubNav.jsx";
-import { AiOutlineMail } from "react-icons/ai";
-import { FiPrinter } from "react-icons/fi";
-import { MdArrowOutward } from "react-icons/md";
-
+import AboutArticle from "../../Components/AboutArticle/AboutArticle.jsx";
+import AboutMission from "../../Components/AboutMission/AboutMission.jsx";
+import useJson from "../../Hooks/useJson.js";
+import aboutBg from "../../assets/Images/aboutBg.jpg"
+// import aboutBg from "../../assets/Images/aboutBg1.jpg"
 export default function About() {
-    const { t } = useTranslation();
-    const list = t("aboutArticle.list", { returnObjects: true });
-    const mainTitle = t("aboutArticle.mainTitle");
+  const { isArabic } = useJson();
+  return (
+    <>
+      <section className="relative min-h-screen flex flex-col justify-start px-10 overflow-hidden">
+        {/* Background */}
+        <div
+          className={`absolute inset-0 -z-10 bg-cover bg-no-repeat  ${
+            isArabic ? "-scale-x-100" : ""
+          }`}
+          style={{
+            backgroundImage: `url(${aboutBg})`,
+          }}
+        />
+        <div className="absolute inset-0 bg-[#00000052] z-0"></div>
 
-    const [activeSlug, setActiveSlug] = useState(
-        Array.isArray(list) && list.length > 0 ? list[0].slug : null,
-    );
-
-    const activeItem = Array.isArray(list)
-        ? list.find((item) => item.slug === activeSlug)
-        : null;
-
-    return (
-      <>
-        <div className="w-full h-40 bg-[#F3F4F5] mt-16 lg:mt-19 py-5 px-20">
-          <ArticleSubNav
-            slug={activeItem?.label}
-            main={t("aboutArticle.main")}
-            mainTitle={t("aboutArticle.mainTitle")}
-          />
-          <div className=" flex  mt-6 md:flex-row-reverse gap-1.5 items-center">
-            <AiOutlineMail className="text-[#1A5C2C]" />
-            <FiPrinter
-              className="text-[#1A5C2C] hover:cursor-pointer transition-all duration-300 ease-in-out hover:text-[#31974d]"
-              onClick={() => window.print()}
-            />
-            <MdArrowOutward className="text-[#1A5C2C]" />
-          </div>
+        {/* Content */}
+        <div className="relative z-10 mt-4">
+          <AboutArticle />
         </div>
-        <section className="flex flex-col lg:flex-row gap-8 py-6 px-16 bg-white h-full md:h-screen">
-          <div className="shrink-0">
-            <ArticleList
-              mainTitle={mainTitle}
-              list={list}
-              activeSlug={activeSlug}
-              onSelect={setActiveSlug}
-            />
-          </div>
 
-          <div className="flex-1">
-            <ArticleDescription list={list} activeSlug={activeSlug} />
-          </div>
-        </section>
-      </>
-    );
-    
+        <div
+          className={` hidden  relative z-10 md:flex  gap-3 w-4xl  mb-3 `}
+            dir={isArabic?"ltr":"rtl"}
+        >
+          <AboutMission />
+        </div>
+        <div
+          className={` flex  relative z-10 md:hidden  gap-3   mb-3 `}
+            dir={isArabic?"ltr":"rtl"}
+        >
+          <AboutMission />
+        </div>
+      </section>
+    </>
+  );
 }

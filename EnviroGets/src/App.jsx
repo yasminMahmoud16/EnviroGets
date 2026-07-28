@@ -3,6 +3,7 @@ import "./App.css";
 import RouterLayout from "./Layout/RouterLayout.jsx";
 import Home from "./Pages/Home/Home.jsx";
 import Sections from "./Pages/Sections/Sections.jsx";
+import About from "./Pages/About/About.jsx";
 
 // pages
 
@@ -13,13 +14,13 @@ const router = createHashRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "sections", element: <Sections /> },
+      { path: "about", element: <About /> },
       // { path: "laboratories", element: <Laboratories /> },
       // { path: "environmental-consulting", element: <environmentalConsulting /> },
       // { path: "soil-studies", element: <soilStudies /> },
       // { path: "air-quality", element: <airQuality /> },
 
       
-      // { path: "about", element: <About /> },
       // { path: "audience", element: <Audience /> },
       // { path: "contact", element: <Contact /> },
       // { path: "clients", element: <Clients /> },

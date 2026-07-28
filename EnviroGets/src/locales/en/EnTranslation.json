@@ -137,6 +137,46 @@
 
   },
 
+
+    "about":{
+    "title":"WHO WE ARE",
+    "article":[
+      {
+        "text":"EnviroGets is a leading environmental consulting foundation in Saudi Arabia, licensed by the National Center for Environmental Compliance (NCEC) – Category (A), delivering services across the Kingdom."
+      },
+      {
+        "text":" The company operates ISO-accredited laboratories for water, soil, air quality, and noise monitoring, ensuring accurate results and full compliance with environmental standards."
+      }
+    ],
+        "images":[
+      "about1.jpg",
+      "about2.jpg",
+      "about3.jpg"
+    ],
+    "scrollData":[
+      {
+        "title":"Our Mission",
+        "text":" Deliver reliable environmental consulting and testing services that support compliance, protect natural resources, and promote sustainable development. 🌱",
+        "image":"aboutScroll1.jpg"
+      },
+      {
+        "title":"Our Policy",
+        "text":[" We are committed to continuous research and development to keep pace with the Kingdom’s industrial and developmental progress.",
+      "Our focus is on delivering high-quality environmental services, ensuring accurate results, regulatory compliance, and supporting sustainable development. "
+      ],
+
+
+        "image":"aboutScroll2.png"
+      },
+      {
+        "title":"Our Vision",
+        "text":" To lead in environmental services by using advanced accredited technologies to support a healthy and sustainable environment for present and future generations. 🌱  ",
+        "image":"aboutScroll3.jpg"
+      }
+    ]
+
+  },
+
   "contact": {
     "mainTitle": "Contact Us",
     "main": "Home",
