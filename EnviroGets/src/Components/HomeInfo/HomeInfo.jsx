@@ -5,12 +5,13 @@ import facebook from "../../assets/Images/facebool.png"
 import tiktok from "../../assets/Images/tiktok.png"
 import twitter from "../../assets/Images/twitter.png"
 import linkedin from "../../assets/Images/linkedin.png"
-import { useTranslation } from "react-i18next";
+import useJson from "../../Hooks/useJson.js"
 
 
 export default function HomeInfo() {
 
-    const { t } = useTranslation();
+    const {  isArabic, t } = useJson();
+
     const information = t("home.homeInfo", { returnObjects: true });
     return (
       <>
@@ -19,11 +20,18 @@ export default function HomeInfo() {
             <img src={map} alt="map" className="lg:w-full object-cover" />
           </div>
           <div className="flex mb-40 md:mb-0 flex-col gap-8">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+            <div
+              dir="rtl"
+              className={`flex flex-col md:flex-row text-center justify-center gap-10`}
+            >
               {information.map((info) => (
-                <div className=" text-2xl text-[#014700] text-center">
+                <div
+                  className={`text-2xl text-[#014700] ${isArabic ? "text-right" : "text-left"}`}
+                >
                   <p className=" font-roboto font-bold">{info.num}+</p>
-                  <p className="md:text-base lg:text-2xl font-extrabold">
+                  <p
+                    className={`md:text-base lg:text-2xl font-extrabold ${isArabic ? "text-right" : "text-left"}`}
+                  >
                     {info.text}
                   </p>
                 </div>

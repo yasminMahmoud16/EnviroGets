@@ -1,12 +1,13 @@
 import { Card } from "flowbite-react";
-import i18next from "i18next";
-import { useTranslation } from "react-i18next";
+import useJson from "../../Hooks/useJson.js";
+
 
 export default function HomeCards() {
-    const { t } = useTranslation();
+
+    const { isArabic, t } = useJson();
+
     const cards = t("home.homeCards", { returnObjects: true });
     const baseUrl = "http://localhost:5173/";
-      const isArabic = i18next.language === "ar";
 
 
     return (

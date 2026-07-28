@@ -14,12 +14,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import useJson from "../../Hooks/useJson.js";
 
 export default function HomeCarousel() {
 
   const swiperRef = useRef(null);
-  const { i18n, t } = useTranslation();
-  const isArabic = i18n.language === "ar";
+  const { i18n} = useTranslation();
+    const { isArabic, t } = useJson();
+
   
 useEffect(() => {
   const swiper = swiperRef.current;

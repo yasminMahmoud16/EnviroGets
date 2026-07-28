@@ -1,42 +1,47 @@
-import { useTranslation } from "react-i18next";
 import logo from "../../assets/Images/EnviroGets.png";
-import {  NavLink } from "react-router";
-import i18next from "i18next";
+import {  Link, NavLink } from "react-router";
 
 import {
   Navbar,
-  NavbarBrand,
+  // NavbarBrand,
   NavbarCollapse,
   NavbarToggle,
 } from "flowbite-react";
 import LangSwitchIcon from "../../Components/LangSwitchIcon/LangSwitchIcon.jsx";
+import useOpen from "../../Hooks/useOpen.js";
+import useJson from "../../Hooks/useJson.js";
 
 
 
 
 export default function NavbarCom() {
-      const isArabic = i18next.language === "ar";
-  const { t } = useTranslation();
+
+  const { isOpen, setIsOpen, navRef } = useOpen();
+
+  const { isArabic, t } = useJson();
   const links = t("navbar.links", { returnObjects: true });
-  console.log(links);
+
+
   return (
     <>
       <Navbar
+        ref={navRef}
         dir="rtl"
         fluid
         className="absolute top-0 left-0 z-50 w-full bg-transparent dark:bg-transparent "
       >
-        <NavbarToggle />
+        <NavbarToggle onClick={() => setIsOpen(!isOpen)} />
         <NavbarCollapse
-          className="mt-2 md:mt-0   bg-white/10 backdrop-blur-md md:bg-transparent
+          className={`mt-2 md:mt-0   bg-white/10 backdrop-blur-md md:bg-transparent
 md:dark:bg-transparent md:dark:backdrop-blur-none
- rounded-md "
+ rounded-md   ${isOpen ? "block" : "hidden md:flex"}    `}
         >
           {links.map((link, index) => (
             <NavLink
               as={NavLink}
               key={index}
               to={link.path}
+              onClick={() => setIsOpen(false)}
               className="border-none text-sm lg:text-xl font-medium text-white dark:text-white duration-300 transition-all ease-in-out hover:bg-[#458F9B]! md:hover:text-[#165761]! md:hover:bg-transparent!"
             >
               {link.title}
@@ -46,7 +51,11 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
           <div className=" hidden md:block ">
             <LangSwitchIcon />
           </div>
-          <NavbarBrand href="/" className=" md:hidden flex justify-between">
+          <Link
+            onClick={() => setIsOpen(false)}
+            to="/"
+            className=" md:hidden flex justify-between"
+          >
             <div className="flex  py-3">
               <div
                 className={`w-30 lg:w-full flex flex-col gap-1 ${isArabic ? "items-start" : "items-start"} mr-3 `}
@@ -66,14 +75,13 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
                 alt={t("navbar.logo")}
               />
             </div>
-
-            <div className=" block md:hidden pl-5 pb-3">
-              <LangSwitchIcon />
-            </div>
-          </NavbarBrand>
+          </Link>
+          <div className="  md:hidden pl-5 pb-8  flex items-center justify-start mr-3">
+            <LangSwitchIcon />
+          </div>
         </NavbarCollapse>
 
-        <NavbarBrand href="/" className="hidden md:flex">
+        <Link to="/" className="hidden md:flex">
           <div
             className={` flex flex-col gap-1 ${isArabic ? "items-start" : "items-end"}  `}
           >
@@ -92,7 +100,7 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
               alt={t("navbar.logo")}
             />
           </div>
-        </NavbarBrand>
+        </Link>
       </Navbar>
     </>
   );
