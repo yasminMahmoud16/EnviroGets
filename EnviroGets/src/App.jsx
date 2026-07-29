@@ -4,6 +4,7 @@ import RouterLayout from "./Layout/RouterLayout.jsx";
 import Home from "./Pages/Home/Home.jsx";
 import Sections from "./Pages/Sections/Sections.jsx";
 import About from "./Pages/About/About.jsx";
+import Contact from "./Pages/Contact/Contact.jsx";
 
 // pages
 
@@ -15,6 +16,7 @@ const router = createHashRouter([
       { index: true, element: <Home /> },
       { path: "sections", element: <Sections /> },
       { path: "about", element: <About /> },
+      { path: "contact", element: <Contact /> },
       // { path: "laboratories", element: <Laboratories /> },
       // { path: "environmental-consulting", element: <environmentalConsulting /> },
       // { path: "soil-studies", element: <soilStudies /> },
@@ -22,7 +24,6 @@ const router = createHashRouter([
 
       
       // { path: "audience", element: <Audience /> },
-      // { path: "contact", element: <Contact /> },
       // { path: "clients", element: <Clients /> },
       // { path: "clients/clients-Details", element: <ClientsDetails /> },
       // { path: "certifications", element: <Certification /> },

@@ -6,9 +6,9 @@ export default function Footer() {
   const {t} = useTranslation();
     return (
       <>
-        <footer className="bg-[#032F0D] text-white border-[0.5px] border-[#5fcf8165]">
+        <footer className="bg-linear-to-r from-[#16393F] via-[#2A4D4B] to-[#7D9A6B] ">
           <div className="  w-full mx-auto max-w-screen-xl p-4  flex flex-col gap-2 md:flex md:flex-row md:items-center md:justify-between">
-            <ul className="flex flex-col  gap-2 md:flex-row md:flex-wrap items-center mt-3 text-sm font-medium text-body sm:mt-0">
+            <ul className="flex flex-col text-white   gap-2 lg:flex-row md:flex-wrap items-center mt-3 text-sm font-medium text-body sm:mt-0">
               <li>
                 <Link to="/contact" className="hover:underline me-4 md:me-6">
                   {t("footer.Contact")}
@@ -25,11 +25,11 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-            <div className="flex items-center justify-center gap-2 font-RobotoCondensed">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-2 font-RobotoCondensed text-white text-center ">
               <p className="text-sm text-body sm:text-center  ">
                 {t("footer.description")}
               </p>
-              <p className="text-sm text-body sm:text-center  "> EPECO</p>
+              <p className="text-sm text-body sm:text-center  "> EnviroGets</p>
               <p className="text-sm text-body sm:text-center  ">2026© </p>
             </div>
           </div>
