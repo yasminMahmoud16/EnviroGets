@@ -94,6 +94,7 @@ export default function HomeInfo() {
                 </a>
               </div>
             </div>
+
           </div>
           <div className="relative z-20 -mt-32 md:-mt-10 flex items-center justify-center px-4">
             <img
@@ -102,6 +103,7 @@ export default function HomeInfo() {
               className="lg:w-full max-w-3xl object-contain drop-shadow-xl"
             />
           </div>
+          {/* <SocialMedia  /> */}
 
           <div className="md:hidden my-2 grid grid-cols-5 items-center">
             <div className="w-20">

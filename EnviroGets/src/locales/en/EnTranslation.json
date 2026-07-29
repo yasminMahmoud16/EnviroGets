@@ -46,7 +46,7 @@
     "terms": "Terms",
     "PrivacyPolicy": "Privacy Policy",
     "Contact": "Contact Us",
-    "description": "Neqaa Al-Biah Office. All rights reserved"
+    "description": "EnviroGets - For Environmental Consulting and Services All rights reserved"
   },
   "home": {
     "titleHero1":"Delivering Environmental Excellence Through Science, Integrity and Innovation",
@@ -178,36 +178,14 @@
   },
 
   "contact": {
-    "mainTitle": "Contact Us",
-    "main": "Home",
-    "title": "Get in Touch",
-    "description": "Feel free to contact us. We are happy to answer your inquiries.",
-    "name": {
-      "label": "Name",
-      "required": "Name is required",
-      "min": "Name must be at least 3 characters",
-      "max": "Name must not exceed 50 characters"
-    },
-    "reason": {
-      "label": "Reason for Contact",
-      "required": "Reason for contact is required"
-    },
-    "email": {
-      "label": "Email Address",
-      "required": "Email address is required",
-      "invalid": "Please enter a valid email address"
-    },
-    "phone": {
-      "label": "Phone Number",
-      "required": "Phone number is required",
-      "invalid": "Please enter a valid phone number"
-    },
-    "message": {
-      "label": "Message",
-      "required": "Message is required",
-      "min": "Message must be at least 10 characters"
-    },
-    "button": "Send"
+    "title": " Contact US ",
+    "description": "GETES Team is ready to provide the right solution according to your needs",
+    "subTitle":"Get in Touch ",
+    "address":"Al Rabwah District, Riyadh, Saudi Arabia",
+    "email":"Info@getes-ksa.com",
+    "phone":"+966 55 531 2093",
+    "socialAd":"Follow For Social Media"
+
   },
   "contactInfo": {
     "successMessage": "Our team is ready to leverage our expertise and resources to best serve your needs. Please complete your inquiry and share a few details below, and we will get back to you shortly.",

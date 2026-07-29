@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 // import Footer from "../Common/Footer/Footer.jsx";
 import NavbarCom from "../Common/Navbar/NavbarCom.jsx";
 import { useEffect } from "react";
+import Footer from "../Common/Footer/Footer.jsx";
 
 export default function RouterLayout() {
   useEffect(() => {
@@ -15,7 +16,7 @@ export default function RouterLayout() {
             <Outlet />
           {/* </main> */}
 
-          {/* <Footer /> */}
+          <Footer />
       </>
     );
 }
