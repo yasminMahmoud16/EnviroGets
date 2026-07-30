@@ -1,5 +1,5 @@
 import logo from "../../assets/Images/EnviroGets.png";
-import {  Link, NavLink } from "react-router";
+import { Link, NavLink, useLocation } from "react-router";
 
 import {
   Navbar,
@@ -20,15 +20,20 @@ export default function NavbarCom() {
 
   const { isArabic, t } = useJson();
   const links = t("navbar.links", { returnObjects: true });
+  const location = useLocation();
+  const transparentPages = ["/", "/about", "/contact"];
+  const isTransparent = transparentPages.includes(location.pathname);
 
-
+  const textClasses = isTransparent
+    ? "text-white"
+    : "text-[#0171DE] dark:text-[#0171DE]";
   return (
     <>
       <Navbar
         ref={navRef}
         dir="rtl"
         fluid
-        className="absolute top-0 left-0 z-50 w-full bg-transparent dark:bg-transparent "
+        className={`absolute top-0 left-0 z-50 w-full bg-transparent dark:bg-transparent  `}
       >
         <NavbarToggle onClick={() => setIsOpen(!isOpen)} />
         <NavbarCollapse
@@ -42,14 +47,16 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
               key={index}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className="border-none text-sm lg:text-xl font-medium text-white dark:text-white duration-300 transition-all ease-in-out hover:bg-[#458F9B]! md:hover:text-[#165761]! md:hover:bg-transparent!"
+              className={`
+                ${textClasses}
+                border-none text-sm lg:text-xl font-medium  duration-300 transition-all ease-in-out hover:bg-[#458F9B]! md:hover:text-[#165761]! md:hover:bg-transparent!`}
             >
               {link.title}
             </NavLink>
           ))}
 
           <div className=" hidden md:block ">
-            <LangSwitchIcon />
+            <LangSwitchIcon isTransparent={isTransparent} />
           </div>
           <Link
             onClick={() => setIsOpen(false)}
@@ -81,19 +88,24 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
           </div>
         </NavbarCollapse>
 
-        <Link to="/" className="hidden md:flex">
+        {/* logo */}
+        <Link to="/" className="hidden md:flex  items-center justify-center">
           <div
             className={` flex flex-col gap-1 ${isArabic ? "items-start" : "items-end"}  `}
           >
-            <h2 className={` text-sm  lg:text-2xl font-bold dark:text-white `}>
+            <h2
+              className={` text-sm  lg:text-2xl font-bold ${textClasses}`}
+            >
               {t("navbar.logo")}
             </h2>
-            <p className=" text-xs lg:text-base font-light dark:text-white">
+            <p
+              className={`text-xs lg:text-base font-bold ${textClasses}`}
+            >
               {t("navbar.slogan")}
             </p>
           </div>
 
-          <div className="w-10 lg:w-25 lg:h-20 flex items-center justify-center">
+          <div className="w-10 lg:w-20 lg:h-20 flex items-center justify-center">
             <img
               src={logo}
               className="mr-1 w-full  lg:mr-0 lg:h-14"
