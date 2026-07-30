@@ -1,3 +1,4 @@
+import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
 import Air from "@/Components/Consulting/Air.jsx";
 import ConInfo from "@/Components/Consulting/ConInfo.jsx";
 import useJson from "@/Hooks/useJson.js"
@@ -17,17 +18,19 @@ export default function Consulting() {
                 {t("consulting.subTitle")}
               </h5>
             </div>
-            <h2
+            {/* <h2
               className={`text-[#2C6FA0]  whitespace-nowrap ${isArabic ? "font-bold text-2xl" : "font-roboto font-semibold text-xl"}`}
             >
               {t("consulting.title")}
-            </h2>
+            </h2> */}
+            <TitleSec
+              title={t("consulting.title")}
+              className="text-[#2C6FA0]"
+            />
           </div>
-                
 
-
-                <ConInfo />
-                <Air/>
+          <ConInfo />
+          <Air />
         </section>
       </>
     );
