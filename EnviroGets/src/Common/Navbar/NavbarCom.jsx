@@ -21,7 +21,13 @@ export default function NavbarCom() {
   const { isArabic, t } = useJson();
   const links = t("navbar.links", { returnObjects: true });
   const location = useLocation();
-  const transparentPages = ["/", "/about", "/contact", "/laboratories"];
+  const transparentPages = [
+    "/",
+    "/about",
+    "/contact",
+    "/laboratories",
+    "/soil-studies",
+  ];
   const isTransparent = transparentPages.includes(location.pathname);
 
   const textClasses = isTransparent

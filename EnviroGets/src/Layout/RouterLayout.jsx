@@ -1,18 +1,18 @@
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import NavbarCom from "../Common/Navbar/NavbarCom.jsx";
 import Footer from "../Common/Footer/Footer.jsx";
 
 export default function RouterLayout() {
+  const location = useLocation();
 
     return (
       <>
+        {/* <main className="relative "> */}
+        <NavbarCom />
+        <Outlet />
+        {/* </main> */}
 
-          {/* <main className="relative "> */}
-          <NavbarCom />
-            <Outlet />
-          {/* </main> */}
-
-          <Footer />
+        {!["/soil-studies"].includes(location.pathname) && <Footer />}
       </>
     );
 }
