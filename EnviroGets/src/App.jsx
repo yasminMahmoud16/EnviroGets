@@ -7,6 +7,7 @@ import About from "./Pages/About/About.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
 import Consulting from "./Pages/EnvironmentalConsulting/Consulting.jsx";
 import Laboratory from "./Pages/Lap/Laboratory.jsx";
+import SoilStudies from "./Pages/SoilStudies/SoilStudies.jsx";
 
 // pages
 
@@ -21,7 +22,7 @@ const router = createHashRouter([
       { path: "contact", element: <Contact /> },
       { path: "laboratories", element: <Laboratory /> },
       { path: "environmental-consulting", element: <Consulting /> },
-      // { path: "soil-studies", element: <soilStudies /> },
+      { path: "soil-studies", element: <SoilStudies /> },
       // { path: "air-quality", element: <airQuality /> },
 
       // { path: "audience", element: <Audience /> },
