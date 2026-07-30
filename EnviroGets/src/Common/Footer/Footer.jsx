@@ -6,7 +6,8 @@ export default function Footer() {
   const {t} = useTranslation();
     return (
       <>
-        <footer className="bg-linear-to-r from-[#16393F] via-[#2A4D4B] to-[#7D9A6B] ">
+        <footer className="  left-0 w-full z-50 bg-linear-to-r from-[#16393F] via-[#2A4D4B] to-[#7D9A6B]">
+          {" "}
           <div className="  w-full mx-auto max-w-screen-xl p-4  flex flex-col gap-2 md:flex md:flex-row md:items-center md:justify-between">
             <ul className="flex flex-col text-white   gap-2 lg:flex-row md:flex-wrap items-center mt-3 text-sm font-medium text-body sm:mt-0">
               <li>
