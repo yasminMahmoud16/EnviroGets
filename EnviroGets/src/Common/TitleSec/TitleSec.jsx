@@ -1,6 +1,11 @@
+import useJson from "@/Hooks/useJson.js";
+
 export default function TitleSec({ title, className = "" }) {
+  const { isArabic} = useJson();
   return (
-    <h2 className={`font-bold  text-center text-[#2D7A45] ${className} `}>
+    <h2
+      className={` whitespace-nowrap ${isArabic ? "font-bold text-xl md:text-2xl" : "font-roboto font-semibold text-xl"}  ${className}`}
+    >
       {title}
     </h2>
   );

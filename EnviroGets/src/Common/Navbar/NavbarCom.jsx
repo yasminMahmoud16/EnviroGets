@@ -1,4 +1,4 @@
-import logo from "../../assets/Images/EnviroGets.png";
+import logo from "@/assets/Images/EnviroGets.png";
 import { Link, NavLink, useLocation } from "react-router";
 
 import {
@@ -7,9 +7,9 @@ import {
   NavbarCollapse,
   NavbarToggle,
 } from "flowbite-react";
-import LangSwitchIcon from "../../Components/LangSwitchIcon/LangSwitchIcon.jsx";
-import useOpen from "../../Hooks/useOpen.js";
-import useJson from "../../Hooks/useJson.js";
+import LangSwitchIcon from "@/Components/LangSwitchIcon/LangSwitchIcon.jsx";
+import useOpen from "@/Hooks/useOpen.js";
+import useJson from "@/Hooks/useJson.js";
 
 
 
@@ -21,7 +21,7 @@ export default function NavbarCom() {
   const { isArabic, t } = useJson();
   const links = t("navbar.links", { returnObjects: true });
   const location = useLocation();
-  const transparentPages = ["/", "/about", "/contact"];
+  const transparentPages = ["/", "/about", "/contact", "/laboratories"];
   const isTransparent = transparentPages.includes(location.pathname);
 
   const textClasses = isTransparent

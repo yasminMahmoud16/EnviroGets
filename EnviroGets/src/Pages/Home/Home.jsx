@@ -1,7 +1,7 @@
-import HomeInfo from "../../Components/HomeInfo/HomeInfo.jsx";
-import HomeCarousel from "../../Components/HomeCarousel/HomeCarousel.jsx";
-import bgHome from "../../assets/Images/bg-home.jpg";
-import HomeCards from "../../Components/HomeCards/HomeCards.jsx";
+import HomeInfo from "@/Components/Home/HomeInfo/HomeInfo.jsx";
+import HomeCarousel from "@/Components/Home/HomeCarousel/HomeCarousel.jsx";
+import bgHome from "@/assets/Images/bg-home.jpg";
+import HomeCards from "@/Components/Home/HomeCards/HomeCards.jsx";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <section className="min-h-screen pb-4">
         <HomeCarousel />
         <HomeInfo />
-        <HomeCards/>
+        <HomeCards />
       </section>
 
       {/* <section className="min-h-screen ">

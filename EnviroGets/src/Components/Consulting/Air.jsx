@@ -1,6 +1,7 @@
-import useJson from "../../Hooks/useJson.js";
-import air1 from "../../assets/Images/air1.png"
-import air2 from "../../assets/Images/air2.png"
+import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
+import useJson from "@/Hooks/useJson.js";
+import air1 from "@/assets/Images/air1.png"
+import air2 from "@/assets/Images/air2.png"
 export default function Air() {
     const { isArabic, t } = useJson();
     const airList = t("consulting.airList", {returnObjects:true});
@@ -11,11 +12,15 @@ export default function Air() {
         <div className=" px-20 flex flex-col md:flex-row  items-center   py-9 ">
           {/* content */}
           <div className="flex-1">
-            <h2
+            {/* <h2
               className={`text-[#2C6FA0]  whitespace-nowrap ${isArabic ? "font-bold text-xl md:text-2xl" : "font-roboto font-semibold text-xl"}`}
             >
               {t("consulting.airTitle")}
-            </h2>
+            </h2> */}
+            <TitleSec
+              title={t("consulting.airTitle")}
+              className="text-[#2C6FA0]"
+            />
 
             <div className=" pr-2 my-2">
               <ul

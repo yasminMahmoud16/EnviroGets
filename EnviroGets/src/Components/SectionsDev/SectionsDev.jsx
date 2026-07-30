@@ -3,7 +3,7 @@
 import { Link } from "react-router-dom";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
-import useJson from "../../Hooks/useJson.js";
+import useJson from "@/Hooks/useJson.js";
 
 export default function SectionsDev() {
   const { isArabic, t } = useJson();

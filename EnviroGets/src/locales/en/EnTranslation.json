@@ -187,6 +187,7 @@
     "socialAd":"Follow For Social Media"
 
   },
+
   "consulting": {
     "title": " Environmental Consulting & Management ",
     "subTitle":"Our Services",
@@ -222,6 +223,34 @@
   "Noise level measurement",
   "Vehicle exhaust testing"
 ]
+
+  },
+
+
+    "lab": {
+    "title": "Mobile Laboratory",
+    "labTitle":"Water And Soil Analysis",
+
+    "text1":[
+      "EnviroGets operates a specialized Air and Noise Monitoring Laboratory, providing accurate measurements and assessments using calibrated instruments and approved methodologies to ensure compliance with environmental regulations.",
+
+      "To support on-site requirements and field operations, GETES also offers Mobile Laboratory services, delivering real-time air quality and noise measurements directly at project locations with efficiency and reliability across Saudi Arabia"
+    ],
+    "text2":[
+      "Industrial and domestic wastewater treatment and desalination",
+      "Surface and groundwater quality assessment",
+      "Bottled and non-bottled drinking water analysis",
+      "Domestic and industrial wastewater analysis",
+      "Chemical and physical water testing",
+      "Bacteriological testing"
+    ],
+    "text3":[
+      "Heavy metals analysis",
+      "Marine and coastal surveys",
+      "Water temperature measurement",
+      "Current speed and direction measurement",
+      "Wave and tidal monitoring"
+    ]
 
   },
 

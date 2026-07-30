@@ -1,4 +1,4 @@
-import useJson from "../../Hooks/useJson.js";
+import useJson from "@/Hooks/useJson.js";
 import { motion } from "framer-motion";
 
 export default function AboutImage() {
