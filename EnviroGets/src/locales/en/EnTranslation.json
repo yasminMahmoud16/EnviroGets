@@ -253,7 +253,51 @@
     ]
 
   },
+ "soil": {
 
+
+"soilList":[
+  {
+    "title": "Soil Testing and Analysis",
+    "text":[
+      "Geotechnical and geophysical laboratory tests",
+      "Chemical and physical soil analysis",
+      "Bacteriological testing",
+      "Waste monitoring and analysis",
+      "Heavy metals measurement"
+    ]
+  },
+  {
+    "title": "Objectives of Soil Investigation",
+    "text":[
+      "Studying soil pollutants",
+      "Assessing the engineering stability of the soil",
+      "Evaluating soil fertility",
+      "Assessing groundwater quality"
+    ]
+  }
+],
+
+"soilTypes":  [
+    {
+    "title": "Types of Analyses Performed on Soil Samples",
+    "text":[
+      "Chemical Analysis: Includes the analysis of organic pollutants (BTEX, PAH, TPH), heavy elements, toxic metals, pH levels, organic matter, nutrients, and dissolved salts.",
+
+      "Physical Analysis:Includes the determination of moisture content, bulk and true density, and the percentages of sand, silt, and clay",
+      "Biological Analysis: Conducted to examine and assess microorganisms"
+    ]
+  }
+]
+
+
+
+
+
+
+
+
+  },
   
   "certifications":{
         "mainTitle": "Certifications",
