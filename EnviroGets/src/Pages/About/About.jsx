@@ -1,8 +1,8 @@
-import AboutArticle from "../../Components/AboutArticle/AboutArticle.jsx";
-import AboutMission from "../../Components/AboutMission/AboutMission.jsx";
-import useJson from "../../Hooks/useJson.js";
-import aboutBg from "../../assets/Images/aboutBg.jpg"
-// import aboutBg from "../../assets/Images/aboutBg1.jpg"
+import AboutArticle from "@/Components/About/AboutArticle/AboutArticle.jsx";
+import AboutMission from "@/Components/About/AboutMission/AboutMission.jsx";
+import useJson from "@/Hooks/useJson.js";
+import aboutBg from "@/assets/Images/aboutBg.jpg";
+// import aboutBg from "@/assets/Images/aboutBg1.jpg"
 export default function About() {
   const { isArabic } = useJson();
   return (
@@ -26,13 +26,13 @@ export default function About() {
 
         <div
           className={` hidden  relative z-10 md:flex  gap-3 w-4xl  mb-3 `}
-            dir={isArabic?"ltr":"rtl"}
+          dir={isArabic ? "ltr" : "rtl"}
         >
           <AboutMission />
         </div>
         <div
           className={` flex  relative z-10 md:hidden  gap-3   mb-3 `}
-            dir={isArabic?"ltr":"rtl"}
+          dir={isArabic ? "ltr" : "rtl"}
         >
           <AboutMission />
         </div>

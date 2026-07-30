@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import ArticleSubNav from "../../Common/ArticleSubNav/ArticleSubNav.jsx";
-import TitleSec from "../../Common/TitleSec/TitleSEC.jsx";
+import ArticleSubNav from "@/Common/ArticleSubNav/ArticleSubNav.jsx";
+import TitleSec from "@/Common/TitleSec/TitleSEC.jsx";
 import i18next from "i18next";
-import CertificationsImg from "../../Components/CertificationsImg/CertificationsImg.jsx";
+import CertificationsImg from "@/Components/CertificationsImg/CertificationsImg.jsx";
 
 export default function Certification() {
     const isArabic = i18next.language === "ar";

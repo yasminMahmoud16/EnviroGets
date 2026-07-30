@@ -1,7 +1,7 @@
-import bgSections from "../../assets/Images/bgSections.jpg";
+import bgSections from "@/assets/Images/bgSections.jpg";
 
-import SectionsDev from "../../Components/SectionsDev/SectionsDev.jsx";
-import useJson from "../../Hooks/useJson.js";
+import SectionsDev from "@/Components/SectionsDev/SectionsDev.jsx";
+import useJson from "@/Hooks/useJson.js";
 
 
 export default function Sections() {

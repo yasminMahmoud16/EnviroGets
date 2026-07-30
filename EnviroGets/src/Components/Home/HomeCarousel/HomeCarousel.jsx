@@ -1,39 +1,37 @@
-import carouselImage1 from "../../assets/Images/Carousel1.png";
-import carouselImage2 from "../../assets/Images/Carousel2.png";
-import carouselImage3 from "../../assets/Images/Carousel3.png";
-import carouselImage4 from "../../assets/Images/Carousel4.png";
+import carouselImage1 from "@/assets/Images/Carousel1.png";
+import carouselImage2 from "@/assets/Images/Carousel2.png";
+import carouselImage3 from "@/assets/Images/Carousel3.png";
+import carouselImage4 from "@/assets/Images/Carousel4.png";
 // import { IoIosArrowRoundBack } from "react-icons/io";
 // import { IoIosArrowRoundForward } from "react-icons/io";
-import hero from "../../assets/Images/hero.png";
+import hero from "@/assets/Images/hero.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import {Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay, EffectFade } from "swiper/modules";
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import useJson from "../../Hooks/useJson.js";
+import useJson from "@/Hooks/useJson.js";
 
 export default function HomeCarousel() {
-
   const swiperRef = useRef(null);
-  const { i18n} = useTranslation();
-    const { isArabic, t } = useJson();
+  const { i18n } = useTranslation();
+  const { isArabic, t } = useJson();
 
-  
-useEffect(() => {
-  const swiper = swiperRef.current;
-  if (!swiper) return;
+  useEffect(() => {
+    const swiper = swiperRef.current;
+    if (!swiper) return;
 
-  swiper.changeDirection(i18n.language === "ar" ? "rtl" : "ltr");
-  swiper.loopDestroy();
-  swiper.loopCreate();
-  swiper.update();
-  swiper.slideTo(0, 0);
-  swiper.autoplay.start();
-}, [i18n.language]);
+    swiper.changeDirection(i18n.language === "ar" ? "rtl" : "ltr");
+    swiper.loopDestroy();
+    swiper.loopCreate();
+    swiper.update();
+    swiper.slideTo(0, 0);
+    swiper.autoplay.start();
+  }, [i18n.language]);
 
   return (
     <>
@@ -123,7 +121,4 @@ useEffect(() => {
       </div>
     </>
   );
-    
 }
-
-

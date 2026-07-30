@@ -1,5 +1,5 @@
-import ContactBg from "../../Components/ContactBg/ContactBg.jsx";
-import ContactInfo from "../../Components/ContactInfo/ContactInfo.jsx";
+import ContactBg from "@/Components/Contact/ContactBg/ContactBg.jsx";
+import ContactInfo from "@/Components/Contact/ContactInfo/ContactInfo.jsx";
 
 export default function Contact() {
   return (
@@ -8,7 +8,6 @@ export default function Contact() {
         <ContactBg />
 
         <ContactInfo />
-
       </section>
     </>
   );

@@ -175,6 +175,18 @@
     ]
   },
 
+
+
+    "contact": {
+    "title": "  تواصل معنا ",
+    "description": "فريق جيتس مستعد لتقديم الحلول الأنسب التي تلبي احتياجاتكم بكفاءة واحترافية.",
+    "subTitle":"يسعدنا تواصلكم ",
+    "address":"Al Rabwah District, Riyadh, Saudi Arabia",
+    "email":"Info@getes-ksa.com",
+    "phone":"+966 55 531 2093",
+    "socialAd":"انضموا لنا على منصات التواصل الاجتماعي"
+
+  },
   "consulting": {
     "title": "الاستشارات والإدارة البيئية",
     "subTitle":"خدمــاتنـــــا",

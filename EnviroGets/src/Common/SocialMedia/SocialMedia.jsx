@@ -1,9 +1,9 @@
-import whatsApp from "../../assets/Images/whatsApp.png";
-import facebook from "../../assets/Images/facebool.png";
-import tiktok from "../../assets/Images/tiktok.png";
-import twitter from "../../assets/Images/twitter.png";
-import linkedin from "../../assets/Images/linkedin.png";
-import QR from "../../assets/Images/QR.png";
+import whatsApp from "@/assets/Images/whatsApp.png";
+import facebook from "@/assets/Images/facebool.png";
+import tiktok from "@/assets/Images/tiktok.png";
+import twitter from "@/assets/Images/twitter.png";
+import linkedin from "@/assets/Images/linkedin.png";
+import QR from "@/assets/Images/QR.png";
 export default function SocialMedia() {
     return (
       <>

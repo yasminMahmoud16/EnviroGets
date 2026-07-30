@@ -1,6 +1,6 @@
-import useJson from "../../Hooks/useJson.js";
-import air1 from "../../assets/Images/air1.png"
-import air2 from "../../assets/Images/air2.png"
+import useJson from "@/Hooks/useJson.js";
+import air1 from "@/assets/Images/air1.png"
+import air2 from "@/assets/Images/air2.png"
 export default function Air() {
     const { isArabic, t } = useJson();
     const airList = t("consulting.airList", {returnObjects:true});

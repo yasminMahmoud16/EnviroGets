@@ -6,6 +6,7 @@ import Sections from "./Pages/Sections/Sections.jsx";
 import About from "./Pages/About/About.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
 import Consulting from "./Pages/EnvironmentalConsulting/Consulting.jsx";
+import Laboratory from "./Pages/Lap/Laboratory.jsx";
 
 // pages
 
@@ -18,7 +19,7 @@ const router = createHashRouter([
       { path: "sections", element: <Sections /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
-      // { path: "laboratories", element: <Laboratories /> },
+      { path: "laboratories", element: <Laboratory /> },
       { path: "environmental-consulting", element: <Consulting /> },
       // { path: "soil-studies", element: <soilStudies /> },
       // { path: "air-quality", element: <airQuality /> },

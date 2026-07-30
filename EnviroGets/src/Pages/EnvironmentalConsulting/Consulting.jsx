@@ -1,6 +1,6 @@
-import Air from "../../Components/Consulting/Air.jsx";
-import ConInfo from "../../Components/Consulting/ConInfo.jsx";
-import useJson from "../../Hooks/useJson.js"
+import Air from "@/Components/Consulting/Air.jsx";
+import ConInfo from "@/Components/Consulting/ConInfo.jsx";
+import useJson from "@/Hooks/useJson.js"
 
 export default function Consulting() {
     const { isArabic, t} = useJson();
