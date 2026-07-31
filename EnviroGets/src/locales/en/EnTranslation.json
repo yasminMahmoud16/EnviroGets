@@ -300,9 +300,11 @@
   },
   
   "certifications":{
-        "mainTitle": "Certifications",
-    "main": "Home",
-    "title": "Our Credentials",
-    "description": "Our compliance and certifications reflect our commitment to the highest environmental standards"
+        "title": "Certificate",
+    "description": [
+      
+      " EnviroGets operates an ISO-accredited Water and Soil Analysis Laboratory, supported by a globally recognized calibration company, ensuring the accuracy and reliability of analytical results and full compliance with approved environmental standards throughout the Kingdom of Saudi Arabia.",
+      " In addition, EnviroGets operates a specialized Air Quality and Noise Monitoring Laboratory, providing precise measurements using calibrated instruments, in full compliance with approved environmental standards "
+    ]
   }
 }
