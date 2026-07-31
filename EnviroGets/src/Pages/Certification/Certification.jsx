@@ -1,42 +1,58 @@
-import { useTranslation } from "react-i18next";
-import ArticleSubNav from "@/Common/ArticleSubNav/ArticleSubNav.jsx";
-import TitleSec from "@/Common/TitleSec/TitleSEC.jsx";
-import i18next from "i18next";
-import CertificationsImg from "@/Components/CertificationsImg/CertificationsImg.jsx";
+import CertificationImg from "@/Components/CertificationImg/CertificationImg.jsx";
+import useJson from "@/Hooks/useJson.js";
+
 
 export default function Certification() {
-    const isArabic = i18next.language === "ar";
-    const { t } = useTranslation();
-    return (
-      <>
-        <section>
-          <div className="hidden md:block w-full h-40 bg-[#F3F4F5] mt-16 lg:mt-19 py-5 px-20">
-            <ArticleSubNav
-              mainTitle={t("certifications.mainTitle")}
-              main={t("certifications.main")}
-            />
-
-            <TitleSec
-              title={t("certifications.mainTitle")}
-              className={`hidden md:block ${isArabic ? "text-right" : "text-left"} font-normal text-[#1A5C2C] text-xl md:text-4xl mt-2`}
-            />
-          </div>
-
-          <div className="bg-white min-h-screen flex flex-col items-center justify-center gap-14 py-6 px-14">
-            <div className="mt-20 md:mt-5 flex flex-col gap-6 items-center pt-10 ">
-              <TitleSec
-                title={t("certifications.title")}
-                className="text-title font-normal leading-none text-4xl"
-              />
-
-              <p className="font-normal text-lg  xl:text-xl text-center text-[#1A5C2C] leading-10">
-                {t("certifications.description")}
-              </p>
+  const { isArabic, t } = useJson();
+  const text = t("certifications.description",{returnObjects:true});
+  return (
+    <>
+      <section className="min-h-screen ">
+        <div className=" pt-30">
+          {/* content */}
+          <div className="px-8">
+            <div
+              className={`bg-linear-to-r from-[#17393F]  via-[#2C4E4B] to-[#5D7C60] w-35 h-15 ${isArabic ? "md:w-50 md:h-15 rounded-xl" : "md:w-50 md:h-10 rounded-full"}  flex  items-center justify-center `}
+            >
+              <h3
+                className={`${isArabic ? "font-bold text-xl md:text-2xl" : "font-roboto font-semibold  text-xl md:text-2xl"} text-white`}
+              >
+                {t("certifications.title")}
+              </h3>
             </div>
 
-            <CertificationsImg />
+            <div>
+              <div
+                className={`flex flex-col ${isArabic ? "gap-8" : ""} justify-center pt-8 px-8`}
+              >
+                {text.map((desc, index) => (
+                  <p
+                    key={index}
+                    className={`text-main text-justify ${
+                      isArabic
+                        ? "font-semibold text-base md:text-xl"
+                        : "font-roboto font-normal text-base md:text-xl"
+                    }`}
+                  >
+                    {desc.includes("EnviroGets") ? (
+                      <>
+                        {desc.split("EnviroGets")[0]}
+                        <strong className="font-bold">EnviroGets</strong>
+                        {desc.split("EnviroGets")[1]}
+                      </>
+                    ) : (
+                      desc
+                    )}
+                  </p>
+                ))}
+              </div>
+            </div>
           </div>
-        </section>
-      </>
-    );
+
+          {/* images */}
+          <CertificationImg />
+        </div>
+      </section>
+    </>
+  );
 }
