@@ -7,7 +7,7 @@ export default function Partners() {
   const text = t("clients.description", { returnObjects: true });
   return (
     <>
-      <section className="min-h-screen ">
+      <section className="min-h-screen  ">
         <div className=" pt-30">
           {/* content */}
           <div className="px-8">
@@ -15,7 +15,7 @@ export default function Partners() {
               className={`bg-linear-to-r from-[#17393F]  via-[#2C4E4B] to-[#5D7C60] w-35 h-15 ${isArabic ? "md:w-50 md:h-15 rounded-xl" : "md:w-50 md:h-10 rounded-full"}  flex  items-center justify-center `}
             >
               <h3
-                className={`${isArabic ? "font-bold text-xl md:text-2xl" : "font-roboto font-semibold  text-xl md:text-xl"} text-white`}
+                className={`${isArabic ? "font-bold text-base md:text-2xl" : "font-roboto font-semibold  text-base md:text-xl"} text-white`}
               >
                 {t("clients.title")}
               </h3>
