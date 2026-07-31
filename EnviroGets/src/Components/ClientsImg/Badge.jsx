@@ -1,6 +1,6 @@
 
 
-import hat from "@/assets/Images/clients/clientHat.png";
+import hat from "@/assets/Images/clientHat.png";
 
 export default function Badge({ logo, name }) {
 

@@ -430,5 +430,23 @@
 
 
 
+  },
+
+
+      "airQuality":{
+        "title": "Air quality Monitoring",
+        "subTitle":"Purpose of air quality Monitoring",
+    "description":" Air quality monitoring is the process of measuring and analyzing pollutants in the air to understand how clean or polluted the air is. It helps protect human health, the environment, and supports environmental management.",
+
+    "list":[
+      "Assess Environmental Health Identify the levels of air pollutants and evaluate their impact on human health, ecosystems, and overall environmental quality.",
+      "Ensure Regulatory Compliance Verify compliance with local and international environmental standards and regulations set by authorities.",
+      "Identify Pollution Sources Determine the origin and contribution of pollution sources (industrial, traffic, construction, etc.) to support control strategies.",
+      "Support Environmental Impact Assessments (EIA) Provide accurate data for baseline studies and for evaluating the impact of existing or proposed projects.",
+      "Guide Mitigation and Control Measures Help design effective pollution control and air quality improvement plans.",
+    "Monitor Trends and Changes Over Time Track variations in air quality to assess the effectiveness of environmental policies and corrective actions."
+
+
+    ]
   }
 }

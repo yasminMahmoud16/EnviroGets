@@ -10,6 +10,7 @@ import Laboratory from "./Pages/Lap/Laboratory.jsx";
 import SoilStudies from "./Pages/SoilStudies/SoilStudies.jsx";
 import Certification from "./Pages/Certification/Certification.jsx";
 import Partners from "./Pages/Partners/Partners.jsx";
+import AirQuality from "./Pages/AirQuality/AirQuality.jsx";
 
 // pages
 
@@ -25,7 +26,7 @@ const router = createHashRouter([
       { path: "laboratories", element: <Laboratory /> },
       { path: "environmental-consulting", element: <Consulting /> },
       { path: "soil-studies", element: <SoilStudies /> },
-      // { path: "air-quality", element: <airQuality /> },
+      { path: "air-quality", element: <AirQuality /> },
 
       // { path: "audience", element: <Audience /> },
       { path: "clients", element: <Partners /> },

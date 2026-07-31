@@ -27,6 +27,7 @@ export default function NavbarCom() {
     "/contact",
     "/laboratories",
     "/soil-studies",
+    "/air-quality",
   ];
   const isTransparent = transparentPages.includes(location.pathname);
 
