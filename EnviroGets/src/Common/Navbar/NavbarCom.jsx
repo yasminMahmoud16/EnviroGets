@@ -1,4 +1,4 @@
-import logo from "@/assets/Images/EnviroGets.png";
+import logo from "@/assets/Images/EnviroGets.webp";
 import { Link, NavLink, useLocation } from "react-router";
 
 import {
@@ -28,11 +28,12 @@ export default function NavbarCom() {
     "/laboratories",
     "/soil-studies",
     "/air-quality",
+    "/sections",
   ];
   const isTransparent = transparentPages.includes(location.pathname);
 
   const textClasses = isTransparent
-    ? "text-white"
+    ? "text-white dark:text-white"
     : "text-[#0171DE] dark:text-[#0171DE]";
   return (
     <>
@@ -42,11 +43,14 @@ export default function NavbarCom() {
         fluid
         className={`absolute top-0 left-0 z-50 w-full bg-transparent dark:bg-transparent  `}
       >
-        <NavbarToggle onClick={() => setIsOpen(!isOpen)} />
+        <NavbarToggle
+          className="shadow  transition-all duration-300 ease-in-out hover:cursor-pointer bg-white/10 backdrop-blur-md! hover:bg-[#165761]! "
+          onClick={() => setIsOpen(!isOpen)}
+        />
         <NavbarCollapse
           className={`mt-2 md:mt-0   bg-white/10 backdrop-blur-md md:bg-transparent
-md:dark:bg-transparent md:dark:backdrop-blur-none
- rounded-md   ${isOpen ? "block" : "hidden md:flex"}    `}
+                    md:dark:bg-transparent md:dark:backdrop-blur-none
+                    rounded-md   ${isOpen ? "block" : "hidden md:flex"}    `}
         >
           {links.map((link, index) => (
             <NavLink
@@ -56,7 +60,7 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
               onClick={() => setIsOpen(false)}
               className={`
                 ${textClasses}
-                border-none text-sm lg:text-xl font-medium  duration-300 transition-all ease-in-out hover:bg-[#458F9B]! md:hover:text-[#165761]! md:hover:bg-transparent!`}
+                border-none p-4 font-extrabold md:p-0 text-sm lg:text-xl md:font-medium  duration-300 transition-all ease-in-out hover:bg-[#458F9B]! md:hover:text-[#165761]! md:hover:bg-transparent!`}
             >
               {link.title}
             </NavLink>
@@ -75,11 +79,11 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
                 className={`w-30 lg:w-full flex flex-col gap-1 ${isArabic ? "items-start" : "items-start"} mr-3 `}
               >
                 <h2
-                  className={` text-sm  lg:text-2xl font-bold dark:text-white `}
+                  className={` text-sm  lg:text-2xl font-bold dark:text-[#0171DE] md:text-white md:dark:text-white `}
                 >
                   {t("navbar.logo")}
                 </h2>
-                <p className=" text-xs lg:text-base font-light dark:text-white">
+                <p className=" text-xs lg:text-base font-light text-[#0171DE] md:text-white md:dark:text-white">
                   {t("navbar.slogan")}
                 </p>
               </div>
@@ -90,7 +94,7 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
               />
             </div>
           </Link>
-          <div className="  md:hidden pl-5 pb-8  flex items-center justify-start mr-3">
+          <div className="  md:hidden p-4  flex items-center justify-start mr-3">
             <LangSwitchIcon />
           </div>
         </NavbarCollapse>
@@ -100,14 +104,10 @@ md:dark:bg-transparent md:dark:backdrop-blur-none
           <div
             className={` flex flex-col gap-1 ${isArabic ? "items-start" : "items-end"}  `}
           >
-            <h2
-              className={` text-sm  lg:text-2xl font-bold ${textClasses}`}
-            >
+            <h2 className={` text-sm  lg:text-2xl font-bold ${textClasses}`}>
               {t("navbar.logo")}
             </h2>
-            <p
-              className={`text-xs lg:text-base font-bold ${textClasses}`}
-            >
+            <p className={`text-xs lg:text-base font-bold ${textClasses}`}>
               {t("navbar.slogan")}
             </p>
           </div>

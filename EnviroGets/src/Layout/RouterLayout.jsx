@@ -12,9 +12,13 @@ export default function RouterLayout() {
         <Outlet />
         {/* </main> */}
 
-        {!["/soil-studies", "/air-quality"].includes(location.pathname) && (
-          <Footer />
-        )}
+        {![
+          "/soil-studies",
+          "/air-quality",
+          "/about",
+          "/sections",
+          "/laboratories",
+        ].includes(location.pathname) && <Footer />}
       </>
     );
 }

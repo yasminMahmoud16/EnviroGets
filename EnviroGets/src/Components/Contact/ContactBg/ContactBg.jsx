@@ -1,4 +1,4 @@
-import bgContact from "@/assets/Images/bgContact.png";
+import bgContact from "@/assets/Images/bgContact.webp";
 import useJson from "@/Hooks/useJson.js";
 export default function ContactBg() {
   const { t, isArabic } = useJson();

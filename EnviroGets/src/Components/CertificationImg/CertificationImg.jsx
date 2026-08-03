@@ -1,6 +1,6 @@
-import certificate1 from "@/assets/Images/certification1.jpg";
-import certificate2 from "@/assets/Images/certification2.jpg";
-import certificate3 from "@/assets/Images/certification3.jpg";
+import certificate1 from "@/assets/Images/certification1.webp";
+import certificate2 from "@/assets/Images/certification2.webp";
+import certificate3 from "@/assets/Images/certification3.webp";
 import { useState } from "react";
 export default function CertificationImg() {
     const [active, setActive] = useState(0);

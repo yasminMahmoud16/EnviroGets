@@ -1,5 +1,5 @@
-import map from "@/assets/Images/map2.png";
-import logo from "@/assets/Images/EnviroGets.png";
+import map from "@/assets/Images/map2.webp";
+import logo from "@/assets/Images/EnviroGets.webp";
 import { IoLocation } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { MdPhoneInTalk } from "react-icons/md";

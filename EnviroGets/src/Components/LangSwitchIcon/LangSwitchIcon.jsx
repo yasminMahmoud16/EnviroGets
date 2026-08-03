@@ -15,10 +15,10 @@ export default function LangSwitchIcon({ isTransparent }) {
         className=" w-8 h-8 flex items-center justify-center  relative group"
       >
         <CiGlobe
-          className={`${isTransparent ? "text-white" : "text-[#0171DE]"}  w-8 h-8 md:w-10 md:h-8 transition-all duration-300 ease-in-out group-hover:text-[#165761] group-hover:cursor-pointer `}
+          className={`${isTransparent ? "text-white" : "text-[#0171DE]  md:text-white md:dark:text-white "}  w-8 h-8 md:w-10 md:h-8 transition-all duration-300 ease-in-out group-hover:text-[#165761] group-hover:cursor-pointer `}
         />
         <span
-          className={`absolute top-8 left-7 md:top-6 md:right-5 transition-all duration-300 ease-in-out  ${isTransparent ? "text-white" : "text-[#0171DE]"}  font-semibold group-hover:text-[#165761] group-hover:cursor-pointer  `}
+          className={`absolute top-5 left-6 md:top-6 md:right-5 transition-all duration-300 ease-in-out  ${isTransparent ? "text-white" : "text-[#0171DE]  md:text-white md:dark:text-white "}  font-semibold group-hover:text-[#165761] group-hover:cursor-pointer  `}
         >
           {i18n.language === "ar" ? "En" : "ع"}
         </span>

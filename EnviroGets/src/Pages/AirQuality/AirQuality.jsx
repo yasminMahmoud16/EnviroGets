@@ -1,4 +1,4 @@
-import airBg from "@/assets/Images/airBg.jpg"
+import airBg from "@/assets/Images/airBg.webp";
 import AirMentoring from "@/Components/Air/AirMentoring.jsx";
 import Goals from "@/Components/Air/Goals.jsx";
 export default function AirQuality() {

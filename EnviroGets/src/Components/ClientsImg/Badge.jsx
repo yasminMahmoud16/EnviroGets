@@ -1,6 +1,6 @@
 
 
-import hat from "@/assets/Images/clientHat.png";
+import hat from "@/assets/Images/clientHat.webp";
 
 export default function Badge({ logo, name }) {
 

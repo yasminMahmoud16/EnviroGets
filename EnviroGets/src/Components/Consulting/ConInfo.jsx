@@ -1,8 +1,8 @@
 import useJson from "@/Hooks/useJson.js";
-import consulting1 from "@/assets/Images/Consulting1.jpg"
-import consulting2 from "@/assets/Images/Consulting2.jpg"
-import consulting3 from "@/assets/Images/Consulting3.jpg"
-import consulting4 from "@/assets/Images/Consulting4.jpg"
+import consulting1 from "@/assets/Images/Consulting1.webp"
+import consulting2 from "@/assets/Images/Consulting2.webp"
+import consulting3 from "@/assets/Images/Consulting3.webp"
+import consulting4 from "@/assets/Images/Consulting4.webp"
 
 
 

@@ -1,10 +1,10 @@
-import map from "@/assets/Images/map.png";
-import clients from "@/assets/Images/client.png";
-import whatsApp from "@/assets/Images/whatsApp.png";
-import facebook from "@/assets/Images/facebool.png";
-import tiktok from "@/assets/Images/tiktok.png";
-import twitter from "@/assets/Images/twitter.png";
-import linkedin from "@/assets/Images/linkedin.png";
+import map from "@/assets/Images/map.webp";
+import clients from "@/assets/Images/client.webp";
+import whatsApp from "@/assets/Images/whatsApp.webp";
+import facebook from "@/assets/Images/facebool.webp";
+import tiktok from "@/assets/Images/tiktok.webp";
+import twitter from "@/assets/Images/twitter.webp";
+import linkedin from "@/assets/Images/linkedin.webp";
 import useJson from "@/Hooks/useJson.js";
 
 export default function HomeInfo() {

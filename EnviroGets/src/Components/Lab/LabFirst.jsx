@@ -1,7 +1,7 @@
 import List from "@/Common/List/List.jsx";
 import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
 import useJson from "@/Hooks/useJson.js";
-import Carousel1 from "@/assets/Images/Carousel1.png"
+import Carousel1 from "@/assets/Images/Carousel1.webp";
 export default function LabFirst() {
     const { t } = useJson();
     const labText = t("lab.text1", { returnObjects: true });

@@ -1,11 +1,11 @@
 import HomeInfo from "@/Components/Home/HomeInfo/HomeInfo.jsx";
 import HomeCarousel from "@/Components/Home/HomeCarousel/HomeCarousel.jsx";
-import bgHome from "@/assets/Images/bg-home.jpg";
+import bgHome from "@/assets/Images/bg-home.webp";
 import HomeCards from "@/Components/Home/HomeCards/HomeCards.jsx";
 
 export default function Home() {
   return (
-    <main className="relative w-full">
+    <div className="relative w-full">
       {/* Background */}
       <div
         className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-50"
@@ -21,6 +21,6 @@ export default function Home() {
 
       {/* <section className="min-h-screen ">
       </section> */}
-    </main>
+    </div>
   );
 }

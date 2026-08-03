@@ -1,7 +1,7 @@
 import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
 import useJson from "@/Hooks/useJson.js";
-import air1 from "@/assets/Images/airQuality1.jpg"
-import air2 from "@/assets/Images/airQuality2.jpg"
+import air1 from "@/assets/Images/airQuality1.webp";
+import air2 from "@/assets/Images/airQuality2.webp";
 export default function AirMentoring() {
   const { isArabic,t} = useJson();
   return (

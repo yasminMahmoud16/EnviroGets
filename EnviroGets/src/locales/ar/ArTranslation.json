@@ -32,16 +32,7 @@
 
     ]
   },
-  "navbarPath": {
-    "Home": "/",
-    "About": "about",
-    "TargetAudience": "audience",
-    "OurServices": "services",
-    "ContactUs": "contact",
-    "Clients": "clients",
-    "clientsDetails": "clients-Details",
-    "Certifications": "certifications"
-  },
+
   "footer": {
     "terms": "شروط الاستخدام",
     "PrivacyPolicy": "سياسة الخصوصية",
@@ -66,17 +57,17 @@
     ],
     "homeCards":[
       {
-        "image":"card1.png",
+        "image":"card1.webp",
         "title":" حلول بيئية مستدامة",
         "text":" تقديم حلول قائمة على أسس علمية تسهم في حماية الموارد الطبيعية وتعزز الاستدامة البيئية على المدى الطويل. "
       },
       {
-        "image":"card2.png",
+        "image":"card2.webp",
         "title":" الاستشارات البيئية والامتثال",
         "text":" دعم المنشآت في الامتثال للأنظمة البيئية وتحقيق ممارسات تشغيلية مستدامة."
       },
       {
-        "image":"card3.png",
+        "image":"card3.webp",
         "title":"الفحوصات والمراقبة البيئية",
         "text":"  تقديم خدمات دقيقة للفحص والرصد البيئي للهواء والمياه والتربة، باستخدام أحدث التقنيات المتقدمة."
       }
@@ -84,7 +75,7 @@
   },
   "sections": {
     "title":"الأقسام",
-    "image":"landingArabic.png",
+    "image":"landingArabic.webp",
     "list":[
       {
         "id":1,
@@ -146,9 +137,9 @@
       }
     ],
     "images":[
-      "about1.jpg",
-      "about2.jpg",
-      "about3.jpg"
+      "about1.webp",
+      "about2.webp",
+      "about3.webp"
     ],
 
 
@@ -156,7 +147,7 @@
       {
         "title":"مهـمـتننـــا",
         "text":" تقديم خدمات موثوقة في الاستشارات والاختبارات البيئية، تدعم الامتثال للأنظمة، وتحافظ على الموارد الطبيعية، وتعزّز التنمية المستدامة. ",
-        "image":"aboutScroll1.jpg"
+        "image":"aboutScroll1.webp"
       },
       {
         "title":"سيــاستنـــا",
@@ -165,12 +156,12 @@
     "نركّز على تقديم خدمات بيئية عالية الجودة، تضمن دقة النتائج، والالتزام باللوائح، ودعم مسيرة التنمية المستدامة."
   ],
         
-        "image":"aboutScroll2.png"
+        "image":"aboutScroll2.webp"
       },
       {
         "title":"رؤيـتنـــــا",
         "text":" الريادة في مجال الخدمات البيئية من خلال استخدام تقنيات متقدمة ومعتمدة، لدعم بيئة صحية ومستدامة للأجيال الحالية والمستقبلية.  ",
-        "image":"aboutScroll3.jpg"
+        "image":"aboutScroll3.webp"
       }
     ]
   },
@@ -307,112 +298,112 @@
     "images": [
   {
     "id": 1,
-    "logo": "client1.png",
+    "logo": "client1.webp",
     "name": "Client 1"
   },
   {
     "id": 2,
-    "logo": "client2.png",
+    "logo": "client2.webp",
     "name": "Client 2"
   },
   {
     "id": 3,
-    "logo": "client3.png",
+    "logo": "client3.webp",
     "name": "Client 3"
   },
   {
     "id": 4,
-    "logo": "client4.png",
+    "logo": "client4.webp",
     "name": "Client 4"
   },
   {
     "id": 5,
-    "logo": "client5.png",
+    "logo": "client5.webp",
     "name": "Client 5"
   },
   {
     "id": 6,
-    "logo": "client6.png",
+    "logo": "client6.webp",
     "name": "Client 6"
   },
   {
     "id": 7,
-    "logo": "client7.png",
+    "logo": "client7.webp",
     "name": "Client 7"
   },
   {
     "id": 8,
-    "logo": "client8.png",
+    "logo": "client8.webp",
     "name": "Client 8"
   },
   {
     "id": 9,
-    "logo": "client9.png",
+    "logo": "client9.webp",
     "name": "Client 9"
   },
   {
     "id": 10,
-    "logo": "client10.png",
+    "logo": "client10.webp",
     "name": "Client 10"
   },
   {
     "id": 11,
-    "logo": "client11.png",
+    "logo": "client11.webp",
     "name": "Client 11"
   },
   {
     "id": 12,
-    "logo": "client12.png",
+    "logo": "client12.webp",
     "name": "Client 12"
   },
   {
     "id": 13,
-    "logo": "client13.png",
+    "logo": "client13.webp",
     "name": "Client 13"
   },
   {
     "id": 14,
-    "logo": "client14.png",
+    "logo": "client14.webp",
     "name": "Client 14"
   },
   {
     "id": 15,
-    "logo": "client15.png",
+    "logo": "client15.webp",
     "name": "Client 15"
   },
   {
     "id": 16,
-    "logo": "client16.png",
+    "logo": "client16.webp",
     "name": "Client 16"
   },
   {
     "id": 17,
-    "logo": "client17.png",
+    "logo": "client17.webp",
     "name": "Client 17"
   },
   {
     "id": 18,
-    "logo": "client18.png",
+    "logo": "client18.webp",
     "name": "Client 18"
   },
   {
     "id": 19,
-    "logo": "client19.png",
+    "logo": "client19.webp",
     "name": "Client 19"
   },
   {
     "id": 20,
-    "logo": "client20.png",
+    "logo": "client20.webp",
     "name": "Client 20"
   },
   {
     "id": 21,
-    "logo": "client21.png",
+    "logo": "client21.webp",
     "name": "Client 21"
   },
   {
     "id": 22,
-    "logo": "client22.png",
+    "logo": "client22.webp",
     "name": "Client 22"
   }
 ]

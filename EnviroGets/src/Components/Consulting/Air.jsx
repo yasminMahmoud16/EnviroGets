@@ -1,7 +1,7 @@
 import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
 import useJson from "@/Hooks/useJson.js";
-import air1 from "@/assets/Images/air1.png"
-import air2 from "@/assets/Images/air2.png"
+import air1 from "@/assets/Images/air1.webp";
+import air2 from "@/assets/Images/air2.webp";
 export default function Air() {
     const { isArabic, t } = useJson();
     const airList = t("consulting.airList", {returnObjects:true});

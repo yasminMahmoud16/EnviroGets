@@ -20,7 +20,7 @@ export default function SectionsDev() {
             {t("sections.title")}
           </h3>
         </div>
-        <div className={`flex flex-col ${isArabic?"gap-2 ":"gap-4"} md:w-2xl lg:w-5xl`}>
+        <div className={`flex flex-col ${isArabic?"gap-2 ":"gap-4"} md:w-full lg:w-5xl`}>
           {links.map((link) => (
             <Link
               key={link.id}

@@ -1,10 +1,10 @@
 import List from "@/Common/List/List.jsx";
 import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
 import useJson from "@/Hooks/useJson.js";
-import animation1 from "@/assets/Images/animation4.jpg";
-import animation2 from "@/assets/Images/animation2.jpg";
-import animation4 from "@/assets/Images/swiper1.jpg";
-import animation3 from "@/assets/Images/animation3.png";
+import animation1 from "@/assets/Images/animation4.webp";
+import animation2 from "@/assets/Images/animation2.webp";
+import animation4 from "@/assets/Images/swiper1.webp";
+import animation3 from "@/assets/Images/animation3.webp";
 import { useState } from "react";
 
 export default function LabSecond() {

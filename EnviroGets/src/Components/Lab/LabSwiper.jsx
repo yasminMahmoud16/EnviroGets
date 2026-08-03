@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import img1 from "@/assets/Images/swiper1.jpg";
-import img2 from "@/assets/Images/Carousel2.png";
-import img3 from "@/assets/Images/swiper3.jpg";
+import img1 from "@/assets/Images/swiper1.webp";
+import img2 from "@/assets/Images/Carousel2.webp";
+import img3 from "@/assets/Images/swiper3.webp";
 
 import { useRef } from "react";
 import { FaArrowLeft } from "react-icons/fa";

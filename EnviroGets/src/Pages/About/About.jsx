@@ -1,7 +1,7 @@
 import AboutArticle from "@/Components/About/AboutArticle/AboutArticle.jsx";
 import AboutMission from "@/Components/About/AboutMission/AboutMission.jsx";
 import useJson from "@/Hooks/useJson.js";
-import aboutBg from "@/assets/Images/aboutBg.jpg";
+import aboutBg from "@/assets/Images/aboutBg.webp";
 // import aboutBg from "@/assets/Images/aboutBg1.jpg"
 export default function About() {
   const { isArabic } = useJson();

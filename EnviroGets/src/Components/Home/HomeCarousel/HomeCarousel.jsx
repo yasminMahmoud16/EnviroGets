@@ -1,10 +1,8 @@
-import carouselImage1 from "@/assets/Images/Carousel1.png";
-import carouselImage2 from "@/assets/Images/Carousel2.png";
-import carouselImage3 from "@/assets/Images/Carousel3.png";
-import carouselImage4 from "@/assets/Images/Carousel4.png";
-// import { IoIosArrowRoundBack } from "react-icons/io";
-// import { IoIosArrowRoundForward } from "react-icons/io";
-import hero from "@/assets/Images/hero.png";
+import carouselImage1 from "@/assets/Images/Carousel1.webp";
+import carouselImage2 from "@/assets/Images/Carousel2.webp";
+import carouselImage3 from "@/assets/Images/Carousel3.webp";
+import carouselImage4 from "@/assets/Images/Carousel4.webp";
+import hero from "@/assets/Images/hero.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
