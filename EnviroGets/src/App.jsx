@@ -1,18 +1,24 @@
+import { lazy, Suspense } from "react";
 import { createHashRouter, RouterProvider } from "react-router";
 import "./App.css";
 import RouterLayout from "./Layout/RouterLayout.jsx";
-import Home from "./Pages/Home/Home.jsx";
-import Sections from "./Pages/Sections/Sections.jsx";
-import About from "./Pages/About/About.jsx";
-import Contact from "./Pages/Contact/Contact.jsx";
-import Consulting from "./Pages/EnvironmentalConsulting/Consulting.jsx";
-import Laboratory from "./Pages/Lap/Laboratory.jsx";
-import SoilStudies from "./Pages/SoilStudies/SoilStudies.jsx";
-import Certification from "./Pages/Certification/Certification.jsx";
-import Partners from "./Pages/Partners/Partners.jsx";
-import AirQuality from "./Pages/AirQuality/AirQuality.jsx";
+import Loading from "./Components/Loading/Loading.jsx";
 
-// pages
+// Lazy Pages
+const Home = lazy(() => import("./Pages/Home/Home.jsx"));
+const Sections = lazy(() => import("./Pages/Sections/Sections.jsx"));
+const About = lazy(() => import("./Pages/About/About.jsx"));
+const Contact = lazy(() => import("./Pages/Contact/Contact.jsx"));
+const Consulting = lazy(
+  () => import("./Pages/EnvironmentalConsulting/Consulting.jsx"),
+);
+const Laboratory = lazy(() => import("./Pages/Lap/Laboratory.jsx"));
+const SoilStudies = lazy(() => import("./Pages/SoilStudies/SoilStudies.jsx"));
+const Certification = lazy(
+  () => import("./Pages/Certification/Certification.jsx"),
+);
+const Partners = lazy(() => import("./Pages/Partners/Partners.jsx"));
+const AirQuality = lazy(() => import("./Pages/AirQuality/AirQuality.jsx"));
 
 const router = createHashRouter([
   {
@@ -27,10 +33,7 @@ const router = createHashRouter([
       { path: "environmental-consulting", element: <Consulting /> },
       { path: "soil-studies", element: <SoilStudies /> },
       { path: "air-quality", element: <AirQuality /> },
-
-      // { path: "audience", element: <Audience /> },
       { path: "clients", element: <Partners /> },
-      // { path: "clients/clients-Details", element: <ClientsDetails /> },
       { path: "certifications", element: <Certification /> },
     ],
   },
@@ -38,9 +41,9 @@ const router = createHashRouter([
 
 function App() {
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <RouterProvider router={router} />
-    </>
+    </Suspense>
   );
 }
 

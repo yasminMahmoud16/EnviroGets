@@ -1,11 +1,12 @@
 import { Card } from "flowbite-react";
 import useJson from "@/Hooks/useJson.js";
+import useUrl from "@/Hooks/useUrl.js";
 
 export default function HomeCards() {
   const { isArabic, t } = useJson();
 
   const cards = t("home.homeCards", { returnObjects: true });
-  const baseUrl = "http://localhost:5173/";
+  const { baseUrl } = useUrl();
 
   return (
     <>
