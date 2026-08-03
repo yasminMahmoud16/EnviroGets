@@ -1,1 +1,0 @@
-import{t as e,u as t}from"./index-BJNZ1m9d.js";var n=t();function r({title:t,className:r=``}){let{isArabic:i}=e();return(0,n.jsx)(`h2`,{className:` whitespace-nowrap ${i?`font-bold text-lg md:text-2xl`:`font-roboto font-semibold text-xl`}  ${r}`,children:t})}export{r as t};
