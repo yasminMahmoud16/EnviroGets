@@ -22,8 +22,9 @@ export default function HomeInfo() {
             dir="rtl"
             className={`flex flex-col md:flex-row text-center justify-center gap-10`}
           >
-            {information.map((info) => (
-              <div
+            {information.map((info, index) => (
+              <div 
+                key={index}
                 className={`text-2xl text-[#014700] ${isArabic ? "text-right" : "text-left"}`}
               >
                 <p className=" font-roboto font-bold">{info.num}+</p>
