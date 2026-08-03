@@ -1,6 +1,6 @@
-import ClientsImg from "@/Components/ClientsImg/ClientsImg.jsx";
 import useJson from "@/Hooks/useJson.js";
-
+import { lazy, Suspense } from "react";
+const ClientsImg = lazy(() => import("@/Components/ClientsImg/ClientsImg.jsx"));
 
 export default function Partners() {
   const { isArabic, t } = useJson();
@@ -50,7 +50,10 @@ export default function Partners() {
           </div>
 
           {/* images */}
-          <ClientsImg />
+
+          <Suspense fallback={null}>
+            <ClientsImg />
+          </Suspense>
         </div>
       </section>
     </>

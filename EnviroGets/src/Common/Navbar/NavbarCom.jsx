@@ -1,26 +1,18 @@
 import logo from "@/assets/Images/EnviroGets.webp";
 import { Link, NavLink, useLocation } from "react-router";
-
-import {
-  Navbar,
-  // NavbarBrand,
-  NavbarCollapse,
-  NavbarToggle,
-} from "flowbite-react";
+import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import LangSwitchIcon from "@/Components/LangSwitchIcon/LangSwitchIcon.jsx";
 import useOpen from "@/Hooks/useOpen.js";
 import useJson from "@/Hooks/useJson.js";
 
-
-
-
 export default function NavbarCom() {
-
   const { isOpen, setIsOpen, navRef } = useOpen();
 
   const { isArabic, t } = useJson();
   const links = t("navbar.links", { returnObjects: true });
+
   const location = useLocation();
+
   const transparentPages = [
     "/",
     "/about",
@@ -30,97 +22,113 @@ export default function NavbarCom() {
     "/air-quality",
     "/sections",
   ];
+
   const isTransparent = transparentPages.includes(location.pathname);
 
-  const textClasses = isTransparent
-    ? "text-white dark:text-white"
-    : "text-[#0171DE] dark:text-[#0171DE]";
+  const textClasses = isTransparent ? "text-white" : "text-[#0171DE]";
+
   return (
-    <>
-      <Navbar
-        ref={navRef}
-        dir="rtl"
-        fluid
-        className={`absolute top-0 left-0 z-50 w-full bg-transparent dark:bg-transparent  `}
-      >
-        <NavbarToggle
-          className="shadow  transition-all duration-300 ease-in-out hover:cursor-pointer bg-white/10 backdrop-blur-md! hover:bg-[#165761]! "
+    <nav
+      ref={navRef}
+      className="absolute top-0 left-0 z-50 w-full bg-transparent"
+      dir="rtl"
+    >
+      <div className="flex items-center justify-between mx-auto p-4">
+        {/* Mobile Toggle */}
+        <button
           onClick={() => setIsOpen(!isOpen)}
-        />
-        <NavbarCollapse
-          className={`mt-2 md:mt-0   bg-white/10 backdrop-blur-md md:bg-transparent
-                    md:dark:bg-transparent md:dark:backdrop-blur-none
-                    rounded-md   ${isOpen ? "block" : "hidden md:flex"}    `}
+          className="inline-flex md:hidden items-center justify-center w-10 h-10 rounded-lg bg-white/10 backdrop-blur-md hover:bg-[#165761] transition"
         >
-          {links.map((link, index) => (
-            <NavLink
-              as={NavLink}
-              key={index}
-              to={link.path}
-              onClick={() => setIsOpen(false)}
-              className={`
-                ${textClasses}
-                border-none p-4 font-extrabold md:p-0 text-sm lg:text-xl md:font-medium  duration-300 transition-all ease-in-out hover:bg-[#458F9B]! md:hover:text-[#165761]! md:hover:bg-transparent!`}
-            >
-              {link.title}
-            </NavLink>
-          ))}
+          {isOpen ? (
+            <HiOutlineX className="text-white text-2xl" />
+          ) : (
+            <HiOutlineMenuAlt3 className="text-white text-2xl" />
+          )}
+        </button>
 
-          <div className=" hidden md:block ">
-            <LangSwitchIcon isTransparent={isTransparent} />
-          </div>
-          <Link
-            onClick={() => setIsOpen(false)}
-            to="/"
-            className=" md:hidden flex justify-between"
-          >
-            <div className="flex  py-3">
-              <div
-                className={`w-30 lg:w-full flex flex-col gap-1 ${isArabic ? "items-start" : "items-start"} mr-3 `}
-              >
-                <h2
-                  className={` text-sm  lg:text-2xl font-bold dark:text-[#0171DE] md:text-white md:dark:text-white `}
+        {/* Menu */}
+        <div
+          className={`
+            ${isOpen ? "block" : "hidden"}
+            absolute top-full left-0 w-full
+            bg-white/10 backdrop-blur-md
+            rounded-lg mt-2
+            md:static md:block md:w-auto
+            md:bg-transparent md:backdrop-blur-none
+          `}
+        >
+          <ul className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 p-4 md:p-0">
+            {links.map((link, index) => (
+              <li key={index}>
+                <NavLink
+                  to={link.path}
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `
+                    block p-3 md:p-0
+                    font-semibold text-sm lg:text-xl
+                    transition duration-300
+                    ${textClasses}
+                    ${isActive ? "text-[#165761]" : "hover:text-[#165761]"}
+                  `
+                  }
                 >
-                  {t("navbar.logo")}
-                </h2>
-                <p className=" text-xs lg:text-base font-light text-[#0171DE] md:text-white md:dark:text-white">
-                  {t("navbar.slogan")}
-                </p>
-              </div>
-              <img
-                src={logo}
-                className="mr-1 h-10 lg:mr-3 lg:h-14"
-                alt={t("navbar.logo")}
-              />
-            </div>
-          </Link>
-          <div className="  md:hidden p-4  flex items-center justify-start mr-3">
-            <LangSwitchIcon />
-          </div>
-        </NavbarCollapse>
+                  {link.title}
+                </NavLink>
+              </li>
+            ))}
 
-        {/* logo */}
-        <Link to="/" className="hidden md:flex  items-center justify-center">
+            <li className="hidden md:block">
+              <LangSwitchIcon isTransparent={isTransparent} />
+            </li>
+
+            <li className="md:hidden">
+              <LangSwitchIcon />
+            </li>
+
+            <li className="md:hidden">
+              <Link
+                to="/"
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-3 pt-4"
+              >
+                <img src={logo} className="h-10" alt={t("navbar.logo")} />
+
+                <div>
+                  <h2 className="font-bold text-[#0171DE]">
+                    {t("navbar.logo")}
+                  </h2>
+
+                  <p className="text-xs text-[#0171DE]">{t("navbar.slogan")}</p>
+                </div>
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Desktop Logo */}
+        <Link to="/" className="hidden md:flex items-center">
           <div
-            className={` flex flex-col gap-1 ${isArabic ? "items-start" : "items-end"}  `}
+            className={`flex flex-col ${
+              isArabic ? "items-start" : "items-end"
+            }`}
           >
-            <h2 className={` text-sm  lg:text-2xl font-bold ${textClasses}`}>
+            <h2 className={`text-sm lg:text-2xl font-extrabold ${textClasses}`}>
               {t("navbar.logo")}
             </h2>
+
             <p className={`text-xs lg:text-base font-bold ${textClasses}`}>
               {t("navbar.slogan")}
             </p>
           </div>
 
-          <div className="w-10 lg:w-20 lg:h-20 flex items-center justify-center">
-            <img
-              src={logo}
-              className="mr-1 w-full  lg:mr-0 lg:h-14"
-              alt={t("navbar.logo")}
-            />
-          </div>
+          <img
+            src={logo}
+            className="w-10 lg:w-20 lg:h-14 mr-2"
+            alt={t("navbar.logo")}
+          />
         </Link>
-      </Navbar>
-    </>
+      </div>
+    </nav>
   );
 }

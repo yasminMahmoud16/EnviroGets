@@ -1,4 +1,3 @@
-import { Card } from "flowbite-react";
 import useJson from "@/Hooks/useJson.js";
 import useUrl from "@/Hooks/useUrl.js";
 
@@ -12,7 +11,7 @@ export default function HomeCards() {
     <>
       <div className="py-3 px-10 mt-5 flex flex-col lg:flex-row items-center justify-center gap-4 ">
         {cards.map((card, index) => (
-          <Card  key={index} className=" w-full h-70 flex flex-col items-center justify-center dark:bg-transparent bg-linear-to-b from-[#F5F6F8/20]  to-[#ebebeb] border border-white dark:border-white rounded-3xl shadow-sm">
+          <div  key={index} className=" w-full h-70 flex flex-col items-center justify-center dark:bg-transparent bg-linear-to-b from-[#F5F6F8/20]  to-[#ebebeb] border border-white dark:border-white rounded-3xl shadow-sm">
             <div className="flex items-center justify-center ">
               <img
                 src={`${baseUrl}${card.image}`}
@@ -30,7 +29,7 @@ export default function HomeCards() {
             >
               {card.text}
             </p>
-          </Card>
+          </div>
         ))}
       </div>
     </>

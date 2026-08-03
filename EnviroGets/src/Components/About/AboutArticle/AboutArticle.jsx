@@ -1,5 +1,8 @@
 import useJson from "@/Hooks/useJson.js";
-import AboutImage from "@/Components/About/AboutImage/AboutImage.jsx";
+import { lazy, Suspense } from "react";
+const AboutImage = lazy(
+  () => import("@/Components/About/AboutImage/AboutImage.jsx"),
+);
 
 export default function AboutArticle() {
   const { t, isArabic } = useJson();
@@ -33,7 +36,10 @@ export default function AboutArticle() {
         </div>
 
         {/* animation image  */}
+
+        <Suspense fallback={null}>
         <AboutImage />
+        </Suspense>
       </div>
     </>
   );

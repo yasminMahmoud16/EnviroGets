@@ -6,30 +6,27 @@ import hero from "@/assets/Images/hero.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
+
 import useJson from "@/Hooks/useJson.js";
 
 export default function HomeCarousel() {
-  const swiperRef = useRef(null);
+  // const swiperRef = useRef(null);
   const { i18n } = useTranslation();
   const { isArabic, t } = useJson();
 
-  useEffect(() => {
-    const swiper = swiperRef.current;
-    if (!swiper) return;
+  // useEffect(() => {
+  //   const swiper = swiperRef.current;
+  //   if (!swiper) return;
 
-    swiper.changeDirection(i18n.language === "ar" ? "rtl" : "ltr");
-    swiper.loopDestroy();
-    swiper.loopCreate();
-    swiper.update();
-    swiper.slideTo(0, 0);
-    swiper.autoplay.start();
-  }, [i18n.language]);
+  //   swiper.changeDirection(i18n.language === "ar" ? "rtl" : "ltr");
+  //   swiper.loopDestroy();
+  //   swiper.loopCreate();
+  //   swiper.update();
+  //   swiper.slideTo(0, 0);
+  //   swiper.autoplay.start();
+  // }, [i18n.language]);
 
   return (
     <>
