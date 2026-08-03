@@ -57,7 +57,6 @@ export default function HomeCarousel() {
               src={carouselImage1}
               className="w-full h-full object-cover   block"
               alt="image"
-              loading="lazy"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-b-2xl">
