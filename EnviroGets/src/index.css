@@ -5,98 +5,98 @@
 
 @font-face {
   font-family: "Cairo";
-  src: url("/cairo-arabic-400-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/cairo-arabic-400-normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Cairo";
-  src: url("/cairo-arabic-500-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/cairo-arabic-500-normal.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Cairo";
-  src: url("/cairo-arabic-600-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/cairo-arabic-600-normal.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Cairo";
-  src: url("/cairo-arabic-700-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/cairo-arabic-700-normal.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Cairo";
-  src: url("/cairo-arabic-800-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/cairo-arabic-800-normal.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Cairo";
-  src: url("/cairo-arabic-900-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/cairo-arabic-900-normal.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/roboto-latin-400-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/roboto-latin-400-normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/roboto-latin-500-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/roboto-latin-500-normal.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/roboto-latin-600-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/roboto-latin-600-normal.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/roboto-latin-700-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/roboto-latin-700-normal.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/roboto-latin-800-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/roboto-latin-800-normal.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/roboto-latin-900-normal.woff2") format("woff2");
+  src: url("/EnviroGets/fonts/roboto-latin-900-normal.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 body{
     font-family: "Cairo", sans-serif;
