@@ -1,0 +1,1 @@
+import{n as e,t}from"./index-BGpq2CKO.js";var n=e();function r({title:e,className:r=``}){let{isArabic:i}=t();return(0,n.jsx)(`h2`,{className:` whitespace-nowrap ${i?`font-bold text-lg md:text-2xl`:`font-roboto font-semibold text-xl`}  ${r}`,children:e})}export{r as t};
