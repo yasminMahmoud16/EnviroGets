@@ -11,26 +11,18 @@ export default function NavbarCom() {
   const { isArabic, t } = useJson();
   const links = t("navbar.links", { returnObjects: true });
 
-  const location = useLocation();
+const location = useLocation();
+const currentPath = location.pathname;
 
-  const transparentPages = [
-    "/",
-    "/about",
-    "/contact",
-    "/laboratories",
-    "/soil-studies",
-    "/air-quality",
-    "/sections",
-  ];
+const transparentPages = ["/environmental-consulting"];
+const isTransparentPage = transparentPages.includes(currentPath);
 
-  const isTransparent = transparentPages.includes(location.pathname);
-
-  const textClasses = isTransparent ? "text-white" : "text-[#0171DE]";
+const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
 
   return (
     <nav
       ref={navRef}
-      className="absolute top-0 left-0 z-50 w-full bg-transparent"
+      className="absolute  top-0 left-0 z-50 w-full bg-transparent"
       dir="rtl"
     >
       <div className="flex items-center justify-between mx-auto p-4">
@@ -55,9 +47,12 @@ export default function NavbarCom() {
             rounded-lg mt-2
             md:static md:block md:w-auto
             md:bg-transparent md:backdrop-blur-none
+            bg-[linear-gradient(to_left,#698EAA,#306784,#63AE98,#0D5933)]
+            p-4
+            md:rounded-3xl
           `}
         >
-          <ul className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 p-4 md:p-0">
+          <ul className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 p-4 md:p-0  text-white">
             {links.map((link, index) => (
               <li key={index}>
                 <NavLink
@@ -68,7 +63,7 @@ export default function NavbarCom() {
                     block p-3 md:p-0
                     font-semibold text-sm lg:text-xl
                     transition duration-300
-                    ${textClasses}
+                    
                     ${isActive ? "text-[#165761]" : "hover:text-[#165761]"}
                   `
                   }
@@ -79,7 +74,7 @@ export default function NavbarCom() {
             ))}
 
             <li className="hidden md:block">
-              <LangSwitchIcon isTransparent={isTransparent} />
+              <LangSwitchIcon />
             </li>
 
             <li className="md:hidden">
@@ -95,11 +90,9 @@ export default function NavbarCom() {
                 <img src={logo} className="h-10" alt={t("navbar.logo")} />
 
                 <div>
-                  <h2 className="font-bold text-[#0171DE]">
-                    {t("navbar.logo")}
-                  </h2>
+                  <h2 className={`font-bold ${textClasses}`}>{t("navbar.logo")}</h2>
 
-                  <p className="text-xs text-[#0171DE]">{t("navbar.slogan")}</p>
+                  <p className={`text-xs ${textClasses}`}>{t("navbar.slogan")}</p>
                 </div>
               </Link>
             </li>

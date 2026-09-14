@@ -41,6 +41,8 @@
   },
   "home": {
     "titleHero1":"Delivering Environmental Excellence Through Science, Integrity and Innovation",
+        "button":"Request a Consultation",
+
     "homeInfo":[
       {
         "num":"10,000",
@@ -57,19 +59,34 @@
     ],
         "homeCards":[
       {
-        "image":"card1.webp",
-        "title":"Sustainable Environmental Solutions",
-        "text":"Delivering science-based solutions that protect natural resources and promote long-term environmental sustainability."
+        "image":"water.webp",
+        "title":"Water & Soil Laboratories",
+        "text":"Accurate environmental analyses supporting sustainable decision-making and environmental compliance."
       },
       {
-        "image":"card2.webp",
+        "image":"consoult.webp",
         "title":"Environmental Consulting & Compliance",
         "text":" Supporting organizations in meeting environmental regulations and achieving sustainable operational practices."
       },
       {
-        "image":"card3.webp",
-        "title":"Environmental Testing & Monitoring",
-        "text":"Providing accurate testing and monitoring services for air, water, and soil using advanced technologies."
+        "image":"measure.webp",
+        "title":"Field Measurements",
+        "text":"Air Quality Monitoring & Noise Level Measurement"
+      },
+      {
+        "image":"enviroment.webp",
+        "title":"Sustainable Environmental Solutions",
+        "text":"Providing scientifically based solutions that contribute to protecting natural resources and promoting long-term environmental sustainability."
+      },
+      {
+        "image":"environmental-impact.webp",
+        "title":"Integrated Environmental Solutions",
+        "text":"Combining expertise, precision, and advanced technologies to achieve the highest levels of compliance and sustainability."
+      },
+      {
+        "image":"certification.webp",
+        "title":"Trusted Accreditation & Certified Credentials",
+        "text":"Reflecting our commitment to the highest standards of quality and accuracy."
       }
     ]
   },
@@ -89,6 +106,11 @@
         "text":"Mobile Laboratory",
         "path":"/laboratories"
       },
+       {
+        "id":5,
+        "text":"Water and soil laboratory",
+        "path":"/laboratories"
+      },
       {
         "id":3,
         "text":"Environmental Consulting & Management",
@@ -96,34 +118,26 @@
       },
       {
         "id":4,
-        "text":"Air & Noise Monitoring Laboratory",
+        "text":"Air Quality & Noise Monitoring Laboratory",
         "path":"/environmental-consulting"
       },
+     
       {
-        "id":5,
-        "text":"Water and soil laboratory",
-        "path":"/laboratories"
-      },
-      {
-        "id":6,
-        "text":"Objectives of Soil Investigation ",
+        "id":7,
+        "text":"Soil Testing & Analysis",
         "path":"/soil-studies"
       },
       {
-        "id":7,
-        "text":"Types of Analyses Performed on Soil Samples",
+        "id":6,
+        "text":" Objectives of Soil Assessment ",
         "path":"/soil-studies"
       },
       {
         "id":8,
-        "text":"Air quality Monitoring",
-        "path":"/air-quality"
-      },
-      {
-        "id":9,
-        "text":"Purpose of air quality Monitoring",
+        "text":"Objectives of Air Quality Monitoring",
         "path":"/air-quality"
       }
+
     ]
 
   },
@@ -133,10 +147,19 @@
     "title":"WHO WE ARE",
     "article":[
       {
-        "text":"EnviroGets is a leading environmental consulting foundation in Saudi Arabia, licensed by the National Center for Environmental Compliance (NCEC) – Category (A), delivering services across the Kingdom."
+        "text":"EnviroGets for Environmental Consulting & Services is a leading provider of environmental consulting and services in the Kingdom of Saudi Arabia."
       },
       {
-        "text":" The company operates ISO-accredited laboratories for water, soil, air quality, and noise monitoring, ensuring accurate results and full compliance with environmental standards."
+        "text":"Established in 2015 under the name Gulf Environmental Technology for Environmental Services (GETES), the organization has consistently delivered professional environmental services. It later evolved its corporate identity and rebranded as EnviroGets, reflecting its forward-looking vision and expanding range of services, while preserving the expertise and professional legacy built over the years."
+      },
+      {
+        "text":"EnviroGets is licensed by the National Center for Environmental Compliance (NCEC), Category (A), and provides integrated environmental solutions through a specialized team of experts and consultants, supporting environmental compliance, sustainability, and responsible development across the Kingdom."
+      },
+      {
+        "text":"The organization operates an ISO/IEC 17025-accredited laboratory for water and soil analysis, equipped with advanced technologies to ensure accurate and reliable results. In addition, EnviroGets operates a specialized Air Quality and Noise Monitoring Laboratory, utilizing measurement and calibration equipment in accordance with national and international standards to provide accurate and reliable data that supports sound environmental decision-making."
+      },
+      {
+        "text":"Driven by its commitment to scientific excellence and innovation, EnviroGets continues to deliver reliable and advanced environmental solutions that contribute to environmental protection, promote sustainability, and support the achievement of the Kingdom of Saudi Arabia’s Vision 2030 objectives."
       }
     ],
         "images":[
@@ -147,21 +170,21 @@
     "scrollData":[
       {
         "title":"Our Mission",
-        "text":" Deliver reliable environmental consulting and testing services that support compliance, protect natural resources, and promote sustainable development. 🌱",
+        "text":[
+          "Our vision is to lead the future of environmental services in Saudi Arabia by delivering innovative, science-based environmental solutions that support sustainability, protect natural resources, and enhance quality of life.",
+          "We aspire to be the trusted environmental partner for the public and private sectors, providing reliable data, specialized laboratory services, and expert consulting that enable informed decisions and strengthen environmental compliance.",
+          "Through our commitment to innovation and environmental responsibility, we contribute to achieving the objectives of Saudi Vision 2030 and building a more sustainable future for generations to come."
+        ],
         "image":"aboutScroll1.webp"
       },
-      {
-        "title":"Our Policy",
-        "text":[" We are committed to continuous research and development to keep pace with the Kingdom’s industrial and developmental progress.",
-      "Our focus is on delivering high-quality environmental services, ensuring accurate results, regulatory compliance, and supporting sustainable development. "
-      ],
-
-
-        "image":"aboutScroll2.webp"
-      },
+      
       {
         "title":"Our Vision",
-        "text":" To lead in environmental services by using advanced accredited technologies to support a healthy and sustainable environment for present and future generations. 🌱  ",
+        "text":[
+          "At EnviroGets, we are committed to innovation and continuous development to deliver effective, integrated environmental solutions that support sustainability, strengthen environmental compliance, and protect natural resources.",
+          "We execute our projects with the highest standards of quality, efficiency, and reliability, while adhering to applicable environmental regulations and ensuring accurate measurements and laboratory results.",
+          "Through advanced technologies and best practices, we strive to create lasting value for our clients and contribute to the objectives of Saudi Vision 2030 and sustainable development."
+        ],
         "image":"aboutScroll3.webp"
       }
     ]
@@ -185,10 +208,18 @@
         "airTitle":"Air & Noise Monitoring Laboratory",
 
     "text1":[
-      "Environmental management plans",
-      "Environmental impact assessment studies   ",
-      "Environmental consulting for facilities and factories",
-      "Supporting Environmental Compliance for waste Landfills"
+      "Environmental Impact Assessment (EIA) Studies.",
+      "Environmental Management Plans (EMP)",
+      "Construction Environmental Management Plans (CEMP)",
+      "Environmental Auditing and Compliance Studies.",
+      "Preparation of Environmental Records and Periodic Reports.",
+      "Environmental Monitoring and Management Plans.",
+      "Environmental Risk Assessment and Mitigation Plans.",
+      "Consulting services for obtaining environmental permits and approvals.",
+      "Environmental solutions for industrial and development projects.",
+      "Environmental supervision during project construction and operation phases.",
+      "Sustainability programs and environmental performance improvement.",
+      "Supporting facilities in meeting the requirements of the National Center for Environmental Compliance (NCEC)."
     ],
     
 
@@ -218,6 +249,44 @@
   },
 
 
+    "labDetails": {
+    "title": "Laboratory Services",
+    "labs": [
+      {
+        "title": "Water Quality Assessment & Analysis",
+        "items": [
+          "Assessment of surface water and groundwater quality.",
+          "Drinking water analysis (bottled and non-bottled).",
+          "Analysis of wastewater, domestic sewage, and industrial wastewater.",
+          "Chemical and physical water testing.",
+          "Microbiological (bacteriological) testing.",
+          "Heavy metals and trace elements analysis."
+        ]
+      },
+      {
+        "title": "Marine & Coastal Surveys",
+        "items": [
+          "Conducting marine and coastal environmental surveys.",
+          "Measuring water temperature.",
+          "Measuring water current speed and direction.",
+          "Monitoring waves and tides.",
+          "Supporting environmental studies for coastal areas and marine projects."
+        ]
+      },
+      {
+        "title": "Laboratory Services & Technical Support",
+        "items": [
+          "Accurate environmental analyses using advanced technologies and equipment.",
+          "Preparation of certified technical reports in accordance with local and international standards.",
+          "Supporting Environmental Impact Assessments (EIAs) and environmental compliance studies.",
+          "Providing reliable results to support informed environmental decision-making.",
+          "Fast, high-quality services delivered by a specialized professional team."
+        ]
+      }
+    ]
+  },
+
+
     "lab": {
     "title": "Mobile Laboratory",
     "labTitle":"Water And Soil Analysis",
@@ -225,23 +294,19 @@
     "text1":[
       "EnviroGets operates a specialized Air and Noise Monitoring Laboratory, providing accurate measurements and assessments using calibrated instruments and approved methodologies to ensure compliance with environmental regulations.",
 
-      "To support on-site requirements and field operations, GETES also offers Mobile Laboratory services, delivering real-time air quality and noise measurements directly at project locations with efficiency and reliability across Saudi Arabia"
+      "Our mobile laboratory provides flexible field solutions, enabling rapid response, accurate measurements, and reliable data to support environmental compliance and informed, science-based decision-making."
     ],
     "text2":[
-      "Industrial and domestic wastewater treatment and desalination",
-      "Surface and groundwater quality assessment",
-      "Bottled and non-bottled drinking water analysis",
-      "Domestic and industrial wastewater analysis",
-      "Chemical and physical water testing",
-      "Bacteriological testing"
+      "EnviroGets’ Water & Soil Laboratory is an advanced environmental analysis center providing specialized water and soil quality testing services in accordance with the latest local and international standards.",
+
+      "The laboratory operates in accordance with the requirements of ISO/IEC 17025, ensuring testing competence, accuracy, and reliability in line with the highest quality standards.",
+
+      "Using advanced analytical technologies and a team of experienced professionals, we deliver accurate and reliable results that support environmental compliance, promote resource sustainability, and serve a wide range of sectors and development projects."
+
     ],
-    "text3":[
-      "Heavy metals analysis",
-      "Marine and coastal surveys",
-      "Water temperature measurement",
-      "Current speed and direction measurement",
-      "Wave and tidal monitoring"
-    ]
+        "button":"Details"
+
+
 
   },
  "soil": {

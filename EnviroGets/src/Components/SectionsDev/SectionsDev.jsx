@@ -12,15 +12,19 @@ export default function SectionsDev() {
 
   return (
     <>
-      <div className=" relative flex  flex-col gap-2     pb-3   px-2  "> {/*container*/}
-        <div className="bg-linear-to-r from-[#13353D] via-[#607E5E] to-[#142833] w-35 h-15 md:w-45 md:h-15 rounded-xl flex  items-center justify-center ">
+      <div className=" relative flex  flex-col gap-2     pb-3   px-2  ">
+        {" "}
+        {/*container*/}
+        <div className="bg-[linear-gradient(to_left,#698EAA,#306784,#63AE98,#0D5933)] w-35 h-15 md:w-45 md:h-15 rounded-xl flex  items-center justify-center  ">
           <h3
             className={`${isArabic ? "font-bold text-xl md:text-2xl" : "font-roboto font-semibold  text-xl md:text-2xl"} text-white`}
           >
             {t("sections.title")}
           </h3>
         </div>
-        <div className={`flex flex-col ${isArabic?"gap-2 ":"gap-4"} md:w-full lg:w-5xl`}>
+        <div
+          className={`flex flex-col ${isArabic ? "gap-3 " : "gap-6"} md:w-full lg:w-4xl  lg:pb-30`}
+        >
           {links.map((link) => (
             <Link
               key={link.id}

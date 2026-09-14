@@ -6,31 +6,19 @@ import hero from "@/assets/Images/hero.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
-// import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import useJson from "@/Hooks/useJson.js";
 
 export default function HomeCarousel() {
-  // const swiperRef = useRef(null);
   const { i18n } = useTranslation();
   const { isArabic, t } = useJson();
 
-  // useEffect(() => {
-  //   const swiper = swiperRef.current;
-  //   if (!swiper) return;
 
-  //   swiper.changeDirection(i18n.language === "ar" ? "rtl" : "ltr");
-  //   swiper.loopDestroy();
-  //   swiper.loopCreate();
-  //   swiper.update();
-  //   swiper.slideTo(0, 0);
-  //   swiper.autoplay.start();
-  // }, [i18n.language]);
 
   return (
     <>
-      <div className="relative w-full    ">
+      <div className="relative    ">
         <Swiper
           style={{ height: "100%" }}
           className="rounded-b-2xl w-full h-full"
@@ -81,38 +69,51 @@ export default function HomeCarousel() {
             />
           </SwiperSlide>
         </Swiper>
+
         <div
           className="absolute inset-0 z-[2] rounded-bl-2xl
     bg-[linear-gradient(to_left,rgba(69,143,155,0.75)_0%,rgba(69,143,155,0.45)_45%,rgba(69,143,155,0.15)_100%)]"
         ></div>
 
         <div
-          className={`absolute   ${
-            isArabic ? "" : "   font-roboto"
-          } top-10 md:top-20 xl:top-30 z-10  px-4 md:px-9 flex flex-col gap-1 md:gap-4 lg:gap-8`}
+          className={`  lg:mt-0 absolute  inset-0 z-10 flex gap-4  justify-between items-center lg:items-end py-6`}
         >
-          <div className=" flex flex-col gap-2 w-3xs  lg:w-2xl ">
+          <div
+            className={`z-10  w-[60%]  md:max-w-xl px-4 py-2 flex flex-col   gap-1 md:gap-4   rounded-3xl
+              ${
+                isArabic
+                  ? "mr-2 md:mr-8 lg:border lg:border-white justify-content items-center"
+                  : "ml-2 md:ml-8 font-roboto justify-start items-start"
+              } 
+            
+            shadow lg:shadow-none
+                `}
+          >
             <h1
               className={`${
                 isArabic
-                  ? "text-sm md:text-2xl lg:text-5xl tracking-normal font-black  leading-[1.65]"
-                  : "font-roboto text-sm md:text-2xl xl:text-4xl leading-tight font-bold"
-              } text-white dark:text-white    `}
+                  ? "text-sm md:text-2xl lg:text-2xl tracking-tighter font-black  leading-[1.65]  text-center"
+                  : "font-roboto text-sm md:text-2xl xl:text-4xl leading-tight font-bold  text-left"
+              } text-white dark:text-white   `}
             >
               {t("home.titleHero1")}
             </h1>
-          </div>
 
-          <div
-            className="flex items-center justify-center w-20 h-10 lg:w-35  xl:w-60 xl:h-30  rounded-2xl xl:rounded-3xl border border-white bg-linear-to-b from-[#f5f6f800] via-[#c3c3c559] to-[#cbcccdae] 
-          text-xs xl:text-xl   shadow p-2"
-          >
-            <img src={hero} alt="" className="md:p-2 object-contain" />
+            <div
+              className="flex items-center justify-center w-20 h-10 lg:w-30  xl:w-50 xl:h-25  rounded-2xl xl:rounded-3xl border border-white bg-linear-to-b from-[#F5F6F800] via-[#c3c3c593] to-[#cbcccd] 
+                text-xs xl:text-xl   shadow "
+            >
+              <img
+                src={hero}
+                alt="رؤية سعودية"
+                className="md:p-2 object-contain w-full h-full"
+              />
+            </div>
           </div>
-
-          {/* bg-white/10 backdrop-blur-md */}
         </div>
       </div>
     </>
   );
 }
+
+

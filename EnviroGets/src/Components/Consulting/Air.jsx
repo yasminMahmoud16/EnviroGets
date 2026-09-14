@@ -9,9 +9,11 @@ export default function Air() {
     return (
       <>
         {/* parent */}
-        <div className=" px-20 flex flex-col md:flex-row  items-center   py-9 ">
+        <div
+          className={`px-8 flex flex-col md:flex-row  items-center ${isArabic ? "gap-4" : "gap-25"}   py-9 `}
+        >
           {/* content */}
-          <div className="flex-1">
+          <div className="">
             {/* <h2
               className={`text-[#2C6FA0]  whitespace-nowrap ${isArabic ? "font-bold text-xl md:text-2xl" : "font-roboto font-semibold text-xl"}`}
             >
@@ -19,12 +21,12 @@ export default function Air() {
             </h2> */}
             <TitleSec
               title={t("consulting.airTitle")}
-              className="text-[#2C6FA0]"
+              className="text-[#2C6FA0] text-4xl! font-normal! mb-3!"
             />
 
             <div className=" pr-2 my-2">
               <ul
-                className={`list-inside text-[#2C6FA0] text-justify ${isArabic ? "font-semibold text-base" : "font-roboto font-normal md:text-sm lg:text-base"}`}
+                className={`list-inside text-[#2C6FA0] text-justify ${isArabic ? "font-bold text-xl" : "font-roboto font-normal md:text-sm lg:text-base"}`}
                 style={{ listStyleType: "square" }}
               >
                 {airList.map((item, index) => (
@@ -36,19 +38,21 @@ export default function Air() {
             </div>
           </div>
           {/* image */}
-          <div className=" relative shrink-0 ml-15  ">
-            <div className="w-60 h-50 border-5 border-[#378BC8] rounded-[40px] overflow-hidden shadow-md">
+          <div className={`relative shrink-0 ml-15 ${isArabic ? "" : "my-25"} `}>
+            {/* Front image - smaller, overlapping bottom-left */}
+            <div className="w-96 h-64  border-2 border-[#378BC8] rounded-[32px] overflow-hidden shadow-lg  bg-white">
               <img
                 src={air1}
                 alt="air1"
-                className="w-full h-full object-cover rounded-3xl "
+                className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-30 h-30 border-4 border-[#378BC8] rounded-full absolute -bottom-8 -left-16 shadow-md">
+            {/* Back image - larger, top-right */}
+            <div className="w-80 h-50  absolute -bottom-16 -left-70 z-10 border-2 border-[#378BC8] rounded-[32px] overflow-hidden shadow-lg">
               <img
                 src={air2}
                 alt="air2"
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

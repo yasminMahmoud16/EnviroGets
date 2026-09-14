@@ -12,8 +12,11 @@ export default function AboutMission() {
           dir={isArabic ? "ltl" : "ltr"}
         >
           {scrollingData.map((item, index) => (
-            <div key={index} className="w-[50%] shrink-0 snap-start">
-              <div className="relative w-full  md:h-60 rounded-3xl bg-gradient-to-r from-[#2D4E86] via-[#2E7D63] to-[#2F95E1] p-6 flex flex-row items-center justify-between gap-4">
+            <div key={index} className="w-4xl  snap-start">
+              <div
+                dir={isArabic ? "ltr" : "rtl"}
+                className="relative w-full  md:h-full rounded-3xl bg-gradient-to-r from-[#2D4E86] via-[#2E7D63] to-[#2F95E1] p-6 flex flex-row items-center justify-between gap-4"
+              >
                 <div className="shrink-0 w-25 h-35 md:w-45 md:h-43 rounded-2xl overflow-hidden">
                   <img
                     src={item.image}
@@ -27,7 +30,7 @@ export default function AboutMission() {
                   dir={isArabic ? "ltr" : "rtl"}
                 >
                   <div
-                    className={`bg-white px-10 py-1 rounded-2xl text-[#378BC8] font-bold shrink-0 ${isArabic ? "text-xl" : "font-roboto text-xl"} `}
+                    className={`bg-white px-10 py-1 rounded-2xl text-[#378BC8] font-bold shrink-0 ${isArabic ? "text-xl " : "font-roboto text-xl "} `}
                   >
                     <h5>{item.title}</h5>
                   </div>

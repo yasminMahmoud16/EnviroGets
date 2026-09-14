@@ -15,6 +15,7 @@ export default function About() {
           }`}
           style={{
             backgroundImage: `url(${aboutBg})`,
+            backgroundPosition: "center",
           }}
         />
         <div className="absolute inset-0 bg-[#00000052] z-0"></div>

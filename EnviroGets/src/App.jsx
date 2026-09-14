@@ -13,6 +13,7 @@ const Consulting = lazy(
   () => import("./Pages/EnvironmentalConsulting/Consulting.jsx"),
 );
 const Laboratory = lazy(() => import("./Pages/Lap/Laboratory.jsx"));
+const LabDetails = lazy(() => import("./Pages/LabDetails/LabDetails.jsx"));
 const SoilStudies = lazy(() => import("./Pages/SoilStudies/SoilStudies.jsx"));
 const Certification = lazy(
   () => import("./Pages/Certification/Certification.jsx"),
@@ -30,6 +31,7 @@ const router = createHashRouter([
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
       { path: "laboratories", element: <Laboratory /> },
+      { path: "lab-details", element: <LabDetails /> },
       { path: "environmental-consulting", element: <Consulting /> },
       { path: "soil-studies", element: <SoilStudies /> },
       { path: "air-quality", element: <AirQuality /> },
