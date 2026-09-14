@@ -311,25 +311,24 @@
   },
  "soil": {
 
-
-"soilList":[
-  {
     "title": "Soil Testing and Analysis",
-    "text":[
-      "Geotechnical and geophysical laboratory tests",
-      "Chemical and physical soil analysis",
-      "Bacteriological testing",
-      "Waste monitoring and analysis",
-      "Heavy metals measurement"
-    ]
-  },
+    "text":
+      "EnviroGets provides specialized soil testing and analysis services to assess physical and chemical properties, determine soil suitability for various projects, and deliver accurate and reliable data that support environmental and engineering studies, ensure compliance with environmental standards, and promote the sustainable management of natural resources."
+    ,
+"soilList":[
+
   {
-    "title": "Objectives of Soil Investigation",
+    "title": "Soil Assessment Objectives",
     "text":[
-      "Studying soil pollutants",
-      "Assessing the engineering stability of the soil",
-      "Evaluating soil fertility",
-      "Assessing groundwater quality"
+      "Chemical and physical soil analysis.",
+      "Bacteriological soil testing.",
+      "Soil contaminant assessment.",
+      "Geotechnical soil stability assessment.",
+      "Waste monitoring and analysis.",
+      "Heavy metal analysis.",
+      "Soil fertility assessment.",
+      "Groundwater quality assessment."
+
     ]
   }
 ],
@@ -337,12 +336,35 @@
 "soilTypes":  [
     {
     "title": "Types of Analyses Performed on Soil Samples",
-    "text":[
-      "Chemical Analysis: Includes the analysis of organic pollutants (BTEX, PAH, TPH), heavy elements, toxic metals, pH levels, organic matter, nutrients, and dissolved salts.",
 
-      "Physical Analysis:Includes the determination of moisture content, bulk and true density, and the percentages of sand, silt, and clay",
-      "Biological Analysis: Conducted to examine and assess microorganisms"
-    ]
+    "text":[
+      {
+
+        "title":"Chemical Analysis",
+        "text":[
+          "Includes a comprehensive range of chemical tests to assess soil quality and detect contaminants, including organic compounds such as BTEX, PAHs, and TPH, as well as heavy metals and toxic elements. Tests also cover pH, organic matter, essential nutrients, and dissolved salts. These analyses help assess soil contamination and determine its suitability for environmental, agricultural, and industrial applications."]
+    
+      },
+    {
+
+      "title":"Physical Analysis",
+      "text":[
+        "Includes the assessment of soil physical properties such as moisture content, bulk and particle density, and particle size distribution (sand, silt, and clay), as well as permeability, soil texture, and water-holding capacity. These tests provide essential data to support geotechnical, hydrological, and agricultural studies."
+  
+  
+      ]
+    },{
+
+      "title":"Biological Analysis",
+      "text":[
+        "Includes the examination and assessment of microorganisms and biological activity in soil to evaluate soil health and its ability to support ecosystems and plant growth. It also contributes to detecting biological contamination, assessing the impact of pollutants on microorganisms, and supporting soil remediation programs and sustainable natural resource management."
+  
+  
+      ]
+    }
+
+      ]
+
   }
 ]
 

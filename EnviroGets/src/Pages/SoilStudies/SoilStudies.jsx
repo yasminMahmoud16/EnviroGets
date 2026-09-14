@@ -1,82 +1,130 @@
 import List from "@/Common/List/List.jsx";
 import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
-import useJson from "@/Hooks/useJson.js"
-import bgSoil from "@/assets/Images/bgSoil.webp";
-import bgSoilEn from "@/assets/Images/bgSoilEn.webp";
-import soilImg1 from "@/assets/Images/soilImg1.webp"
-import soilImg2 from "@/assets/Images/soilImg2.webp"
-import soilImg3 from "@/assets/Images/soilImg3.webp"
+import useJson from "@/Hooks/useJson.js";
+import soilImage from "@/assets/Images/soilImage.webp";
+import soilImg1 from "@/assets/Images/soilImg1.webp";
+import soilImg2 from "@/assets/Images/soilImg2.webp";
+import soilImg3 from "@/assets/Images/soilImg3.webp";
 
-
-import bottomImg from "@/assets/Images/bottomImg1.webp";
-import bottomImg2 from "@/assets/Images/bottomImg2.webp"
-import bottomEng from "@/assets/Images/bottomEng.webp"
-import bottomEng2 from "@/assets/Images/bottomEng2.webp"
 export default function SoilStudies() {
-    const { isArabic, t } = useJson();
-    const soil = t("soil.soilList", { returnObjects: true });
-    const soilType = t("soil.soilTypes", { returnObjects: true });
-    return (
-      <>
-        <section
-          className="min-h-screen  relative"
-          style={{
-            backgroundImage: `url(${isArabic ? bgSoil : bgSoilEn})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center top",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="flex flex-col md:flex-row justify-between px-8">
-            {/* container */}
-            <div className="px-8 pt-30  lg:w-3xl pb-2">
+  const { isArabic, t } = useJson();
+  const soil = t("soil.soilList", { returnObjects: true });
+
+  const soilType = t("soil.soilTypes", { returnObjects: true });
+  console.log(soil);
+  return (
+    <>
+      <section className="min-h-screen  relative ">
+        <div className="flex flex-col  justify-between px-8">
+          {/* container */}
+          <div className="px-8 pt-30   pb-2">
+            <div className="text-[#2C6FA0] flex flex-col gap-4">
+              <TitleSec
+                title={t("soil.title")}
+                className={`${isArabic ? "" : " text-3xl! font-normal!"}`}
+              />
+              <p
+                className={`${isArabic ? "font-bold text-lg" : "font-semibold text-lg font-roboto"} text-justify leading-8`}
+              >
+                {t("soil.text")}
+              </p>
+            </div>
+
+            <div className="flex justify-between items-center mt-5 text-[#2C6FA0]">
               {soil.map((item, index) => (
                 <div
                   key={index}
                   className="flex flex-col justify-center gap-6 mt-2"
                 >
-                  <TitleSec title={item.title} className="text-white" />
+                  <TitleSec
+                    title={item.title}
+                    className={`${isArabic ? "" : " text-3xl! font-normal!"}`}
+                  />
 
-                  <div className="px-8">
-                    <ul className="list-square list-outside">
+                  <div className="px-8 ">
+                    <ul className="list-square list-outside text-[#2C6FA0]! ">
                       {item.text.map((text, i) => (
-                        <List key={i} item={text} />
+                        <List
+                          key={i}
+                          item={text}
+                          className={`text-[#2C6FA0]! ${isArabic?"font-bold!":"font-semibold!"} `}
+                        />
                       ))}
                     </ul>
                   </div>
                 </div>
               ))}
 
-              {soilType.map((item, index) => (
-                <>
-                  <div className="flex flex-col justify-center gap-6 mt-3">
-                    <TitleSec title={item.title} className="text-white" />
-                    <div key={index} className="px-8 ">
-                      <ul className="list-square list-outside">
-                        {item.text.map((text, i) => (
-                          <List key={i} item={text} />
+              <div className="w-96">
+                <img
+                  src={soilImage}
+                  alt="soil-Image"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-10  mt-5">
+              {soilType.map((soilType, i) => (
+                <div key={i} className="text-[#2C6FA0] ">
+                  {/* <h2 className={`font-bold text-3xl`}>{soilType.title}</h2> */}
+                  <TitleSec
+                    title={soilType.title}
+                    className={`${isArabic ? "" : " text-3xl! font-normal!"} mb-5!`}
+                  />
+
+                  {soilType.text.map((section, j) => (
+                    <div key={j} className="mb-4 flex flex-col gap-3">
+                      <h3
+                        className={`font-bold text-2xl underline underline-offset-4 ${isArabic ? "" : "font-roboto"}`}
+                      >
+                        {section.title}
+                      </h3>
+
+                      <ul
+                        className={`list-disc pr-5 text-justify leading-7 ${isArabic ? "" : "font-roboto"}`}
+                        style={{
+                          listStyle: "square",
+                        }}
+                      >
+                        {section.text.map((item, k) => (
+                          <li
+                            className={`${isArabic ? "" : "font-roboto font-semibold"}`}
+                            key={k}
+                          >
+                            {item}
+                          </li>
                         ))}
                       </ul>
                     </div>
-                  </div>
-                </>
+                  ))}
+                </div>
               ))}
             </div>
 
-            {/* images container */}
-            <div
-              className={`md:pt-30  flex items-center justify-center lg:block ${isArabic ? "lg:pl-10" : "lg:pr-10"}   `}
-            >
-              <div className={`w-64 ${isArabic ? "pb-15" : "pb-6 "} `}>
-                <img
-                  src={soilImg1}
-                  alt="soil"
-                  className="w-full h-full object-cover "
-                />
+            {/* {soilType.map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col justify-center gap-6 mt-3"
+              >
+                <TitleSec title={item.title} className="text-white" />
+                <div key={index} className="px-8 ">
+                  <ul className="list-square list-outside">
+                    {item.text.map((text, i) => (
+                      <List key={i} item={text} />
+                    ))}
+                  </ul>
+                </div>
               </div>
+            ))} */}
+          </div>
 
-              <div className="hidden lg:block relative">
-                <div className={`hidden md:block w-64 absolute z-20  `}>
+          {/* images container */}
+          <div
+            className={`md:pt-5 mb-5  flex items-center justify-center lg:block ${isArabic ? "lg:pl-10" : "lg:pr-10"}   `}
+          >
+            <div className="flex flex-col lg:flex lg:flex-row items-center justify-around  ">
+                <div className={`hidden md:block w-64   `}>
                   <img
                     src={soilImg2}
                     alt="soil"
@@ -84,7 +132,7 @@ export default function SoilStudies() {
                   />
                 </div>
                 <div
-                  className={`hidden md:block w-64 absolute ${isArabic ? "left-60 top-30" : "right-30 top-45"}   `}
+                  className={`hidden md:block w-64   `}
                 >
                   <img
                     src={soilImg3}
@@ -92,47 +140,23 @@ export default function SoilStudies() {
                     className="   w-full h-full object-cover"
                   />
                 </div>
+                <div
+                  className={`hidden md:block w-64   `}
+                >
+                  <img
+                    src={soilImg1}
+                    alt="soil"
+                    className="   w-full h-full object-cover"
+                  />
+                </div>
               </div>
-            </div>
           </div>
 
-          <div
-            className={`${isArabic ? "hidden lg:block w-60 h-50 absolute bottom-0 left-0" : "hidden "} `}
-          >
-            <img
-              src={bottomImg}
-              alt="image"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div
-            className={`${isArabic ? "hidden" : "hidden lg:block w-60 h-50 absolute bottom-0 right-0 "} `}
-          >
-            <img
-              src={bottomEng}
-              alt="image"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div
-            className={`${isArabic ? "hidden" : "hidden lg:block w-30 h-80 absolute bottom-60 right-0  "}`}
-          >
-            <img
-              src={bottomEng2}
-              alt="image"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div
-            className={`${isArabic ? "hidden lg:block w-40 h-80 absolute bottom-0 left-0 " : "hidden"}`}
-          >
-            <img
-              src={bottomImg2}
-              alt="image"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </section>
-      </>
-    );
+
+
+          
+        </div>
+      </section>
+    </>
+  );
 }
