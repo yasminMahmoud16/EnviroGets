@@ -512,17 +512,20 @@
 
 
       "airQuality":{
-        "title": "Air quality Monitoring",
-        "subTitle":"Purpose of air quality Monitoring",
-    "description":" Air quality monitoring is the process of measuring and analyzing pollutants in the air to understand how clean or polluted the air is. It helps protect human health, the environment, and supports environmental management.",
+        "titles":[ "Objectives of Air Quality Monitoring"],
+
 
     "list":[
-      "Assess Environmental Health Identify the levels of air pollutants and evaluate their impact on human health, ecosystems, and overall environmental quality.",
-      "Ensure Regulatory Compliance Verify compliance with local and international environmental standards and regulations set by authorities.",
-      "Identify Pollution Sources Determine the origin and contribution of pollution sources (industrial, traffic, construction, etc.) to support control strategies.",
-      "Support Environmental Impact Assessments (EIA) Provide accurate data for baseline studies and for evaluating the impact of existing or proposed projects.",
-      "Guide Mitigation and Control Measures Help design effective pollution control and air quality improvement plans.",
-    "Monitor Trends and Changes Over Time Track variations in air quality to assess the effectiveness of environmental policies and corrective actions."
+      "Assessing ambient air quality and measuring various air pollutant levels.",
+      "Monitoring air pollution sources and identifying the nature and levels of emissions affecting the environment",
+      "Ensuring compliance with environmental requirements, standards, and permissible pollutant limits.",
+      "Assessing the environmental impacts of activities and projects on ambient air quality.",
+      "Providing accurate and reliable environmental data and measurements to support informed environmental decisions.",
+    "Monitoring changes in pollutant levels and tracking trends over different time periods",
+    "Identifying potential risks to public health and the environment associated with air pollution.",
+    "Supporting environmental management plans and developing appropriate measures to reduce pollution sources.",
+    "Verifying the efficiency of emission control measures and the effectiveness of pollution control systems.",
+    "Preparing documented technical reports and data to support environmental compliance and monitoring requirements."
 
 
     ]

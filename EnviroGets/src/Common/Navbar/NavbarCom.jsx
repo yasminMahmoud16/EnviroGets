@@ -14,7 +14,11 @@ export default function NavbarCom() {
 const location = useLocation();
 const currentPath = location.pathname;
 
-const transparentPages = ["/environmental-consulting"];
+  const transparentPages = [
+    "/environmental-consulting",
+    "/air-quality",
+    "/soil-studies",
+  ];
 const isTransparentPage = transparentPages.includes(currentPath);
 
 const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
