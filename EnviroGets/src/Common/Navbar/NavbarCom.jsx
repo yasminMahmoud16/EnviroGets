@@ -56,7 +56,9 @@ const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
             md:rounded-3xl
           `}
         >
-          <ul className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 p-4 md:p-0  text-white">
+          <ul
+            className={`flex flex-col md:flex-row md:items-center gap-2 md:gap-6 p-4 md:p-0  text-white ${isArabic ? " font-semibold text-sm lg:text-xl" : "font-roboto text-base font-extrabold"}`}
+          >
             {links.map((link, index) => (
               <li key={index}>
                 <NavLink
@@ -65,7 +67,7 @@ const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
                   className={({ isActive }) =>
                     `
                     block p-3 md:p-0
-                    font-semibold text-sm lg:text-xl
+                   
                     transition duration-300
                     
                     ${isActive ? "text-[#165761]" : "hover:text-[#165761]"}
@@ -94,9 +96,13 @@ const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
                 <img src={logo} className="h-10" alt={t("navbar.logo")} />
 
                 <div>
-                  <h2 className={`font-bold ${textClasses}`}>{t("navbar.logo")}</h2>
+                  <h2 className={`font-bold ${textClasses}`}>
+                    {t("navbar.logo")}
+                  </h2>
 
-                  <p className={`text-xs ${textClasses}`}>{t("navbar.slogan")}</p>
+                  <p className={`text-xs ${textClasses}`}>
+                    {t("navbar.slogan")}
+                  </p>
                 </div>
               </Link>
             </li>
