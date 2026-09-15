@@ -4,6 +4,14 @@
     "slogan":"For Environmental Consulting and Services",
     "links": [
       {
+     "title": "Home",
+     "path": "/"
+   },
+          {
+        "title": "Who We Are",
+        "path": "/about"
+      },   
+      {
         "title": "Contact Us",
         "path": "/contact"
       },
@@ -15,18 +23,16 @@
         "title": "Certifications",
         "path": "/certifications"
       },
+            {
+        "title": "Our projects",
+        "path": "/Projects"
+      },
         {
         "title": "Sections",
         "path": "/sections"
-      },
-
-      {
-        "title": "AboutUs",
-        "path": "/about"
-      },      {
-        "title": "Home",
-        "path": "/"
       }
+
+  
     
 
 
@@ -389,11 +395,10 @@
 
     "clients":{
         "title": "They Trust US",
-    "description": [
-      "Our clients are at the heart of everything we do. At EnviroGets, we proudly serve a diverse range of industries, providing reliable environmental solutions tailored to their unique needs. We are committed to building long-term partnerships based on trust, quality, and excellence."
-    ],
+        "subTitle":"Some of Our Valued Partners Throughout Our Journey",
 
-"images": [
+
+    "images": [
   {
     "id": 1,
     "logo": "client1.webp",
@@ -503,8 +508,39 @@
     "id": 22,
     "logo": "client22.webp",
     "name": "Client 22"
+  },
+  {
+    "id": 23,
+    "logo": "client23.webp",
+    "name": "Client 23"
+  },
+  {
+    "id": 24,
+    "logo": "client24.webp",
+    "name": "Client 24"
+  },
+  {
+    "id": 25,
+    "logo": "client25.webp",
+    "name": "Client 25"
+  },
+  {
+    "id": 26,
+    "logo": "client26.webp",
+    "name": "Client 26"
+  },
+  {
+    "id": 27,
+    "logo": "client27.webp",
+    "name": "Client 27"
+  },
+  {
+    "id": 28,
+    "logo": "client28.webp",
+    "name": "Client 28"
   }
-]
+],
+"article":"We are proud with the trust of our partners and in serving leading government entities and organizations across the Kingdom of Saudi Arabia. We look forward to building new partnerships that contribute to a more sustainable future."
 
 
 
