@@ -7,6 +7,8 @@ import instagram from "@/assets/Images/instagram.webp";
 // import { FaSquareXTwitter } from "react-icons/fa6";
 // import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
+import { FaCircleArrowLeft, FaCircleArrowDown } from "react-icons/fa6";
+
 import img1 from "@/Assets/Images/servcies1.webp";
 import border1 from "@/Assets/Images/border1.webp";
 import img2 from "@/Assets/Images/servcies2.webp";
@@ -14,4 +16,4 @@ import border2 from "@/Assets/Images/border2.webp";
 import img3 from "@/Assets/Images/servcies3.webp";
 import img4 from "@/Assets/Images/servcies4.webp";
 
-export { whatsApp, facebook, tiktok, linkedin, twitter, instagram, IoMdArrowBack, IoMdArrowForward ,img1,border1,img2,border2,img3,img4 };
+export { whatsApp, facebook, tiktok, linkedin, twitter, instagram, IoMdArrowBack, IoMdArrowForward, img1, border1, img2, border2, img3, img4, FaCircleArrowLeft, FaCircleArrowDown };
