@@ -569,7 +569,7 @@
 
 
   "projects": {
-
+    "title":"Our Projects",
         "list":[
       {
         "subTitle":"Asbestos Environmental Survey & Assessment – KJO South Area",
@@ -942,7 +942,7 @@
       "title": "KJO – South Area",
       "slug": "أعمال المسح والتقييم البيئي لماده الأسبستوس KJO – South Area",
       "image": "project17.webp",
-      "logo": "small",
+      "imageStyle": "small",
       "text-Type": "normal",
 
       "text": [
