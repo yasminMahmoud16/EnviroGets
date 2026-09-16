@@ -12,7 +12,7 @@ export default function Certification() {
           {/* content */}
           <div className="px-8">
             <div
-              className={`bg-linear-to-r from-[#17393F]  via-[#2C4E4B] to-[#5D7C60] w-35 h-15 ${isArabic ? "md:w-50 md:h-15 rounded-xl" : "md:w-50 md:h-10 rounded-full"}  flex  items-center justify-center `}
+              className={`bg-linear-to-r from-[#17393F]  via-[#2C4E4B] to-[#5D7C60] w-35 h-15 ${isArabic ? "md:w-50 md:h-15 rounded-xl" : "md:w-50 md:h-15 rounded-xl"}  flex  items-center justify-center `}
             >
               <h3
                 className={`${isArabic ? "font-bold text-xl md:text-2xl" : "font-roboto font-semibold  text-xl md:text-2xl"} text-white`}
@@ -28,10 +28,10 @@ export default function Certification() {
                 {text.map((desc, index) => (
                   <p
                     key={index}
-                    className={`text-main text-justify ${
+                    className={`text-main text-justify leading-8 ${
                       isArabic
                         ? "font-semibold text-base md:text-xl"
-                        : "font-roboto font-normal text-base md:text-xl"
+                        : "font-roboto font-normal text-base md:text-xl pb-3"
                     }`}
                   >
                     {desc.includes("EnviroGets") ? (
