@@ -199,12 +199,91 @@
 
   "contact": {
     "title": " Contact US ",
-    "description": "GETES Team is ready to provide the right solution according to your needs",
-    "subTitle":"Get in Touch ",
+    "description": "Your Partner in Environmental Compliance & Sustainability",
+    "subTitle":"Feel Free to Contact us ",
     "address":"Al Rabwah District, Riyadh, Saudi Arabia",
     "email":"Info@getes-ksa.com",
     "phone":"+966 55 531 2093",
-    "socialAd":"Follow For Social Media"
+    "socialAd":"Follow For Social Media",
+
+
+    "information":[
+      {
+        "name1":"500+ Partnerships",
+        "name2":"with Valued Clients"
+      },
+      {
+        "name1":"10,000+ Clients",
+        "name2":"Served Annually"
+      },
+      {
+        "name1":"Serving 15+ Cities ",
+        "name2":"Across the Kingdom"
+      }
+    ],
+        "general":
+      {
+        "title":"Overview",
+        "description":"EnviroGets for Environmental Consulting & Services has successfully delivered its services to clients across all regions of the Kingdom of Saudi Arabia, providing consistent and reliable environmental consulting and testing services nationwide."
+      },
+
+      "bransheTitle":"Branches",
+            "branshes":[
+        {
+          "image":"saudia.webp",
+          "name":"Head Office",
+          "address":"Riyadh Branch , Al Rawabi, Saudi Arabia",
+          "location":"Show on Map",
+          "locationIcon":"map-pin.webp",
+               "locationUrl":"https://www.bing.com/maps/search?FORM=HDRSC6&q=%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9+-+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6+-+%D8%AD%D9%8A+%D8%A7%D9%84%D8%B1%D8%A8%D9%88%D8%A9+-+%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1+%D9%85%D8%AA%D8%B9%D8%A8+%D8%A8%D9%86+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2&cp=24.692053%7E46.763855&lvl=16&style=r"
+
+        },
+        {
+          "image":"saudia.webp",
+          "name":"Eastern Province Branch",
+          "address":"Dammam Branch , Saudi Arabia",
+          "location":"Show on Map",
+          "locationIcon":"map-pin.webp",
+              "locationUrl":"https://www.bing.com/maps/search?FORM=HDRSC6&q=%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9+-+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6+-+%D8%AD%D9%8A+%D8%A7%D9%84%D8%B1%D8%A8%D9%88%D8%A9+-+%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1+%D9%85%D8%AA%D8%B9%D8%A8+%D8%A8%D9%86+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2&cp=24.692053%7E46.763855&lvl=16&style=r"
+        },
+        {
+          "image":"egypt.webp",
+          "name":"Egypt Branch",
+          "address":"Dokki , Arab Rebuplic of Egypt",
+          "location":"Show on Map",
+          "locationIcon":"map-pin.webp",
+                              "locationUrl":"https://www.bing.com/maps/search?FORM=HDRSC6&q=dokki+egypt&cp=30.041221%7E31.207885&lvl=14.5&style=r"
+        }
+      ],
+
+       "title2": "Get in Touch",
+    "description2": "Feel free to contact us. We are happy to answer your inquiries.",
+    "name": {
+      "label": "Name",
+      "required": "Name is required",
+      "min": "Name must be at least 3 characters",
+      "max": "Name must not exceed 50 characters"
+    },
+    "reason": {
+      "label": "Reason for Contact",
+      "required": "Reason for contact is required"
+    },
+    "email2": {
+      "label": "Email Address",
+      "required": "Email address is required",
+      "invalid": "Please enter a valid email address"
+    },
+    "phone2": {
+      "label": "Phone Number",
+      "required": "Phone number is required",
+      "invalid": "Please enter a valid phone number"
+    },
+    "message": {
+      "label": "Message",
+      "required": "Message is required",
+      "min": "Message must be at least 10 characters"
+    },
+    "button": "Send"
 
   },
 
