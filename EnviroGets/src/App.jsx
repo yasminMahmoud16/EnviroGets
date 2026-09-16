@@ -19,6 +19,7 @@ const Certification = lazy(
   () => import("./Pages/Certification/Certification.jsx"),
 );
 const Partners = lazy(() => import("./Pages/Partners/Partners.jsx"));
+const Projects = lazy(() => import("./Pages/Projects/Projects.jsx"));
 const AirQuality = lazy(() => import("./Pages/AirQuality/AirQuality.jsx"));
 
 const router = createHashRouter([
@@ -36,6 +37,7 @@ const router = createHashRouter([
       { path: "soil-studies", element: <SoilStudies /> },
       { path: "air-quality", element: <AirQuality /> },
       { path: "clients", element: <Partners /> },
+      { path: "projects", element: <Projects /> },
       { path: "certifications", element: <Certification /> },
     ],
   },

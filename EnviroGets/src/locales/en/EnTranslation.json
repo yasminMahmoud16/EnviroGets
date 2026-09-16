@@ -565,5 +565,399 @@
 
 
     ]
-  }
+  },
+
+
+  "projects": {
+
+        "list":[
+      {
+        "subTitle":"Asbestos Environmental Survey & Assessment – KJO South Area",
+        "slug":"أعمال المسح والتقييم البيئي لماده الأسبستوس KJO – South Area"
+    },
+      {
+        "subTitle":"Environmental File Management for Fuel Stations",
+                "slug":"إدارة الملف البيئي لمحطات الوقود",
+
+        "content":[
+          "Environmental File Management for Nagahat Fuel Stations ",
+          "Al-Drees Fuel Stations"
+        ]
+    },
+      {
+        "subTitle":"Environmental File Management for Pharmaceutical Companies",
+                "slug":"إدارة الملف البيئي لشركات الأدويه",
+
+        "content":[
+          "Environmental File Management for Hikma",
+          "Environmental File Management for Cipla"
+        ]
+    },
+      {
+        "subTitle":"Water Quality Monitoring for Hotels",
+        "slug":"متابعة جودة المياه للفنادق",
+        "content":[
+          "Water Quality Monitoring for Marriott Hotels"
+        ]
+    },
+      {
+        "subTitle":"Environmental File Management for Hospitals",
+        "slug":"اداره الملف البيئي للمستشفيات",
+        "content":[
+          "Seha Al-Suwaidi Hospital – Dr. Sulaiman Al Habib",
+          "King Salman Hospital in Hail",
+          "King Khalid Hospital in Al-Kharj"
+        ]
+    },
+      {
+        "subTitle":"Environmental File Management for Industrial Facilities",
+        "slug":"إدارة الملف البيئي المنشآت الصناعية",
+        "content":[
+          "Golden Chip Factory",
+          "Benaa Ready-Mix Concrete Products Factory",
+          "Al-Talad Ready-Mix Concrete Factory",
+          "Ishraqa Al-Furqan Paper Products Factory",
+          "Dallam Mining Quarry",
+          "Sludge Sample Monitoring for Al-Nawaqel International Landfills",
+          "Elrabaa Milling Company",
+          "Saudi Public Transport Company – SAPTCO",
+          "Air Quality Monitoring Project for Reviva"
+        ]
+    },
+      {
+        "subTitle":"Environmental File Management for the Industrial Cities Authority",
+        "slug":"اداره الملف البيئي لهيئة المدن الصناعية"
+
+    },
+      {
+        "subTitle":"Environmental File Management for Dhruma Industrial City",
+        "slug":"إدارة الملف البيئي لمدينة ضرماء الصناعية",
+        "content":[
+          "Alfanar Power Station",
+          "Ishbiliyah Power Station",
+          "Al-Dar Al-Baida Power Station",
+          "Al-Arid District Power Station",
+          "Al-Manfouhah District Power Station",
+          "Al-Dawadmi Power Station",
+          "Al-Manousiyah Power Station",
+          "Al-Nasriyah District Power Station",
+          "Al-Nazim District Power Station"
+        ]
+    }
+  ],
+    "content":[
+    {
+      "id": 1,
+      "title": "Environmental File Management for Nagahat Fuel Stations ",
+      "slug": "إدارة الملف البيئي لمحطات الوقود – نجاحات",
+      "image": "project1.webp",
+      "logo": "client26.webp",
+      "imageStyle":"medium",
+      "text-Type": "normal",
+      "text": [
+        "EnviroGets successfully implemented the Environmental File Management for Fuel Stations – Success Stories project to support fuel stations in meeting environmental requirements and ensuring compliance with applicable regulations and standards.",
+
+        "The project included the preparation and management of environmental files, provision of technical consulting, and monitoring of compliance requirements, contributing to improved environmental performance and the sustainability of operational activities.",
+
+        "This project reflects EnviroGets’ expertise in delivering integrated environmental solutions that support business sustainability and help clients achieve high levels of environmental compliance and operational efficiency."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Al-Drees Fuel Stations",
+      "slug": "محطات وقود الدريس",
+
+      "image":"project2.webp",
+
+      "imageStyle":"large",
+      "text-Type": "normal",
+      "text": [
+        "EnviroGets for Environmental Consulting & Services (EnviroGets) conducted air, water, and soil quality measurements and monitoring at several Al-Drees fuel station sites, carrying out environmental measurements and sampling in accordance with approved procedures and applicable standards.",
+
+        "The scope of work included ambient air quality monitoring, water measurements and analyses, as well as soil sampling and analysis. These activities aimed to assess the environmental conditions of the sites and provide accurate and reliable data and results to support environmental monitoring and compliance requirements.",
+
+        "The work was conducted using specialized instruments and equipment, with rigorous quality control procedures applied to ensure the reliability of the measurements and results delivered to the client."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Environmental File Management for Hikma",
+            "slug": "إدارة الملف البيئي لشركة Hikma",
+
+      "logo": "client23.webp",
+      "text-Type": "bulted",
+      "intro":"EnviroGets successfully implemented the Environmental File Management Project for Hikma in the Kingdom of Saudi Arabia, providing:",
+      "text": [
+        "Preparation and management of the environmental file.",
+
+        "Technical and consulting support to ensure compliance with applicable environmental requirements and regulations."
+
+        
+      ],
+      "end":"This project highlights EnviroGets’ expertise in environmental file management for pharmaceutical and industrial facilities, delivering integrated solutions that support sustainability and enhance environmental compliance efficiency."
+    },
+    {
+      "id": 4,
+      "title": "Environmental File Management for Cipla",
+            "slug": "إدارة الملف البيئي لشركة Cipla",
+
+      "logo": "client24.webp",
+      "text-Type": "bulted",
+      "intro":"EnviroGets successfully implemented the Environmental File Management Project for Cipla, aimed at ensuring the facility’s compliance with applicable environmental regulations and requirements, while enhancing compliance efficiency across all environmental aspects associated with its operations.",
+      "intro2":"Our services included:",
+      "text": [
+        "Preparation and updating of the environmental file.",
+
+        "Review of technical documentation and environmental records.",
+
+        "Monitoring licensing and environmental compliance requirements.",
+        "Providing the necessary technical consulting to ensure that the company’s activities comply with environmental regulations issued by the relevant regulatory authorities.",
+        "Assessing environmental aspects, identifying improvement opportunities, and providing recommendations to enhance environmental performance and minimize potential risks, supporting sustainability and operational continuity in accordance with best practices."
+      ],
+      "end":"This project reflects EnviroGets’ expertise in environmental file management for pharmaceutical and industrial facilities, delivering integrated solutions that combine technical expertise, regulatory compliance, and support for sustainability objectives."
+    },
+    {
+      "id": 5,
+      "title": "Water Quality Monitoring for Marriott Hotels",
+            "slug": "متابعة جودة المياة لفنادق Marriott",
+
+      "image": "project5.webp",
+      "logo": "client3.webp",
+      "imageStyle":"medium",
+      "text-Type": "bulted",
+      "intro":"Water Quality Monitoring for Marriott Hotels in Saudi Arabia EnviroGets provides water quality monitoring services for Marriott hotels across the Kingdom of Saudi Arabia, with the aim of ensuring water quality meets applicable health and environmental standards while supporting the hotels in maintaining the highest levels of safety and quality",
+      "intro2":"The project included:",
+      "text": [
+        "Implementing regular water sampling programs across various points of use.",
+
+        "Conducting physical, chemical, and microbiological analyses, including pH, residual chlorine, turbidity, and total dissolved solids (TDS).",
+
+        "Testing for bacterial indicators such as Total Coliform and E. coli in accordance with applicable standards and regulations."
+      ],
+      "intro3":"The project also included:",
+      "text2":[
+        "Analyzing test results.",
+        "Preparing detailed technical reports.",
+        "Providing recommendations to improve water quality and ensure continued compliance."
+      ],
+      "end":"These services contribute to guest safety and the quality of hospitality services, while reflecting EnviroGets’ expertise in implementing water quality monitoring programs for hospitality facilities and delivering accurate, science-based solutions that support sustainability and the highest quality standards."
+    
+    },
+    {
+      "id": 6,
+      "title": "Specialized Environmental Solutions for the Healthcare Sector",
+            "slug": "حلول بيئية متخصصة للقطاع الصحي ",
+
+       "image": [
+        "project6.webp"
+
+      ],
+      "imageStyle":"large",
+      "intro":"EnviroGets has provided environmental services to a range of hospitals and healthcare facilities, supporting their compliance with applicable environmental requirements and regulations while promoting best practices in managing environmental aspects within healthcare facilities.",
+      "intro2":"These projects reflect EnviroGets’ expertise in delivering specialized environmental solutions for the healthcare sector, including monitoring, assessment, and environmental studies, in accordance with the highest standards of quality and compliance and in line with applicable environmental requirements and regulations in the Kingdom of Saudi Arabia.",
+      "intro3":"Key Healthcare Sector Partners:",
+      "text-Type": "bulted",
+      "text": [
+        "King Salman Hospital in Hail",
+
+        "King Khalid Hospital in Al-Kharj",
+
+        "Seha Al-Suwaidi Hospital – Dr. Sulaiman Al Habib"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Golden Chip Factory",
+      "slug": "مصنع الشريحه الذهبيه",
+
+      "image": "project7.webp",
+      "imageStyle":"medium",
+      "text-Type": "normal",
+      "text": [
+        "EnviroGets provided environmental services for the Golden Chip Factory Project, conducting environmental studies and consulting services in accordance with applicable regulatory requirements and standards, ensuring the project’s compliance with approved environmental regulations.",
+
+        "Our team applied advanced scientific methodologies to assess the project’s environmental aspects, identify potential impacts, and recommend appropriate solutions and mitigation measures, contributing to enhanced environmental sustainability and compliance efficiency.",
+
+        "This project reflects EnviroGets’ expertise in supporting industrial projects and delivering integrated environmental solutions that help clients achieve their operational objectives while maintaining the highest environmental standards."
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Benaa Ready-Mix Concrete Products Factory",
+            "slug": "مصنع بناء للمنتجات الخرسانية الجاهزة",
+
+      "image": "project8.webp",
+      "imageStyle": "medium",
+      "text-Type": "normal",
+      "text": [
+        "As part of supporting the industrial sector, EnviroGets provided integrated environmental solutions for the Benaa Ready-Mix Concrete Products Factory Project, helping maintain a balance between operational efficiency and compliance with environmental standards.",
+
+        "Our work focused on providing technical and consulting support to improve the factory’s environmental performance and enhance compliance with applicable environmental regulations and requirements, while promoting practices that optimize resource utilization and minimize the environmental impacts associated with industrial operations.",
+
+        "This project reflects EnviroGets’ commitment to delivering sustainable solutions that support industrial growth and align with the Kingdom of Saudi Arabia’s development and sustainability objectives."
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Al-Talad Ready-Mix Concrete Factory",
+      "slug": "مصنع التلاد للخرسانه الجاهزه",
+
+      "image": "project9.webp",
+      "logo": "medium",
+      "text-Type": "bulted",
+      "intro":"EnviroGets provided environmental and consulting services for the Al-Talad Ready-Mix Concrete Factory Project, supporting the facility’s compliance with environmental requirements and enhancing its environmental performance throughout all stages of operation.",
+      "intro2":"Our services included assessing the environmental aspects associated with:",
+      "text": [
+        "Ready-mix concrete production processes.",
+
+        "Assessing potential impacts on air, soil, and surrounding resources.",
+
+        "Providing technical solutions and preventive measures to help reduce emissions.",
+        "Supporting waste management and achieving environmental compliance."
+      ],
+      "end":"This project demonstrates EnviroGets’ expertise in delivering integrated environmental solutions for the industrial sector by leveraging technical expertise, field measurements, and scientific studies that support sustainability and achieve the highest standards of quality and compliance."
+    },
+    {
+      "id": 10,
+      "title": "Ishraqa Al-Furqan Paper Products Factory",
+      "slug": "شركة مصنع إشراقة الفرقان للمنتجات الورقية",
+      "image": "project10.webp",
+      "imageStyle": "medium",
+      "text-Type": "normal",
+      "text": [
+        "EnviroGets supported Ishraqa Al-Furqan Paper Products Factory by providing environmental services that enhance compliance with regulatory requirements and improve the facility’s overall environmental performance.",
+
+        "This project demonstrates EnviroGets’ expertise in delivering specialized environmental solutions tailored to the needs of the paper manufacturing sector, in accordance with best environmental practices and recognized standards."
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Dallam Mining Quarry",
+            "slug": "محجر دلام للتعدين",
+
+      "image": "project11.webp",
+      "imageStyle": "medium",
+      "text-Type": "normal",
+      "text": [
+        "EnviroGets provided environmental services and consulting for the Dallam Mining Quarry Project, supporting compliance with the environmental regulations and requirements applicable in the Kingdom of Saudi Arabia and promoting sustainable mining practices.",
+
+        "Our services included assessing the project’s environmental aspects, identifying potential impacts on the surrounding environmental elements, and developing the necessary recommendations and mitigation measures to minimize environmental impacts and ensure the continuity of operations in accordance with best environmental practices.",
+
+        "This project reflects EnviroGets’ expertise in supporting mining and quarrying projects through integrated environmental solutions based on technical expertise, reliable data, and a strong commitment to the highest standards of quality and sustainability."
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Air Quality Monitoring Project for Reviva",
+            "slug": "مشروع مراقبة جودة الهواء لشركة Reviva",
+
+      "logo": "client22.webp",
+      "text-Type": "bulted",
+      "intro":"EnviroGets successfully implemented an Air Quality Monitoring Project for Reviva to assess ambient air quality and ensure that the facility’s operational activities comply with the applicable environmental requirements and regulatory standards in the Kingdom of Saudi Arabia.",
+      "intro2":"The project included a comprehensive field monitoring program using specialized measurement and calibration equipment to measure the concentrations of key air pollutants, including:",
+      "text": [
+        "Particulate matter (PM₂.₅ and PM₁₀) and gaseous pollutants (SO₂, NO₂, CO, and O₃).",
+
+        "Meteorological parameters, including wind speed and direction, temperature, relative humidity, and atmospheric pressure, to ensure accurate interpretation of monitoring results.",
+
+        "Analysis of field data and comparison of results against applicable environmental standards.",
+        "Preparation of a comprehensive technical report covering the assessment of ambient air quality, identification of potential emission sources, and provision of the necessary technical recommendations to support environmental compliance and improve operational performance."
+      ],
+      "end":"This project demonstrates EnviroGets’ expertise in implementing air quality monitoring programs in accordance with the latest international practices and standards, providing reliable scientific data that supports informed decision-making and promotes environmental sustainability."
+    },
+    {
+      "id": 13,
+      "title": "Sludge Sample Monitoring for Al-Nawaqel International Landfills",
+        "slug": "متابعة عينات الحمأة لمرادم شركة النواقل الدولية",
+      "image": "project13.webp",
+      "logo": "client21.webp",
+      "imageStyle":"medium",
+      "text-Type": "bulted",
+      "intro":"EnviroGets carries out the analysis and monitoring of sludge samples at landfills operated by Al-Nawaqel International, with the aim of verifying the efficiency of drying processes, assessing sludge quality, and ensuring compliance with applicable environmental requirements and approved technical standards.",
+      "intro2":"The project includes:",
+      "text": [
+        "Conducting physical and chemical analyses, including moisture content, total solids (TS), and volatile solids (VS).",
+
+        "Analyzing relevant environmental parameters and indicators to assess the efficiency of drying processes and landfill performance.",
+
+        "Analyzing results, preparing technical reports, and providing recommendations to improve operational efficiency and support proper sludge management."
+            ],
+            "end":"These services contribute to strengthening environmental compliance and achieving higher levels of efficiency and sustainability in waste management."
+    },
+    {
+      "id": 14,
+      "title": "Elrabaa Milling Company",
+            "slug": "شركة المطاحن الرابعة",
+
+      "image": "project14.webp",
+      "imageStyle": "medium",
+      "text-Type": "normal",
+      "text": [
+        "Environmental Services for Fourth Milling Company Fourth Milling Company is a key industrial facility in the food manufacturing sector. EnviroGets supported its operations by providing environmental services and consulting tailored to the nature of its activities and environmental compliance requirements.",
+
+        "Our services focused on providing practical environmental solutions that enhance operational efficiency, minimize potential environmental impacts, and support the implementation of best practices in environmental management, in alignment with applicable regulations and recognized standards.",
+
+        "This project demonstrates EnviroGets’ expertise in serving major industrial facilities and delivering reliable environmental solutions that contribute to sustainability, strengthen environmental compliance, and support business continuity with high levels of efficiency and quality."
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Saudi Public Transport Company – SAPTCO",
+      "slug": "الشركة السعودية للنقل الجماعي – سابتكو (SAPTCO)",
+      "image": "project15.webp",
+      "imageStyle": "large",
+      "text-Type": "normal",
+      "text": [
+            "EnviroGets for Environmental Consulting & Services (EnviroGets) successfully delivered a range of environmental services and studies for Saudi Public Transport Company (SAPTCO), including air quality studies, water analysis, and soil analysis.",
+
+            "All services were conducted in accordance with applicable environmental standards and requirements, using advanced measurement and analytical technologies to support environmental compliance and ensure accurate and reliable results."
+      ]
+    },
+    {
+      "id": 16,
+      "slug":"إدارة الملف البيئي لمدينة ضرماء الصناعية",
+      "image": "project16.webp",
+      "imageStyle": "large",
+      "text-Type": "normal",
+      "intro":"upon its expertise in environmental monitoring and measurements, EnviroGets has conducted a range of environmental monitoring activities and studies for several power stations and projects across the electricity sector. These services aimed to assess and monitor the environmental conditions of the sites and strengthen compliance with applicable environmental requirements and standards.",
+
+      "intro2":"The scope of work included ambient air quality measurements, water and soil sampling, and the required environmental analyses, carried out using specialized field and technical procedures to ensure the accuracy and reliability of data and results.",
+
+      "intro3":"These activities provide reliable environmental data that support environmental performance monitoring, assessment of environmental quality, identification of potential changes, and informed decision-making to achieve higher levels of environmental compliance and sustainability.",
+      "intro4":"Key Power Stations Covered by Our Services:",
+      "text": [
+        "Alfanar Power Station",
+        "Ishbiliyah Power Station",
+        "Al-Dar Al-Baida Power Station",
+        "Al-Arid District Power Station",
+        "Al-Manfouhah District Power Station",
+        "Al-Dawadmi Power Station",
+        "Al-Manousiyah Power Station",
+        "Al-Nasriyah District Power Station",
+        "Al-Nazim District Power Station"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "KJO – South Area",
+      "slug": "أعمال المسح والتقييم البيئي لماده الأسبستوس KJO – South Area",
+      "image": "project17.webp",
+      "logo": "small",
+      "text-Type": "normal",
+
+      "text": [
+        "EnviroGets’ technical team carried out an environmental survey and assessment of asbestos-containing materials in petroleum pipelines as part of the Khafji Joint Operations (KJO) Project. The work was conducted in accordance with applicable environmental best practices, the requirements of the National Center for Environmental Compliance (NCEC), and international occupational health and safety standards.",
+
+
+        "​The scope of work included a comprehensive field environmental survey to identify the locations of Thermal System Insulation (TSI) and gaskets suspected of containing asbestos fibers, assess their physical condition, and evaluate the potential risk of fiber release. In accordance with approved environmental protocols, field samples were collected using the wet method to minimize the release of airborne asbestos fibers, with full personal protective equipment (PPE) and complete work-area containment measures implemented.",
+
+
+        "​The documentation process included transporting samples under a secure Chain of Custody system for accredited laboratory analysis using Polarized Light Microscopy (PLM) to identify asbestos types and determine their percentage composition. The generated waste was also classified to establish appropriate safe handling and disposal pathways.",
+
+        "These measures provide a critical foundation for developing an Asbestos Management & Abatement Plan and ensuring the final disposal of hazardous waste at approved disposal facilities, supporting the highest standards of environmental protection, site safety, and sustainability."
+      ]
+    }
+  ]}
+
+
 }

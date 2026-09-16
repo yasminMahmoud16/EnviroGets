@@ -18,6 +18,7 @@ const currentPath = location.pathname;
     "/environmental-consulting",
     "/air-quality",
     "/soil-studies",
+    "/Projects",
   ];
 const isTransparentPage = transparentPages.includes(currentPath);
 
