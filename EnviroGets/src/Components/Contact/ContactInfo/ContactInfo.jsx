@@ -1,88 +1,110 @@
-import map from "@/assets/Images/map2.webp";
-import logo from "@/assets/Images/EnviroGets.webp";
-import { IoLocation } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
-import { MdPhoneInTalk } from "react-icons/md";
-import SocialMedia from "@/Common/SocialMedia/SocialMedia.jsx";
+// import map from "@/assets/Images/map2.webp";
+import { IoLocationOutline } from "react-icons/io5";
+import {
+  MdOutlineMailOutline,
+  MdOutlinePhoneInTalk,
+} from "@/assets/Icons/icon.js";
+import { logo } from "@/assets/Icons/icon.js";
+
+// import { MdPhoneInTalk } from "react-icons/md";
+// import SocialMedia from "@/Common/SocialMedia/SocialMedia.jsx";
 import useJson from "@/Hooks/useJson.js";
 export default function ContactInfo() {
   const { t, isArabic } = useJson();
+  const info = t("contact.information",{returnObjects:true});
+
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row  items-center justify-between px-20 ">
-        {/* parent container */}
-
-        <div className="">
-          <div className=" flex  items-start justify-center gap-8 p-4  ">
-            {/* logo image */}
-            <div className="w-15 h-25  pb-10 ">
-              <img src={logo} alt="EnviroGets" className="w-full h-full" />
-            </div>
-
-            {/* container */}
-            <div className="flex flex-col gap-4 ">
+      {/* parent container */}
+      {/* <div className="flex flex-col lg:flex-row  items-center justify-between  gap-10 pb-8"> */}
+      <div
+        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-25 pb-8 mx-3"
+        dir={`${isArabic ? "" : "rtl"}`}
+      >
+        <div className="col-span-1 flex  items-center justify-between gap-8 p-4  ">
+          {/* container */}
+          <div className="flex flex-col gap-8 ">
+            {/* general view  */}
+            <div className="w-full">
               <h3
-                className={` ${isArabic ? "text-right" : "text-left font-roboto font-semibold text-base md:text-3xl"} text-[#2C6FA0] font-extrabold text-xl md:text-3xl `}
+                className={`mb-5 ${isArabic ? "text-right " : "text-left font-roboto text-base md:text-3xl"} text-[#249643]  text-xl md:text-3xl font-medium  `}
               >
-                {t("contact.subTitle")}
+                {t("contact.general.title")}
               </h3>
-              <div
-                className={`flex flex-col ${isArabic ? "items-end" : " items-start"}  gap-4`}
+              <p
+                className={`text-[#2C6FA0] text-justify leading-7   md:w-lg  ${isArabic ? "font-medium text-base" : "font-roboto  font-medium text-base"}`}
+                dir={`${isArabic ? "" : "ltr"}`}
               >
-                <div
-                  className="flex items-center justify-center text-left  gap-2"
-                  dir="ltr"
-                >
-                  <IoLocation className="text-xl text-[#2C6FA0]" />
-                  <p
-                    className={`text-[#2C6FA0] font-normal text-sm ${isArabic ? "" : "font-roboto "}`}
-                  >
-                    {t("contact.address")}
-                  </p>
-                </div>
-                <div
-                  className="flex items-center justify-center gap-2"
-                  dir="ltr"
-                >
-                  <MdEmail className="text-xl text-[#2C6FA0] " />
-                  <p
-                    className={`text-[#2C6FA0] font-normal text-sm ${isArabic ? "" : "font-roboto "}`}
-                  >
-                    {t("contact.email")}
-                  </p>
-                </div>
-
-                <div
-                  className="flex items-center justify-center gap-2"
-                  dir="ltr"
-                >
-                  <MdPhoneInTalk className="text-xl text-[#2C6FA0]" />
-                  <p
-                    className={`text-[#2C6FA0] font-normal text-sm ${isArabic ? "" : "font-roboto "}`}
-                  >
-                    {t("contact.phone")}
-                  </p>
-                </div>
-              </div>
+                {t("contact.general.description")}
+              </p>
             </div>
-          </div>
 
-          {/* Social media  */}
-          <div
-            className={`flex flex-col gap-4  justify-center  items-center mt-3`}
-          >
-            <p
-              className={`${isArabic ? "text-lg text-right " : "font-roboto text-lg text-left"} text-[#2C6FA0] font-semibold `}
-            >
-              {t("contact.socialAd")}
-            </p>
-            <SocialMedia />
+            {/* clients info */}
+            <div className=" flex flex-col md:flex-row items-center md:items-start gap-3 md:gap-2 ">
+              {info.map((text, index) => (
+                <div
+                  key={index}
+                  className={`border border-[#4FA14B] shadow-md w-70 md:w-40 h-15 rounded-2xl flex flex-col items-center justify-center text-center text-[#4FA14B] ${isArabic ? " font-bold text-sm" : "font-roboto font-extrabold text-sm "}`}
+                >
+                  {/* {t("contact.info.clients")} */}
+                  <p>{text.name1}</p>
+                  <p> {text.name2}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div className="w-80  h-80 py-4">
-          <img src={map} alt="map" className="w-full h-full rounded-xl" />
+        {/* contact */}
+        <div className="col-span-1  gap-5">
+          <div className="flex flex-col gap-4 mt-5  w-full relative">
+            <h3
+              className={` ${isArabic ? "text-right md:text-3xl  " : "text-left font-roboto  text-base md:text-3xl"} text-[#249643]  text-xl font-medium  `}
+            >
+              {t("contact.subTitle")}
+            </h3>
+            <div
+              className={`flex flex-col  ${isArabic ? "items-end" : " items-end"}  gap-4`}
+            >
+              <div
+                className="flex items-center justify-center text-left  gap-2 font-roboto font-medium"
+                dir="ltr"
+              >
+                <IoLocationOutline className="text-xl text-[#2C6FA0]" />
+                <p className={`text-[#2C6FA0]  text-base ${isArabic ? "" : ""}`}>
+                  {t("contact.address")}
+                </p>
+              </div>
+              <div
+                className="flex items-center justify-center gap-2 font-roboto font-medium"
+                dir="ltr"
+              >
+                <MdOutlineMailOutline className="text-xl text-[#2C6FA0] " />
+                <p className={`text-[#2C6FA0]  text-base ${isArabic ? "" : ""}`}>
+                  {t("contact.email")}
+                </p>
+              </div>
+
+              <div
+                className="flex items-center justify-center gap-2 font-roboto font-medium"
+                dir="ltr"
+              >
+                <MdOutlinePhoneInTalk className="text-xl text-[#2C6FA0]" />
+                <p className={`text-[#2C6FA0]  text-base ${isArabic ? "" : " "}`}>
+                  {t("contact.phone")}
+                </p>
+              </div>
+            </div>
+
+            <div className="md:hidden w-60 h-25 pb-10 flex justify-center absolute  top-20 left-45  -translate-x-1/4">
+              <img
+                src={logo}
+                alt="EnviroGets"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>

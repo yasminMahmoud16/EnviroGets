@@ -5,7 +5,7 @@ export default function ContactBg() {
   return (
     <>
       <div
-        className="relative h-80 w-full bg-cover bg-no-repeat flex  justify-center items-center"
+        className="relative h-80 w-full bg-cover bg-no-repeat flex  justify-center items-center mb-5"
         style={{
           backgroundImage: `url(${bgContact})`,
           // backgroundPosition: "center top",
@@ -15,14 +15,16 @@ export default function ContactBg() {
         <div className="absolute inset-0 bg-[#809c6c]/53" />
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center   px-8 md:px-16 max-w-xl gap-3">
+        <div
+          className={` bg-white/5 backdrop-blur-xs border border-[#9fd39db5] rounded-xl  relative z-10 flex flex-col items-center justify-center text-center py-2  px-3.5 max-w-xl  ${isArabic ? "gap-2" : "mt-13 gap-1 "}`}
+        >
           <h1
-            className={`text-[#014700] mb-3 ${isArabic ? " text-3xl md:text-4xl font-bold" : "font-roboto font-semibold text-xl md:text-3xl"}`}
+            className={`text-white mb-3 ${isArabic ? " text-2xl font-extrabold" : "font-roboto font-semibold text-xl md:text-3xl"}`}
           >
             {t("contact.title")}
           </h1>
           <p
-            className={`text-[#014700] font-semibold text-base md:text-xl leading-relaxed ${isArabic ? "" : "font-roboto font-semibold text-xl md:text-2xl"}`}
+            className={`text-white font-black text-base md:text-2xl leading-relaxed ${isArabic ? "" : "font-roboto font-semibold text-xl md:text-xl"}`}
           >
             {t("contact.description")}
           </p>
