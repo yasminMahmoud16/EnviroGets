@@ -9,7 +9,7 @@ export default function AboutMission() {
       <div className="pt-10 w-full hidden md:block">
         <div
           className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 no-scrollbar"
-          dir={isArabic ? "ltl" : "ltr"}
+          dir={isArabic ? "ltl" : "rtl"}
         >
           {scrollingData.map((item, index) => (
             <div key={index} className="w-4xl  snap-start">

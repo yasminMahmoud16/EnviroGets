@@ -23,7 +23,7 @@ export default function HomeInfo() {
             loading="lazy"
           />
         </div>
-        <div className="flex items-center justify-center  md:mb-0 flex-col gap-8 ">
+        <div className="flex items-center justify-center  md:mb-0 flex-col gap-4 ">
           {/* button */}
           <Link
             to="/contact"
@@ -56,22 +56,52 @@ export default function HomeInfo() {
                 </div>
               ))} */}
 
-              <SocialMedia/>
+              <SocialMedia />
             </div>
 
             {/* customers  */}
             <div
               dir="rtl"
-              className={` flex flex-col md:flex-row ${
-                isArabic ? " w-70 md:w-md" : "mr-6 w-70 md:w-xl"
+              className={`hidden  md:flex flex-col md:flex-row ${
+                isArabic ? " w-70 md:w-md" : " w-70 md:w-fit"
               } gap-9 items-center justify-center  rounded-2xl px-4 py-2 xl:px-5 xl:py-2.5 border border-[#014700]  bg-white/5 backdrop-blur-xs text-base xl:text-xl text-[#014700] shadow-lg`}
             >
               {information.map((info, index) => (
                 <div
                   key={index}
                   className={`flex flex-col items-center justify-center
-      ${index !== 0 ? "md:border-r border-[#014700] md:pr-4" : ""}
+      ${index !== 0 ? " md:border-r border-[#014700] md:pr-4" : ""}
       
+    `}
+                >
+                  <p className="font-bold text-md xl:text-2xl xl:mb-1 font-roboto">
+                    {info.num}+
+                  </p>
+
+                  <p
+                    className={`font-extrabold text-sm xl:text-xl ${isArabic ? "" : "font-roboto "}`}
+                  >
+                    {info.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+            {/* customs mobile */}
+            <div
+              dir="rtl"
+              className={` md:hidden flex flex-col md:flex-row ${
+                isArabic ? " w-70 " : " w-70 "
+              } gap-5 items-center justify-center  rounded-2xl px-4 py-2  border border-[#014700]  bg-white/5 backdrop-blur-xs text-base xl:text-xl text-[#014700] shadow-lg`}
+            >
+              {information.map((info, index) => (
+                <div
+                  key={index}
+                  className={`flex flex-col items-center justify-center
+${
+  index !== info.length - 1
+    ? "border-b border-[#014700] pb-4"
+    : ""
+}      
     `}
                 >
                   <p className="font-bold text-md xl:text-2xl xl:mb-1 font-roboto">
@@ -185,7 +215,7 @@ export default function HomeInfo() {
               </a>
             </div>
           ))} */}
-          <SocialMedia/>
+          <SocialMedia />
           {/* <div className="w-20">
             <img src={whatsApp} alt="whatsApp" />
           </div> */}

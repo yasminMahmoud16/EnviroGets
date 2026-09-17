@@ -7,7 +7,7 @@ export default function Contact() {
     <>
       <section className="min-h-screen ">
           <ContactBg />
-        <div className="px-8">
+        <div className="px-4 md:px-8">
 
           <ContactInfo />
 

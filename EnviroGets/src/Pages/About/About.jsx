@@ -26,7 +26,7 @@ export default function About() {
         </div>
 
         <div
-          className={` hidden  relative z-10 md:flex  gap-3 w-4xl  mb-3 `}
+          className={` hidden  relative z-10 md:flex  gap-3 w-full  mb-3 `}
           dir={isArabic ? "ltr" : "rtl"}
         >
           <AboutMission />

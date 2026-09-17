@@ -2,8 +2,8 @@ import {whatsApp, facebook, tiktok, linkedin, twitter, instagram} from "@/assets
 export default function SocialMedia() {
     return (
       <>
-        <div className="flex  justify-center items-center gap-8 ">
-          <div className={`flex  items-center justify-center gap-3 `}>
+        <div className="flex  justify-between items-center gap-8 ">
+          <div className={`flex  items-center justify-center gap-6 md:gap-12 `}>
             <div className="w-8 h-8">
               <a href="https://wa.me/966555312093" target="_blank">
                 <img

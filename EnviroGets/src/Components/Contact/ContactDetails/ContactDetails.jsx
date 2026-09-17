@@ -54,7 +54,7 @@ export default function ContactDetails() {
           <div className="col-span-1">
             <div
               dir={`${isArabic ? "" : "ltr"}`}
-              className={`flex flex-col items-start gap-4 justify-center my-3 ${isArabic ? "lg:mr-15" : "lg:ml-15"}`}
+              className={`flex flex-col items-start gap-4 justify-center my-3 ${isArabic ? "lg:mr-0" : "lg:ml-0"}`}
             >
               <p
                 className={`${

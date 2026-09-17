@@ -13,7 +13,7 @@ export default function Sections() {
       <>
         <section
           className="relative bg-cover bg-center
-          lg:bg-position-[center_-250px]  bg-no-repeat z-10 min-h-screen flex md:flex-col lg:flex-row items-end md:items-end  lg:items-end md:justify-end lg:justify-between   px-10  lg:pt-25 "
+          lg:bg-position-[center_-250px]  bg-no-repeat z-10 min-h-screen flex md:flex-col lg:flex-row items-center md:items-end  lg:items-end md:justify-end lg:justify-between   px-10  lg:pt-25 "
           style={{
             backgroundImage: `url(${bgSections})`,
             // backgroundPosition: "center -250px",

@@ -72,21 +72,20 @@ export default function HomeCarousel() {
         ></div>
 
         <div
-          className={`  lg:mt-0 absolute  inset-0 z-10 flex gap-4  justify-between items-center lg:items-end py-6`}
+          className={`  lg:mt-0 absolute  inset-0 z-10 flex gap-4  justify-between items-end lg:items-end py-6`}
+          dir="ltr"
         >
           <div
-            className={`z-10  w-[60%]  md:max-w-xl px-4 py-2 flex flex-col   gap-1 md:gap-4   rounded-3xl
+            className={`z-10   w-[60%] mt-7 md:mt-0 md:max-w-xl px-4 py-2 hidden md:flex flex-col   gap-1 md:gap-4   rounded-2xl md:rounded-3xl
               ${
                 isArabic
-                  ? "mr-2 md:mr-8 lg:border lg:border-white justify-content items-center"
-                  : "ml-2 md:ml-8 font-roboto justify-start items-start"
-              } 
-            
-            shadow lg:shadow-none
+                  ? "mr-2 md:mr-8 border border-white justify-content items-center"
+                  : "ml-2 md:ml-8 font-roboto justify-start items-center bg-[white]/10 backdrop-blur-xs border border-white"
+              } shadow lg:shadow-none
                 `}
           >
             <h1
-              className={`${
+              className={` ${
                 isArabic
                   ? "text-sm md:text-2xl lg:text-2xl tracking-tighter font-black  leading-[1.65]  text-center"
                   : "font-roboto text-md tracking-wider md:text-2xl xl:text-4xl leading-tight font-bold  text-left "
@@ -105,6 +104,17 @@ export default function HomeCarousel() {
                 className="md:p-2 object-contain w-full h-full"
               />
             </div>
+          </div>
+
+          <div
+            className=" md:hidden ml-3 flex items-end justify-end w-20 h-10 lg:w-30  xl:w-50 xl:h-25  rounded-lg border border-white bg-linear-to-b from-[#F5F6F800] via-[#c3c3c593] to-[#cbcccd] 
+                   shadow "
+          >
+            <img
+              src={hero}
+              alt="رؤية سعودية"
+              className="md:p-2 object-contain w-full h-full"
+            />
           </div>
         </div>
       </div>

@@ -33,7 +33,7 @@ export default function SectionsDev() {
             >
               {/* Text */}
               <p
-                className={`${isArabic ? " font-bold  text-base md:text-xl lg:text-2xl " : "font-roboto font-semibold text-xl md:text-2xl "} text-[#0171DE]`}
+                className={`${isArabic ? " font-bold  text-xl md:text-xl lg:text-2xl " : "font-roboto font-semibold text-xl md:text-2xl "} text-[#0171DE]`}
               >
                 {link.text}
               </p>
