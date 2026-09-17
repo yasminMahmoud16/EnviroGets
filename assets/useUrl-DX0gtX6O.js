@@ -1,0 +1,1 @@
+function e(){return{baseUrl:`http://localhost:5173/EnviroGets/`}}export{e as t};
