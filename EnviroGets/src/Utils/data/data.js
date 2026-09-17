@@ -5,7 +5,7 @@ import {
   linkedin,
   twitter,
   instagram,
-} from "@/assets/Icons/icon.js";
+} from "@/assets/Images/Images.js";
 
 const socialLinks = [
     {

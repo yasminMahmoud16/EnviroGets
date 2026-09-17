@@ -1,9 +1,4 @@
-import whatsApp from "@/assets/Images/whatsApp.webp";
-import facebook from "@/assets/Images/facebool.webp";
-import tiktok from "@/assets/Images/tiktok.webp";
-import twitter from "@/assets/Images/twitter.webp";
-import linkedin from "@/assets/Images/linkedin.webp";
-import instagram from "@/assets/Images/instagram.webp";
+import {whatsApp, facebook, tiktok, linkedin, twitter, instagram} from "@/assets/Images/Images.js"
 export default function SocialMedia() {
     return (
       <>
@@ -14,6 +9,7 @@ export default function SocialMedia() {
                 <img
                   src={whatsApp}
                   alt="whatsApp"
+                  loading="lazy"
                   className="duration-300 ease-in-out transition-all hover:-translate-y-2"
                 />
               </a>
@@ -26,6 +22,7 @@ export default function SocialMedia() {
                 <img
                   src={tiktok}
                   alt="tiktok"
+                  loading="lazy"
                   className="duration-300 ease-in-out transition-all hover:-translate-y-2 w-full h-full"
                 />
               </a>
@@ -35,6 +32,7 @@ export default function SocialMedia() {
                 <img
                   src={twitter}
                   alt="twitter"
+                  loading="lazy"
                   className="duration-300 ease-in-out transition-all hover:-translate-y-2 w-full h-full"
                 />
               </a>
@@ -47,6 +45,7 @@ export default function SocialMedia() {
                 <img
                   src={linkedin}
                   alt="linkedin"
+                  loading="lazy"
                   className="duration-300 ease-in-out transition-all hover:-translate-y-2 w-full h-full"
                 />
               </a>
@@ -59,6 +58,7 @@ export default function SocialMedia() {
                 <img
                   src={facebook}
                   alt="facebook"
+                  loading="lazy"
                   className="duration-300 ease-in-out transition-all hover:-translate-y-2 w-full h-full"
                 />
               </a>
@@ -71,6 +71,7 @@ export default function SocialMedia() {
                 <img
                   src={instagram}
                   alt="instagram"
+                  loading="lazy"
                   className="duration-300 ease-in-out transition-all hover:-translate-y-2 w-full h-full"
                 />
               </a>

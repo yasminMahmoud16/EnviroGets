@@ -10,7 +10,7 @@ export default function Home() {
 
       {/* Background */}
       <div
-        className="absolute inset-0 -z-10 bg-cover bg-no-repeat opacity-50"
+        className="absolute inset-0 -z-10 bg-cover bg-no-repeat opacity-50 "
         style={{
           backgroundImage: `url(${bgHome})`,
           backgroundPosition: "center",

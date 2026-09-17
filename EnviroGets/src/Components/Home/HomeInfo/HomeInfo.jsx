@@ -5,7 +5,8 @@ import clients from "@/assets/Images/client.webp";
 import useJson from "@/Hooks/useJson.js";
 
 import { Link } from "react-router-dom";
-import { socialLinks } from "@/Utils/data/data.js";
+// import { socialLinks } from "@/Utils/data/data.js";
+import SocialMedia from "@/Common/SocialMedia/SocialMedia.jsx";
 
 export default function HomeInfo() {
   const { t, isArabic } = useJson();
@@ -15,7 +16,12 @@ export default function HomeInfo() {
     <>
       <div className="flex flex-col gap-4 mt-10 md:flex-row md:gap-4  justify-around items-center px-6">
         <div className="pb-3 flex items-center justify-center  mt-4 w-50 md:w-64">
-          <img src={map} alt="map" className="w-full object-cover" />
+          <img
+            src={map}
+            alt="map"
+            className="w-full object-cover"
+            loading="lazy"
+          />
         </div>
         <div className="flex items-center justify-center  md:mb-0 flex-col gap-8 ">
           {/* button */}
@@ -32,7 +38,7 @@ export default function HomeInfo() {
             <div
               className={`flex gap-8 items-center justify-between z-10 rounded-2xl px-4 py-2 xl:px-5 xl:py-2.5   text-base xl:text-xl text-[#F0EDE6]`}
             >
-              {socialLinks.map((social) => (
+              {/* {socialLinks.map((social) => (
                 <div key={social.name}>
                   <a
                     href={social.link}
@@ -43,11 +49,14 @@ export default function HomeInfo() {
                     <img
                       src={social.icon}
                       alt={social.name}
+                      loading="lazy"
                       className="w-full duration-300 ease-in-out transition-all hover:-translate-y-2"
                     />
                   </a>
                 </div>
-              ))}
+              ))} */}
+
+              <SocialMedia/>
             </div>
 
             {/* customers  */}
@@ -169,13 +178,14 @@ export default function HomeInfo() {
         {/* <SocialMedia  /> */}
 
         <div className="hidden my-2  grid-cols-5 items-center">
-          {socialLinks.map((social) => (
+          {/* {socialLinks.map((social) => (
             <div className="w-20" key={social.name}>
               <a href={social.link} target="_blank" rel="noopener noreferrer">
                 <img src={social.icon} alt={social.name} />
               </a>
             </div>
-          ))}
+          ))} */}
+          <SocialMedia/>
           {/* <div className="w-20">
             <img src={whatsApp} alt="whatsApp" />
           </div> */}

@@ -1,14 +1,12 @@
 import List from "@/Common/List/List.jsx";
 import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
 import useJson from "@/Hooks/useJson.js";
-import quality from "@/assets/Images/airQuality.webp"
-
-
+import { quality } from "@/assets/Images/Images.js";
 
 export default function AirMentoring() {
   const { isArabic, t } = useJson();
-      const airTitles = t("airQuality.titles", { returnObjects: true }); 
-      const airLists = t("airQuality.list", { returnObjects: true }); 
+  const airTitles = t("airQuality.titles", { returnObjects: true });
+  const airLists = t("airQuality.list", { returnObjects: true });
 
   return (
     <>
@@ -16,9 +14,9 @@ export default function AirMentoring() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
         <div className="col-span-1">
-          <img src={quality} alt="" />
+          <img src={quality} alt="air" loading="lazy" />
         </div>
-        <div className="col-span-2 text-[#2C6FA0] ">
+        <div className="col-span-2 text-main ">
           {/* title */}
           <div>
             {airTitles.map((title) => (
@@ -34,7 +32,7 @@ export default function AirMentoring() {
             {airLists.map((list) => (
               <List
                 item={list}
-                className={`text-[#2C6FA0]!  text-justify ${isArabic ? "font-bold! pr-5 " : "font-semibold! pl-5"}`}
+                className={`text-main!  text-justify ${isArabic ? "font-bold! pr-5 " : "font-semibold! pl-5"}`}
               />
             ))}
           </div>

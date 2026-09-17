@@ -1,10 +1,7 @@
 import List from "@/Common/List/List.jsx";
 import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
 import useJson from "@/Hooks/useJson.js";
-import soilImage from "@/assets/Images/soilImage.webp";
-import soilImg1 from "@/assets/Images/soilImg1.webp";
-import soilImg2 from "@/assets/Images/soilImg2.webp";
-import soilImg3 from "@/assets/Images/soilImg3.webp";
+import {soilImage,soilImg2,soilImg1,soilImg3,} from "@/assets/Images/Images.js";
 
 export default function SoilStudies() {
   const { isArabic, t } = useJson();
@@ -18,7 +15,7 @@ export default function SoilStudies() {
         <div className="flex flex-col  justify-between px-8">
           {/* container */}
           <div className="px-8 pt-30   pb-2">
-            <div className="text-[#2C6FA0] flex flex-col gap-4">
+            <div className="text-main flex flex-col gap-4">
               <TitleSec
                 title={t("soil.title")}
                 className={`${isArabic ? "text-2xl!" : "  text-2xl! md:text-3xl! font-normal!"}`}
@@ -30,7 +27,7 @@ export default function SoilStudies() {
               </p>
             </div>
 
-            <div className="flex justify-between items-center mt-5 text-[#2C6FA0]">
+            <div className="flex justify-between items-center mt-5 text-main">
               {soil.map((item, index) => (
                 <div
                   key={index}
@@ -42,12 +39,12 @@ export default function SoilStudies() {
                   />
 
                   <div className="px-4 md:px-8 ">
-                    <ul className="list-square list-outside text-[#2C6FA0]! ">
+                    <ul className="list-square list-outside text-main! ">
                       {item.text.map((text, i) => (
                         <List
                           key={i}
                           item={text}
-                          className={`text-[#2C6FA0]! ${isArabic ? "font-bold!" : "font-semibold!"} `}
+                          className={`text-main! ${isArabic ? "font-bold!" : "font-semibold!"} `}
                         />
                       ))}
                     </ul>
@@ -59,6 +56,7 @@ export default function SoilStudies() {
                 <img
                   src={soilImage}
                   alt="soil-Image"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -66,7 +64,7 @@ export default function SoilStudies() {
 
             <div className="flex flex-col gap-10  mt-5">
               {soilType.map((soilType, i) => (
-                <div key={i} className="text-[#2C6FA0] ">
+                <div key={i} className="text-main ">
                   {/* <h2 className={`font-bold text-3xl`}>{soilType.title}</h2> */}
                   <TitleSec
                     title={soilType.title}
@@ -127,6 +125,7 @@ export default function SoilStudies() {
               <div className={`w-40 lg:w-64   `}>
                 <img
                   src={soilImg2}
+                  loading="lazy"
                   alt="soil"
                   className="w-full h-full object-cover "
                 />
@@ -134,6 +133,7 @@ export default function SoilStudies() {
               <div className={`w-40 lg:w-64   `}>
                 <img
                   src={soilImg3}
+                  loading="lazy"
                   alt="soil"
                   className="   w-full h-full object-cover"
                 />
@@ -142,6 +142,7 @@ export default function SoilStudies() {
                 <img
                   src={soilImg1}
                   alt="soil"
+                  loading="lazy"
                   className="   w-full h-full object-cover"
                 />
               </div>

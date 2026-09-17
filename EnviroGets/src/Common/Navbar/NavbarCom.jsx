@@ -1,4 +1,4 @@
-import logo from "@/assets/Images/EnviroGets.webp";
+import {logo} from "@/assets/Images/Images.js";
 import { Link, NavLink, useLocation } from "react-router";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import LangSwitchIcon from "@/Components/LangSwitchIcon/LangSwitchIcon.jsx";

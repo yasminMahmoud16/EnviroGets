@@ -1,18 +1,16 @@
 // import map from "@/assets/Images/map2.webp";
-import { IoLocationOutline } from "react-icons/io5";
 import {
-  MdOutlineMailOutline,
-  MdOutlinePhoneInTalk,
+  MdOutlineMailOutline,MdOutlinePhoneInTalk,
+  IoLocationOutline,
 } from "@/assets/Icons/icon.js";
-import { logo } from "@/assets/Icons/icon.js";
+import { logo } from "@/assets/Images/Images.js";
 
 // import { MdPhoneInTalk } from "react-icons/md";
 // import SocialMedia from "@/Common/SocialMedia/SocialMedia.jsx";
 import useJson from "@/Hooks/useJson.js";
 export default function ContactInfo() {
   const { t, isArabic } = useJson();
-  const info = t("contact.information",{returnObjects:true});
-
+  const info = t("contact.information", { returnObjects: true });
 
   return (
     <>
@@ -33,7 +31,7 @@ export default function ContactInfo() {
                 {t("contact.general.title")}
               </h3>
               <p
-                className={`text-[#2C6FA0] text-justify leading-7   md:w-lg  ${isArabic ? "font-medium text-base" : "font-roboto  font-medium text-base"}`}
+                className={`text-main text-justify leading-7   md:w-lg  ${isArabic ? "font-medium text-base" : "font-roboto  font-medium text-base"}`}
                 dir={`${isArabic ? "" : "ltr"}`}
               >
                 {t("contact.general.description")}
@@ -71,8 +69,8 @@ export default function ContactInfo() {
                 className="flex items-center justify-center text-left  gap-2 font-roboto font-medium"
                 dir="ltr"
               >
-                <IoLocationOutline className="text-xl text-[#2C6FA0]" />
-                <p className={`text-[#2C6FA0]  text-base ${isArabic ? "" : ""}`}>
+                <IoLocationOutline className="text-xl text-main" />
+                <p className={`text-main  text-base ${isArabic ? "" : ""}`}>
                   {t("contact.address")}
                 </p>
               </div>
@@ -80,8 +78,8 @@ export default function ContactInfo() {
                 className="flex items-center justify-center gap-2 font-roboto font-medium"
                 dir="ltr"
               >
-                <MdOutlineMailOutline className="text-xl text-[#2C6FA0] " />
-                <p className={`text-[#2C6FA0]  text-base ${isArabic ? "" : ""}`}>
+                <MdOutlineMailOutline className="text-xl text-main " />
+                <p className={`text-main  text-base ${isArabic ? "" : ""}`}>
                   {t("contact.email")}
                 </p>
               </div>
@@ -90,8 +88,8 @@ export default function ContactInfo() {
                 className="flex items-center justify-center gap-2 font-roboto font-medium"
                 dir="ltr"
               >
-                <MdOutlinePhoneInTalk className="text-xl text-[#2C6FA0]" />
-                <p className={`text-[#2C6FA0]  text-base ${isArabic ? "" : " "}`}>
+                <MdOutlinePhoneInTalk className="text-xl text-main" />
+                <p className={`text-main  text-base ${isArabic ? "" : " "}`}>
                   {t("contact.phone")}
                 </p>
               </div>
@@ -101,6 +99,7 @@ export default function ContactInfo() {
               <img
                 src={logo}
                 alt="EnviroGets"
+                loading="lazy"
                 className="w-full h-full object-contain"
               />
             </div>

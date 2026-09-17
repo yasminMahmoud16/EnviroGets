@@ -1,6 +1,6 @@
 import useJson from "@/Hooks/useJson.js";
-import clientArticle1 from "@/assets/Images/clientArticle1.webp"
-import clientArticle2 from "@/assets/Images/clientArticle2.webp"
+
+import { clientArticle1, clientArticle2 } from "@/assets/Images/Images.js";
 // import { lazy, Suspense } from "react";
 // const ClientsImg = lazy(() => import("@/Components/ClientsImg/ClientsImg.jsx"));
 
@@ -44,6 +44,7 @@ export default function Partners() {
                     key={index}
                     src={img.logo}
                     alt={img.name}
+                    loading="lazy"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -87,6 +88,7 @@ export default function Partners() {
                     <img
                       src={clientArticle1}
                       alt="client"
+                      loading="lazy"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
@@ -94,6 +96,7 @@ export default function Partners() {
                     <img
                       src={clientArticle2}
                       alt="client"
+                      loading="lazy"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>

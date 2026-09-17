@@ -24,6 +24,7 @@ export default function HomeCards() {
               <img
                 src={`${baseUrl}${card.image}`}
                 alt={card.title}
+                loading="lazy"
                 className="max-h-16 max-w-full object-contain"
               />
             </div>
@@ -35,7 +36,7 @@ export default function HomeCards() {
                   isArabic
                     ? "text-2xl font-extrabold"
                     : "font-roboto font-extrabold text-xl tracking-wider"
-                } text-[#2C6FA0] text-center`}
+                } text-main text-center`}
               >
                 {card.title}
               </h5>
@@ -48,7 +49,7 @@ export default function HomeCards() {
                   isArabic
                     ? "font-semibold text-base"
                     : "font-roboto text-base font-normal"
-                } text-[#2C6FA0] text-center`}
+                } text-main text-center`}
               >
                 {card.text}
               </p>

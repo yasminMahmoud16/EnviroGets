@@ -1,9 +1,5 @@
-import carouselImage1 from "@/assets/Images/Carousel1.webp";
-import carouselImage2 from "@/assets/Images/Carousel2.webp";
-import carouselImage3 from "@/assets/Images/Carousel3.webp";
-import carouselImage4 from "@/assets/Images/Carousel4.webp";
-import hero from "@/assets/Images/hero.webp";
-
+import {
+  carouselImage1,carouselImage2,carouselImage3,carouselImage4,hero,} from "@/assets/Images/Images.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { useTranslation } from "react-i18next";
