@@ -16,18 +16,18 @@ export default function Partners() {
           <div className="px-8 flex flex-col items-center justify-center">
             {/* titles */}
             <div
-              className={`  ${isArabic ? " rounded-xl" : " rounded-full"}  flex flex-col gap-3 items-center justify-center `}
+              className={`  ${isArabic ? " rounded-xl" : " rounded-full"}  flex flex-col gap-5 md:gap-3 items-center justify-center `}
             >
               <h3
-                className={`${isArabic ? "font-bold text-base md:text-2xl" : "font-roboto font-semibold  text-base md:text-xl"} text-white`}
+                className={`${isArabic ? "font-bold text-3xl md:text-2xl" : "font-roboto font-semibold  text-3xl md:text-xl"} text-white`}
               >
                 {t("clients.title")}
               </h3>
               <p
-                className={`bg-[#33A3DD] w-fit  py-3 px-2 rounded-4xl ${isArabic ? "font-bold text-base md:text-2xl" : "font-roboto font-semibold  text-base md:text-xl"} text-[#FCFAFF]`}
+                className={`bg-[#33A3DD] w-fit py-2 md:py-3 px-2 rounded-4xl ${isArabic ? "font-bold text-base md:text-2xl" : "font-roboto font-semibold text-center text-sm md:text-xl"} text-[#FCFAFF]`}
               >
                 <span
-                  className={`border border-dashed rounded-3xl px-3 w-fit ${isArabic ? "" : "py-2"}`}
+                  className={` ${isArabic ? "border border-dashed rounded-3xl px-3 w-fit" : "py-2"}`}
                 >
                   {t("clients.subTitle")}
                 </span>
@@ -36,7 +36,7 @@ export default function Partners() {
 
             {/* clients  */}
             <div
-              className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 my-10`}
+              className={`grid grid-cols-1 md:grid-cols-3  lg:grid-cols-4 gap-3 my-10`}
             >
               {images.map((img, index) => (
                 <div className="bg-white w-50 h-30 flex items-center justify-center p-4">
@@ -73,24 +73,24 @@ export default function Partners() {
 
             {/* article  */}
 
-            <div className="grid grid-cols-2 gap-4 justify-center mb-4 items-center ">
-              <div className="col-span-1 px-3 w-96">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center mb-4 items-center ">
+              <div className="col-span-1 px-3 w-full lg:w-96">
                 <p
-                  className={`text-justify text-white  ${isArabic ? " leading-8 font-bold text-xl" : "font-roboto font-extrabold text-xl  leading-7"}`}
+                  className={` text-white  ${isArabic ? " text-justify leading-8 font-bold text-lg md:text-xl" : "font-roboto  font-extrabold text-xl  leading-7"}`}
                 >
                   {t("clients.article")}
                 </p>
               </div>
               <div className="col-span-1">
                 <div className="flex items-center justify-center gap-3">
-                  <div className="w-55 h-55 rounded-3xl">
+                  <div className="w-50 h-50 md:w-55 md:h-55 rounded-3xl">
                     <img
                       src={clientArticle1}
                       alt="client"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
-                  <div className="w-55 h-55 rounded-3xl">
+                  <div className="w-50 h-50 md:w-55 md:h-55 rounded-3xl">
                     <img
                       src={clientArticle2}
                       alt="client"

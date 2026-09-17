@@ -13,22 +13,22 @@ export default function HomeInfo() {
 
   return (
     <>
-      <div className="flex flex-col mt-4 md:flex-row md:gap-4  justify-around items-center px-6">
-        <div className="pb-3 flex items-center justify-center  mt-4">
-          <img src={map} alt="map" className="lg:w-full object-cover" />
+      <div className="flex flex-col gap-4 mt-10 md:flex-row md:gap-4  justify-around items-center px-6">
+        <div className="pb-3 flex items-center justify-center  mt-4 w-50 md:w-64">
+          <img src={map} alt="map" className="w-full object-cover" />
         </div>
-        <div className="flex items-center justify-center mb-40 md:mb-0 flex-col gap-8 ">
+        <div className="flex items-center justify-center  md:mb-0 flex-col gap-8 ">
           {/* button */}
           <Link
             to="/contact"
-            className={`w-md px-4 py-3 text-center text-white font-bold text-3xl rounded-2xl
+            className={`w-80  lg:w-md px-4 py-3 text-center text-white font-bold text-xl lg:text-3xl rounded-2xl
              bg-[linear-gradient(to_left,#698EAA,#306784,#63AE98,#0D5933)]
              hover:brightness-90
              transition duration-300 ${isArabic ? "" : "font-roboto"}`}
           >
             {t("home.button")}
           </Link>
-          <div className="hidden md:flex flex-col  items-center justify-between gap-2">
+          <div className=" flex flex-col  items-center justify-between gap-2">
             <div
               className={`flex gap-8 items-center justify-between z-10 rounded-2xl px-4 py-2 xl:px-5 xl:py-2.5   text-base xl:text-xl text-[#F0EDE6]`}
             >
@@ -53,22 +53,25 @@ export default function HomeInfo() {
             {/* customers  */}
             <div
               dir="rtl"
-              className={`hidden lg:flex ${
-                isArabic ? " w-md" : "mr-6 w-xl"
+              className={` flex flex-col md:flex-row ${
+                isArabic ? " w-70 md:w-md" : "mr-6 w-70 md:w-xl"
               } gap-9 items-center justify-center  rounded-2xl px-4 py-2 xl:px-5 xl:py-2.5 border border-[#014700]  bg-white/5 backdrop-blur-xs text-base xl:text-xl text-[#014700] shadow-lg`}
             >
               {information.map((info, index) => (
                 <div
                   key={index}
                   className={`flex flex-col items-center justify-center
-      ${index !== 0 ? "border-r border-[#014700] pr-4" : ""}
+      ${index !== 0 ? "md:border-r border-[#014700] md:pr-4" : ""}
+      
     `}
                 >
                   <p className="font-bold text-md xl:text-2xl xl:mb-1 font-roboto">
                     {info.num}+
                   </p>
 
-                  <p className={`font-extrabold text-sm xl:text-xl ${isArabic?"":"font-roboto "}`}>
+                  <p
+                    className={`font-extrabold text-sm xl:text-xl ${isArabic ? "" : "font-roboto "}`}
+                  >
                     {info.text}
                   </p>
                 </div>
@@ -156,16 +159,16 @@ export default function HomeInfo() {
 
           {/* </div> */}
         </div>
-        <div className=" flex items-center justify-center px-4 mt-4">
+        <div className=" flex items-center justify-center px-4 mt-4 w-50 md:w-64">
           <img
             src={clients}
             alt="clients"
-            className="lg:w-full max-w-3xl object-contain drop-shadow-xl"
+            className="w-full object-contain drop-shadow-xl"
           />
         </div>
         {/* <SocialMedia  /> */}
 
-        <div className="md:hidden my-2 grid grid-cols-5 items-center">
+        <div className="hidden my-2  grid-cols-5 items-center">
           {socialLinks.map((social) => (
             <div className="w-20" key={social.name}>
               <a href={social.link} target="_blank" rel="noopener noreferrer">

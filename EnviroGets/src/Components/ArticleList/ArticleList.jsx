@@ -1,6 +1,6 @@
 import useJson from "@/Hooks/useJson.js";
 import { useState } from "react";
-import { FaCircleArrowLeft } from "@/assets/Icons/icon.js";
+import { FaCircleArrowLeft, FaCircleArrowRight } from "@/assets/Icons/icon.js";
 export default function ArticleList({
     mainTitle,
     list,
@@ -35,7 +35,7 @@ export default function ArticleList({
                   }}
                   className={`flex items-center justify-between gap-2 tracking-wider 
       ${isArabic ? " text-right" : "font-roboto  text-left"} 
-      text-sm leading-[1.65] font-bold w-full px-4 py-3 
+      text-xs leading-[1.65] font-bold w-full px-4 py-3 
       cursor-pointer hover:bg-neutral-secondary-medium 
       hover:text-fg-brand focus:outline-none 
       ${
@@ -45,15 +45,21 @@ export default function ArticleList({
       } 
       ${index !== list.length - 1 ? "border-b-[0.5px] border-[#DBE1DD]" : ""}`}
                 >
-                  {item.subTitle}
+                  <span>{item.subTitle}</span>
                   {item.content ? (
-                    <FaCircleArrowLeft
-                      className={`text-lg   transition-transform duration-300 ${
-                        openIndex === index
-                          ? "text-[#2C6FA0] -rotate-90"
-                          : " rotate-0"
-                      }`}
-                    />
+                    isArabic ? (
+                      <FaCircleArrowLeft
+                        className={`shrink-0 text-lg transition-transform duration-300 ${
+                          openIndex === index ? "-rotate-90" : "rotate-0"
+                        }`}
+                      />
+                    ) : (
+                      <FaCircleArrowRight
+                        className={`shrink-0 text-lg transition-transform duration-300 ${
+                          openIndex === index ? "rotate-90" : "rotate-0"
+                        }`}
+                      />
+                    )
                   ) : null}
                 </button>
 
@@ -66,8 +72,7 @@ export default function ArticleList({
                     }`}
                   >
                     <ul
-                      className="overflow-hidden"
-                     
+                      className={`${isArabic ? "" : "font-roboto"} overflow-hidden`}
                     >
                       {item.content.map((specialization, i) => (
                         <li
@@ -77,9 +82,7 @@ export default function ArticleList({
                             activeId === specialization.trim()
                               ? "text-fg-brand"
                               : ""
-                              
-                                  }`}
-                              
+                          }`}
                         >
                           {specialization}
                         </li>

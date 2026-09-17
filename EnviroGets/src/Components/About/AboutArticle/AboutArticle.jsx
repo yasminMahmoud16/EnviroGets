@@ -25,8 +25,9 @@ export default function AboutArticle() {
             </h3>
           </div>
           <div className="text-white text-justify">
-            {aboutText.map((item) => (
+            {aboutText.map((item,i) => (
               <p
+                key={i}
                 className={`${isArabic ? "text-xl font-bold " : "font-roboto text-base md:text-xl font-bold"} text-white leading-8 pb-6 tracking-wider whitespace-break-spaces`}
               >
                 {item.text.includes("بتصنيف (A)") ||
@@ -35,7 +36,7 @@ export default function AboutArticle() {
                     {item.text.includes("بتصنيف (A)") ? (
                       <>
                         {item.text.split("بتصنيف (A)")[0]}
-                        <span className="text-[#66FF53] underline font-bold">
+                        <span className="text-[#66FF53] underline underline-offset-2 font-bold">
                           بتصنيف (A)
                         </span>
                         {item.text.split("بتصنيف (A)")[1]}
@@ -43,7 +44,7 @@ export default function AboutArticle() {
                     ) : (
                       <>
                         {item.text.split("Category (A)")[0]}
-                        <span className="text-[#66FF53] underline font-bold">
+                        <span className="text-[#66FF53] underline underline-offset-2 font-bold">
                           Category (A)
                         </span>
                         {item.text.split("Category (A)")[1]}

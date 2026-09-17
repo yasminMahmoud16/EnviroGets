@@ -18,10 +18,10 @@ export default function HomeCarousel() {
 
   return (
     <>
-      <div className="relative    ">
+      <div className="relative    h-60 md:h-full">
         <Swiper
           style={{ height: "100%" }}
-          className="rounded-b-2xl w-full h-full"
+          className="rounded-b-2xl w-full  h-full"
           key={i18n.language}
           dir={i18n.language === "ar" ? "rtl" : "ltr"}
           modules={[Autoplay, EffectFade]}
@@ -93,7 +93,7 @@ export default function HomeCarousel() {
               className={`${
                 isArabic
                   ? "text-sm md:text-2xl lg:text-2xl tracking-tighter font-black  leading-[1.65]  text-center"
-                  : "font-roboto text-sm md:text-2xl xl:text-4xl leading-tight font-bold  text-left"
+                  : "font-roboto text-md tracking-wider md:text-2xl xl:text-4xl leading-tight font-bold  text-left "
               } text-white dark:text-white   `}
             >
               {t("home.titleHero1")}

@@ -14,7 +14,7 @@ export default function AirMentoring() {
     <>
       {/* parent */}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
         <div className="col-span-1">
           <img src={quality} alt="" />
         </div>

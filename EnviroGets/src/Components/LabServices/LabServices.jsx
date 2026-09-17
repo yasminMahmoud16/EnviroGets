@@ -29,7 +29,7 @@ export default function LabServices() {
                                     className="bg-[#378BC8] w-fit  flex items-center justify-center rounded-2xl py-3 px-2"
                                 >
                                     <h2
-                                        className={`text-white ${isArabic ? "text-3xl " : "font-roboto text-3xl "} font-normal`}
+                                        className={`text-white ${isArabic ? "text-2xl md:text-3xl " : "font-roboto text-2xl md:text-3xl "} font-normal`}
                                     >
                                         {service.title}
                                     </h2>
