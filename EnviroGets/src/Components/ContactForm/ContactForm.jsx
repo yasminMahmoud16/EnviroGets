@@ -51,7 +51,7 @@ const [status, setStatus] = useState("");
 
     return (
       <>
-        <div className=" w-full lg:max-w-md mx-auto p-6 border border-[#4FA14B] rounded-2xl ">
+        <div className=" w-full  mx-auto p-6 border border-[#4FA14B] rounded-2xl " dir={`${isArabic?"":"ltr"}`}>
           <h2 className="text-2xl font-normal text-[#1A5C2C] mb-2 leading-none">
             {t("contact.title2")}
           </h2>

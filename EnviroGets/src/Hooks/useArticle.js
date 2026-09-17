@@ -3,7 +3,7 @@ export default function useArticle() {
 
     const logoClass = "h-16 w-auto object-contain mb-3";
     const imageStyleClasses = {
-        large: "w-full max-h-[520px] object-cover rounded-lg",
+        large: "w-full h-55 object-contain rounded-lg",
         medium: " md:w-60 lg:w-80 md:h-40 lg:h-[243px]  rounded-lg",
         small: "w-full max-w-md  max-h-[240px] object-cover rounded-lg",
     };

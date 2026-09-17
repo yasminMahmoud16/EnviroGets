@@ -9,7 +9,7 @@ export default function ContactBranches() {
                 {branches.map((branch, index) => (
                     <div
                         key={index}
-                        className={`border border-[#4FA14B] flex flex-col  items-start p-6 rounded-2xl mb-3 shadow-md text-[#2C6FA0] gap-2  ${isArabic ? "font-bold" : "font-roboto font-medium"} `}
+                        className={`w-[460px] border border-[#4FA14B] flex flex-col  items-start p-6 rounded-2xl mb-3 shadow-md text-[#2C6FA0] gap-2  ${isArabic ? "font-bold" : "font-roboto font-medium"} `}
                     >
                         <div className="w-16 h-12 ">
                             <img

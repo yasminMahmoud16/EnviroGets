@@ -11,7 +11,7 @@ const socialLinks = [
     {
         name: "whatsApp",
         icon: whatsApp,
-        link: "#",
+        link: "https://wa.me/966555312093",
     },
     {
         name: "tiktok",
@@ -21,7 +21,7 @@ const socialLinks = [
     {
         name: "instagram",
         icon: instagram,
-        link: "https://x.com/GETES662766",
+        link: "https://www.instagram.com/getes.2026?stkn=MXUxbmxqaG1ldGNlcA==",
     },
     {
         name: "twitter",

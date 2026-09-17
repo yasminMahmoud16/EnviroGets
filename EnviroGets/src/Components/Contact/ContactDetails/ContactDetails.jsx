@@ -21,7 +21,7 @@ export default function ContactDetails() {
           </div>
 
           <div
-            className="grid grid-cols-1  lg:grid-cols-2 w-full px-8 mt-4"
+            className="grid grid-cols-1 items-center lg:grid-cols-2 w-full px-8 mt-4"
             dir={`${isArabic ? "" : "rtl"}`}
           >
             {/* Left column */}
@@ -52,7 +52,9 @@ export default function ContactDetails() {
             {/* Right column */}
             <div className="col-span-1">
               <div
-                className={`flex flex-col items-start gap-4 justify-center my-3 ${isArabic ? "lg:mr-15" : "lg:mr-15"}`}
+                dir={`${isArabic?"":"ltr"}`}
+                className={`flex flex-col items-start gap-4 justify-center my-3 ${isArabic ? "lg:mr-15" : "lg:ml-15"}`}
+                
               >
                 <p
                   className={`${

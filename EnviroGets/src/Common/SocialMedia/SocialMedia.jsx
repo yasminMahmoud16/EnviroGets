@@ -10,7 +10,7 @@ export default function SocialMedia() {
         <div className="flex  justify-center items-center gap-8 ">
           <div className={`flex  items-center justify-center gap-3 `}>
             <div className="w-8 h-8">
-              <a href="#" target="_blank">
+              <a href="https://wa.me/966555312093" target="_blank">
                 <img
                   src={whatsApp}
                   alt="whatsApp"

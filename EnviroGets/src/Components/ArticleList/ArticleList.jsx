@@ -9,7 +9,7 @@ export default function ArticleList({
 }) {
     const { isArabic } = useJson();
     const [openIndex, setOpenIndex] = useState(null);
-
+const [activeParentIndex, setActiveParentIndex] = useState(null);
 
     return (
       <div className="flex flex-col mb-5">
@@ -27,30 +27,36 @@ export default function ArticleList({
                   type="button"
                   onClick={() => {
                     if (item.content) {
-                      setOpenIndex(openIndex === index ? null : index);
-                      onSelect(item.content[0]);
+                      const isOpen = openIndex === index;
+
+                      setOpenIndex(isOpen ? null : index);
+                      setActiveParentIndex(isOpen ? null : index);
                     } else {
                       onSelect(item.slug || item.subTitle);
+                      setActiveParentIndex(null);
                     }
                   }}
-                  className={`flex items-center justify-between gap-2 tracking-wider 
-      ${isArabic ? " text-right" : "font-roboto  text-left"} 
-      text-xs leading-[1.65] font-bold w-full px-4 py-3 
-      cursor-pointer hover:bg-neutral-secondary-medium 
-      hover:text-fg-brand focus:outline-none 
-      ${
-        activeId === (item.slug || item.subTitle)
-          ? "text-fg-brand bg-neutral-secondary-medium"
-          : "text-[#1A2E1D]"
-      } 
-      ${index !== list.length - 1 ? "border-b-[0.5px] border-[#DBE1DD]" : ""}`}
+                  className={`flex items-center justify-between gap-2 tracking-wider  
+  ${isArabic ? "text-right" : "font-roboto text-left"}  
+  text-xs leading-[1.65] font-bold w-full px-4 py-3  
+  cursor-pointer hover:bg-neutral-secondary-medium  
+  hover:text-fg-brand focus:outline-none  
+  ${
+    (item.content && activeParentIndex === index)
+    // (!item.content && activeId === (item.slug || item.subTitle))
+      ? "text-[#2C6FA0] bg-neutral-secondary-medium"
+      : "text-[#1A2E1D]"
+  }  
+  ${index !== list.length - 1 ? "border-b-[0.5px] border-[#DBE1DD]" : ""}`}
                 >
                   <span>{item.subTitle}</span>
                   {item.content ? (
                     isArabic ? (
                       <FaCircleArrowLeft
                         className={`shrink-0 text-lg transition-transform duration-300 ${
-                          openIndex === index ? "-rotate-90" : "rotate-0"
+                          openIndex === index
+                            ? "-rotate-90 text-[#2C6FA0]"
+                            : "rotate-0 "
                         }`}
                       />
                     ) : (
@@ -72,7 +78,7 @@ export default function ArticleList({
                     }`}
                   >
                     <ul
-                      className={`${isArabic ? "" : "font-roboto"} overflow-hidden`}
+                      className={`${isArabic ? "" : "font-roboto"} overflow-hidden `}
                     >
                       {item.content.map((specialization, i) => (
                         <li

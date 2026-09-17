@@ -23,7 +23,7 @@ export default function Sections() {
 
           <SectionsDev />
 
-          <div className="relative md:w-xs lg:w-xl hidden md:block  ">
+          <div className="relative md:w-xs lg:w-50 hidden md:block  ">
             <img
               src={t("sections.image")}
               alt="landing"

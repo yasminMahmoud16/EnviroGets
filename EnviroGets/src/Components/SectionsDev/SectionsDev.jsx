@@ -12,7 +12,7 @@ export default function SectionsDev() {
 
   return (
     <>
-      <div className=" relative flex  flex-col gap-2     pb-3   px-2  ">
+      <div className=" relative flex  flex-col gap-2        px-2  ">
         {" "}
         {/*container*/}
         <div className="bg-[linear-gradient(to_left,#698EAA,#306784,#63AE98,#0D5933)] w-35 h-15 md:w-45 md:h-15 rounded-xl flex  items-center justify-center  ">
@@ -23,7 +23,7 @@ export default function SectionsDev() {
           </h3>
         </div>
         <div
-          className={`flex flex-col ${isArabic ? "gap-3 " : "gap-6"} md:w-full lg:w-4xl  lg:pb-30`}
+          className={`flex flex-col ${isArabic ? "gap-3 " : "gap-6"} md:w-full lg:w-4xl  lg:pb-10`}
         >
           {links.map((link) => (
             <Link

@@ -33,7 +33,7 @@ export default function Projects() {
 
     return (
       <section className="min-h-screen px-8">
-        <div className="grid grid-cols-1  items-center justify-center md:grid-cols-6 gap-6 pt-15 md:pt-28">
+        <div className="grid grid-cols-1  justify-center md:grid-cols-6 gap-6 pt-15 md:pt-28">
           <div className="col-span-2">
             <ArticleList
               mainTitle={t("projects.title")}
@@ -65,7 +65,7 @@ export default function Projects() {
                 ) : (
                   // Image (with or without logo) — keep block layout
                   <div>
-                    <div className="flex items-start gap-8">
+                    <div className="flex items-start gap-8 ">
                       {activeContent.image && (
                         <div
                           className={`mb-6 space-y-4 ${getImageClass(activeContent.imageStyle)}`}
@@ -78,7 +78,7 @@ export default function Projects() {
                               key={index}
                               src={`${baseUrl}/${image}`}
                               alt={activeContent.title || activeContent.slug}
-                              className="w-full h-full object-cover rounded-lg"
+                              className="w-full h-full object-contain rounded-lg"
                             />
                           ))}
                         </div>
@@ -94,7 +94,7 @@ export default function Projects() {
                         )}
                     </div>
                     <h2
-                      className={`${isArabic ? " text-2xl md:text-4xl" : "font-roboto text-2xl"} font-normal mb-5 text-[#2C6FA0]`}
+                      className={`${isArabic ? " text-2xl md:text-4xl" : "font-roboto text-2xl md:text-4xl leading-14"} font-medium mb-5 text-[#2C6FA0]`}
                     >
                       {activeContent.title || activeContent.slug}
                     </h2>
@@ -103,41 +103,53 @@ export default function Projects() {
 
                 {/*======================== content ==================================== */}
                 <div
-                  className={`${isArabic ? "text-justify  font-semibold " : "font-roboto font-medium"} text-base md:text-lg space-y-4 leading-8 text-[#1A2E1D] `}
+                  className={`${
+                    isArabic
+                      ? "text-justify font-semibold text-base md:text-lg"
+                      : "font-roboto font-semibold text-xl"
+                  }  space-y-4 leading-8 text-[#1A2E1D]`}
                 >
-                  {activeContent.intro && <p>{activeContent.intro}</p>}
-                  {activeContent.intro2 && <p>{activeContent.intro2}</p>}
-                  {activeContent.intro4 && <p>{activeContent.intro4}</p>}
+                  {Object.entries(activeContent).map(([key, value]) => {
+                    // تجاهل البيانات اللي مش محتوى نصي
+                    if (
+                      ![
+                        "intro",
+                        "intro2",
+                        "intro3",
+                        "intro4",
+                        "text",
+                        "text2",
+                        "end",
+                        "end2",
+                      ].includes(key)
+                    ) {
+                      return null;
+                    }
 
-                  {Array.isArray(activeContent.text) &&
-                    (isBulleted ? (
-                      <ul
-                        className="list-inside text-[#1A2E1D] ps-6 space-y-2 text-justify"
-                        style={{ listStyle: "square" }}
-                      >
-                        {activeContent.text.map((t, i) => (
-                          <li key={i}>{t}</li>
-                        ))}
-                      </ul>
-                    ) : (
-                      activeContent.text.map((t, i) => <p key={i}>{t}</p>)
-                    ))}
+                    // لو Array → اعرضها List أو paragraphs
+                    if (Array.isArray(value)) {
+                      return isBulleted ? (
+                        <ul
+                          key={key}
+                          className="list-inside text-[#1A2E1D] ps-6 space-y-2 text-justify"
+                          style={{ listStyle: "square" }}
+                        >
+                          {value.map((item, i) => (
+                            <li key={i}>{item}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <div key={key} className="space-y-4">
+                          {value.map((item, i) => (
+                            <p key={i}>{item}</p>
+                          ))}
+                        </div>
+                      );
+                    }
 
-                  {activeContent.intro3 && <p>{activeContent.intro3}</p>}
-
-                  {Array.isArray(activeContent.text2) &&
-                    (isBulleted ? (
-                      <ul className="list-disc ps-6 space-y-2">
-                        {activeContent.text2.map((t, i) => (
-                          <li key={i}>{t}</li>
-                        ))}
-                      </ul>
-                    ) : (
-                      activeContent.text2.map((t, i) => <p key={i}>{t}</p>)
-                    ))}
-
-                  {activeContent.end && <p>{activeContent.end}</p>}
-                  {activeContent.end2 && <p>{activeContent.end2}</p>}
+                    // لو نص عادي
+                    return value ? <p key={key}>{value}</p> : null;
+                  })}
                 </div>
               </div>
             ) : (

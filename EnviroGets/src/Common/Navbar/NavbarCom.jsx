@@ -112,7 +112,7 @@ backdrop-blur-md hover:bg-[#165761] transition"
         </div>
 
         {/* Desktop Logo */}
-        <Link to="/" className="hidden md:flex items-center">
+        <Link to="/" className="hidden md:flex items-center h-full">
           <div
             className={`flex flex-col ${
               isArabic ? "items-start" : "items-end"
@@ -127,11 +127,13 @@ backdrop-blur-md hover:bg-[#165761] transition"
             </p>
           </div>
 
-          <img
-            src={logo}
-            className="w-10 lg:w-20 lg:h-14 mr-2"
-            alt={t("navbar.logo")}
-          />
+          <div className="w-10 lg:w-13 lg:h-15 flex items-center justify-center">
+            <img
+              src={logo}
+              className="w-full h-full mr-2"
+              alt={t("navbar.logo")}
+            />
+          </div>
         </Link>
       </div>
     </nav>
