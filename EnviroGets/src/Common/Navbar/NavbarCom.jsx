@@ -11,8 +11,8 @@ export default function NavbarCom() {
   const { isArabic, t } = useJson();
   const links = t("navbar.links", { returnObjects: true });
 
-const location = useLocation();
-const currentPath = location.pathname;
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   const transparentPages = [
     "/environmental-consulting",
@@ -20,9 +20,9 @@ const currentPath = location.pathname;
     "/soil-studies",
     "/Projects",
   ];
-const isTransparentPage = transparentPages.includes(currentPath);
+  const isTransparentPage = transparentPages.includes(currentPath);
 
-const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
+  const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
 
   return (
     <nav
@@ -34,7 +34,8 @@ const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex md:hidden items-center justify-center w-10 h-10 rounded-lg bg-white/10 backdrop-blur-md hover:bg-[#165761] transition"
+          className="inline-flex lg:hidden items-center justify-center w-10 h-10 rounded-lg bg-[linear-gradient(to_bottom,#698EAA,#306784,#63AE98)]
+backdrop-blur-md hover:bg-[#165761] transition"
         >
           {isOpen ? (
             <HiOutlineX className="text-white text-2xl" />
@@ -48,17 +49,17 @@ const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
           className={`
             ${isOpen ? "block" : "hidden"}
             absolute top-full left-0 w-full
-            bg-white/10 backdrop-blur-md
+            bg-white/20 backdrop-blur-md
             rounded-lg mt-2
-            md:static md:block md:w-auto
-            md:bg-transparent md:backdrop-blur-none
-            bg-[linear-gradient(to_left,#698EAA,#306784,#63AE98,#0D5933)]
+            lg:static lg:block lg:w-auto
+            lg:bg-transparent lg:backdrop-blur-none
+            lg:bg-[linear-gradient(to_left,#698EAA,#306784,#63AE98,#0D5933)]
             p-4
-            md:rounded-3xl
+            lg:rounded-3xl
           `}
         >
           <ul
-            className={`flex flex-col md:flex-row md:items-center gap-2 md:gap-6 p-4 md:p-0  text-white ${isArabic ? " font-semibold text-sm lg:text-xl" : "font-roboto text-base font-extrabold"}`}
+            className={`flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6 p-4 lg:p-0 text-[#0e3951] lg:text-white ${isArabic ? " font-semibold text-sm  md:text-base lg:text-xl" : "font-roboto text-xs md:text-base lg:text-base font-extrabold"}`}
           >
             {links.map((link, index) => (
               <li key={index}>
@@ -67,11 +68,11 @@ const textClasses = isTransparentPage ? "text-[#306784]" : "text-white";
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
                     `
-                    block p-3 md:p-0
+                    block p-3  md:p-0
                    
                     transition duration-300
                     
-                    ${isActive ? "text-[#165761]" : "hover:text-[#165761]"}
+                    ${isActive ? "text-gray-300 lg:text-[#165761]" : "hover:text-[#165761]"}
                   `
                   }
                 >

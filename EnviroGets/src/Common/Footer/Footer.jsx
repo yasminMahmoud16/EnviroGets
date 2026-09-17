@@ -8,7 +8,7 @@ export default function Footer() {
       <>
         <footer className=" left-0 w-full z-50 bg-[linear-gradient(to_left,#698EAA,#306784,#63AE98,#0D5933)]">
           <div className="  w-full mx-auto max-w-screen-xl p-4  flex flex-col  md:flex md:flex-row md:items-center md:justify-center ">
-            <ul className="flex flex-col text-white   gap-36 lg:flex-row md:flex-wrap  justify-between items-center mt-3 text-base font-extrabold text-body sm:mt-0">
+            <ul className="flex flex-col text-white   gap-6 lg:flex-row md:flex-wrap  justify-between items-center mt-3 text-base font-extrabold text-body sm:mt-0">
               <li>
                 <Link to="/contact" className="hover:underline me-4 md:me-6">
                   {t("footer.Contact")}

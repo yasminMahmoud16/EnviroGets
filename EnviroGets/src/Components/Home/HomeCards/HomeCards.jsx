@@ -9,7 +9,7 @@ export default function HomeCards() {
 
   return (
     <>
-      <div className="py-3 px-10 mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="py-3 px-10 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {cards.map((card, index) => (
           <div
             key={index}
@@ -34,7 +34,7 @@ export default function HomeCards() {
                 className={`${
                   isArabic
                     ? "text-2xl font-extrabold"
-                    : "font-roboto font-extrabold text-2xl tracking-wider"
+                    : "font-roboto font-extrabold text-xl tracking-wider"
                 } text-[#2C6FA0] text-center`}
               >
                 {card.title}

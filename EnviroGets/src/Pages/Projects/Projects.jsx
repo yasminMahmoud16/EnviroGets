@@ -50,9 +50,9 @@ export default function Projects() {
                 activeContent.logo &&
                 !isValidImageStyle(activeContent.logo) ? (
                   // Logo only — show title and logo inline in one row
-                  <div className="flex items-center gap-4 mb-5">
+                  <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-5">
                     <h2
-                      className={`${isArabic ? "text-2xl md:text-4xl" : "font-roboto text-3xl"} font-medium text-[#2C6FA0] `}
+                      className={`${isArabic ? "text-2xl md:text-4xl" : "font-roboto text-2xl text-center"} font-medium text-[#2C6FA0] `}
                     >
                       {activeContent.title || activeContent.slug}
                     </h2>
@@ -94,7 +94,7 @@ export default function Projects() {
                         )}
                     </div>
                     <h2
-                      className={`${isArabic ? " text-2xl md:text-4xl" : "font-roboto text-4xl"} font-normal mb-5 text-[#2C6FA0]`}
+                      className={`${isArabic ? " text-2xl md:text-4xl" : "font-roboto text-2xl"} font-normal mb-5 text-[#2C6FA0]`}
                     >
                       {activeContent.title || activeContent.slug}
                     </h2>
@@ -103,7 +103,7 @@ export default function Projects() {
 
                 {/*======================== content ==================================== */}
                 <div
-                  className={`${isArabic ? " font-semibold " : "font-roboto font-medium"} text-base md:text-lg space-y-4 text-justify leading-8 text-[#1A2E1D] `}
+                  className={`${isArabic ? "text-justify  font-semibold " : "font-roboto font-medium"} text-base md:text-lg space-y-4 leading-8 text-[#1A2E1D] `}
                 >
                   {activeContent.intro && <p>{activeContent.intro}</p>}
                   {activeContent.intro2 && <p>{activeContent.intro2}</p>}

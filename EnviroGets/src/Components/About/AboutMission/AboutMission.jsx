@@ -71,7 +71,7 @@ export default function AboutMission() {
         <div className="flex flex-col gap-6">
           {scrollingData.map((item, index) => (
             <div key={index} className="w-full">
-              <div className="relative w-full h-100 rounded-3xl bg-linear-to-r from-[#2D4E86] via-[#2E7D63] to-[#2F95E1] p-6 flex  flex-col items-center justify-center gap-4">
+              <div className="relative w-full h-100 rounded-3xl bg-linear-to-r from-[#2D4E86] via-[#2E7D63] to-[#2F95E1] p-6 flex  flex-col items-center justify-center gap-4 overflow-y-auto overflow-x-hidden">
                 <div className="shrink-0 w-full h-35 md:w-45 md:h-43 rounded-2xl overflow-hidden">
                   <img
                     src={item.image}
@@ -96,7 +96,7 @@ export default function AboutMission() {
                   <div className="px-2 flex-1 " dir={isArabic ? "rtl" : "ltr"}>
                     {Array.isArray(item.text) ? (
                       <ul
-                        className={`list-disc text-white/90 text-sm leading-relaxed  h-20 ${
+                        className={`list-disc text-white/90 text-sm leading-relaxed text-justify   h-20 ${
                           isArabic
                             ? "font-medium text-xs pr-5 text-right"
                             : "font-roboto font-normal text-xs text-left pl-5"

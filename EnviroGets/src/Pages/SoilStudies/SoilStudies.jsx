@@ -21,10 +21,10 @@ export default function SoilStudies() {
             <div className="text-[#2C6FA0] flex flex-col gap-4">
               <TitleSec
                 title={t("soil.title")}
-                className={`${isArabic ? "" : " text-3xl! font-normal!"}`}
+                className={`${isArabic ? "text-2xl!" : "  text-2xl! md:text-3xl! font-normal!"}`}
               />
               <p
-                className={`${isArabic ? "font-bold text-lg" : "font-semibold text-lg font-roboto"} text-justify leading-8`}
+                className={`${isArabic ? "font-bold text-lg" : "font-normal  text-lg font-roboto"} text-justify leading-8`}
               >
                 {t("soil.text")}
               </p>
@@ -38,16 +38,16 @@ export default function SoilStudies() {
                 >
                   <TitleSec
                     title={item.title}
-                    className={`${isArabic ? "" : " text-3xl! font-normal!"}`}
+                    className={`${isArabic ? "text-2xl!" : "text-2xl!  md:text-3xl! font-normal!"}`}
                   />
 
-                  <div className="px-8 ">
+                  <div className="px-4 md:px-8 ">
                     <ul className="list-square list-outside text-[#2C6FA0]! ">
                       {item.text.map((text, i) => (
                         <List
                           key={i}
                           item={text}
-                          className={`text-[#2C6FA0]! ${isArabic?"font-bold!":"font-semibold!"} `}
+                          className={`text-[#2C6FA0]! ${isArabic ? "font-bold!" : "font-semibold!"} `}
                         />
                       ))}
                     </ul>
@@ -55,7 +55,7 @@ export default function SoilStudies() {
                 </div>
               ))}
 
-              <div className="w-96">
+              <div className="hidden md:block md:w-70 lg:w-96">
                 <img
                   src={soilImage}
                   alt="soil-Image"
@@ -70,7 +70,7 @@ export default function SoilStudies() {
                   {/* <h2 className={`font-bold text-3xl`}>{soilType.title}</h2> */}
                   <TitleSec
                     title={soilType.title}
-                    className={`${isArabic ? "" : " text-3xl! font-normal!"} mb-5!`}
+                    className={`${isArabic ? "text-2xl! whitespace-break-spaces!" : "whitespace-break-spaces! text-2xl!  md:text-3xl!  font-normal!"} mb-5!`}
                   />
 
                   {soilType.text.map((section, j) => (
@@ -123,38 +123,30 @@ export default function SoilStudies() {
           <div
             className={`md:pt-5 mb-5  flex items-center justify-center lg:block ${isArabic ? "lg:pl-10" : "lg:pr-10"}   `}
           >
-            <div className="flex flex-col lg:flex lg:flex-row items-center justify-around  ">
-                <div className={`hidden md:block w-64   `}>
-                  <img
-                    src={soilImg2}
-                    alt="soil"
-                    className="w-full h-full object-cover "
-                  />
-                </div>
-                <div
-                  className={`hidden md:block w-64   `}
-                >
-                  <img
-                    src={soilImg3}
-                    alt="soil"
-                    className="   w-full h-full object-cover"
-                  />
-                </div>
-                <div
-                  className={`hidden md:block w-64   `}
-                >
-                  <img
-                    src={soilImg1}
-                    alt="soil"
-                    className="   w-full h-full object-cover"
-                  />
-                </div>
+            <div className="flex flex-col gap-3 md:flex md:flex-row items-center justify-around  ">
+              <div className={`w-40 lg:w-64   `}>
+                <img
+                  src={soilImg2}
+                  alt="soil"
+                  className="w-full h-full object-cover "
+                />
               </div>
+              <div className={`w-40 lg:w-64   `}>
+                <img
+                  src={soilImg3}
+                  alt="soil"
+                  className="   w-full h-full object-cover"
+                />
+              </div>
+              <div className={`w-40 lg:w-64   `}>
+                <img
+                  src={soilImg1}
+                  alt="soil"
+                  className="   w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
-
-
-
-          
         </div>
       </section>
     </>
