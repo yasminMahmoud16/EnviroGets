@@ -73,13 +73,12 @@ export default function HomeCarousel() {
 
         <div
           className={`  lg:mt-0 absolute  inset-0 z-10 flex gap-4  justify-between items-end lg:items-end py-6`}
-          dir="ltr"
         >
           <div
             className={`z-10   w-[60%] mt-7 md:mt-0 md:max-w-xl px-4 py-2 hidden md:flex flex-col   gap-1 md:gap-4   rounded-2xl md:rounded-3xl
               ${
                 isArabic
-                  ? "mr-2 md:mr-8 border border-white justify-content items-center"
+                  ? "mr-2 md:mr-8 border border-white justify-content items-center bg-[white]/10 backdrop-blur-xs"
                   : "ml-2 md:ml-8 font-roboto justify-start items-center bg-[white]/10 backdrop-blur-xs border border-white"
               } shadow lg:shadow-none
                 `}
@@ -106,10 +105,7 @@ export default function HomeCarousel() {
             </div>
           </div>
 
-          <div
-            className=" md:hidden ml-3 flex items-end justify-end w-20 h-10 lg:w-30  xl:w-50 xl:h-25  rounded-lg border border-white bg-linear-to-b from-[#F5F6F800] via-[#c3c3c593] to-[#cbcccd] 
-                   shadow "
-          >
+          <div className="md:hidden mr-auto ml-4 flex items-end justify-end w-20 h-10 lg:w-30 rounded-lg border border-white bg-linear-to-b from-[#F5F6F800] via-[#c3c3c593] to-[#cbcccd] shadow">
             <img
               src={hero}
               alt="رؤية سعودية"
