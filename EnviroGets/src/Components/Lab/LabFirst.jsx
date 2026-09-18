@@ -8,17 +8,17 @@ export default function LabFirst() {
     return (
       <>
         {/* parent */}
-        <div className="md:px-8 pt-30 gap-10 md:gap-24   flex flex-col-reverse  lg:flex-row items-center justify-between">
+        <div className="md:px-8  gap-10 md:gap-24   flex flex-col-reverse  lg:flex-row items-center justify-between">
           {/* content */}
           <div className="  px-6  ">
             <TitleSec
               title={t("lab.title")}
-              className={`text-white pb-4 ${isArabic ? "" : "font-roboto"}`}
+              className={`text-white pb-4 ${isArabic ? "md:text-3xl! font-medium!" : "font-roboto"}`}
             />
 
             <div className="px-8">
               {labText.map((item, index) => (
-                <List item={item} index={index} className="" classList="pb-8" />
+                <List item={item} index={index} className="" classList={`pb-8 ${isArabic?"md:text-xl! font-bold!":""}`} />
               ))}
             </div>
           </div>

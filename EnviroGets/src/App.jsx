@@ -21,6 +21,7 @@ const Certification = lazy(
 const Partners = lazy(() => import("./Pages/Partners/Partners.jsx"));
 const Projects = lazy(() => import("./Pages/Projects/Projects.jsx"));
 const AirQuality = lazy(() => import("./Pages/AirQuality/AirQuality.jsx"));
+const WaterAndSoilLab = lazy(() => import("./Pages/WaterAndSoilLab/WaterAndSoilLab.jsx"));
 
 const router = createHashRouter([
   {
@@ -34,6 +35,7 @@ const router = createHashRouter([
       { path: "laboratories", element: <Laboratory /> },
       { path: "lab-details", element: <LabDetails /> },
       { path: "environmental-consulting", element: <Consulting /> },
+      { path: "water-and-soil-Lab", element: <WaterAndSoilLab /> },
       { path: "soil-studies", element: <SoilStudies /> },
       { path: "air-quality", element: <AirQuality /> },
       { path: "clients", element: <Partners /> },

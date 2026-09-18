@@ -23,7 +23,7 @@ export default function SectionsDev() {
           </h3>
         </div>
         <div
-          className={`flex flex-col ${isArabic ? "gap-3 " : "gap-6"} md:w-full lg:w-4xl  lg:pb-10`}
+          className={`flex flex-col ${isArabic ? "gap-6 " : "gap-6"} md:w-full lg:w-4xl  lg:pb-10`}
         >
           {links.map((link) => (
             <Link

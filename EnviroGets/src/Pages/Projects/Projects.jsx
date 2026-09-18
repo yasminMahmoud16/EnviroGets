@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {  useState } from "react";
 import ArticleList from "@/Components/ArticleList/ArticleList.jsx";
 import useJson from "@/Hooks/useJson.js";
 import useUrl from "@/Hooks/useUrl.js";
@@ -13,15 +13,40 @@ export default function Projects() {
   const list = t("projects.list", { returnObjects: true });
   const content = t("projects.content", { returnObjects: true });
 
-  const [activeId, setActiveId] = useState(() => {
-    if (Array.isArray(list) && list.length > 0) {
-      const first = list[0];
-      return first.content?.length
-        ? first.content[0].trim()
-        : first.slug || first.subTitle;
-    }
-    return null;
-  });
+    const getDefaultId = (list) => {
+      if (Array.isArray(list) && list.length > 0) {
+        const first = list[0];
+        return first.content?.length
+          ? first.content[0].trim()
+          : first.slug || first.subTitle;
+      }
+      return null;
+    };
+  const [activeId, setActiveId] = useState(() => getDefaultId(list));
+  const [prevIsArabic, setPrevIsArabic] = useState(isArabic);
+  if (isArabic !== prevIsArabic) {
+    setPrevIsArabic(isArabic);
+    setActiveId(getDefaultId(list));
+  }
+// const [activeId, setActiveId] = useState(() => {
+//   if (Array.isArray(list) && list.length > 0) {
+//     const first = list[0];
+//     return first.content?.length
+//       ? first.content[0].trim()
+//       : first.slug || first.subTitle;
+//   }
+//   return null;
+// });
+//   useEffect(() => {
+//     if (Array.isArray(list) && list.length > 0) {
+//       const first = list[0];
+//       setActiveId(
+//         first.content?.length
+//           ? first.content[0].trim()
+//           : first.slug || first.subTitle,
+//       );
+//     }
+//   }, [isArabic]);
 
   const activeContent = findContent(content, activeId);
   const isBulleted = activeContent?.["text-Type"] === "bulted";
@@ -153,7 +178,9 @@ export default function Projects() {
           ) : (
             activeId && (
               <p className="text-neutral-500">
-                لا توجد تفاصيل متاحة لهذا العنصر بعد.
+                {isArabic
+                  ? "اختر عنصرًا لعرض التفاصيل."
+                  : "Select an item to view the details"}
               </p>
             )
           )}

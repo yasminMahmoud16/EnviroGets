@@ -104,30 +104,24 @@
     "list":[
       {
         "id":1,
-        "text":"About US",
+        "text":"Who We Are",
         "path":"/about"
       },
-      {
-        "id":2,
-        "text":"Mobile Laboratory",
-        "path":"/laboratories"
-      },
-       {
-        "id":5,
-        "text":"Water and soil laboratory",
-        "path":"/laboratories"
-      },
-      {
+            {
         "id":3,
-        "text":"Environmental Consulting & Management",
+        "text":"Environmental Consulting",
         "path":"/environmental-consulting"
       },
       {
         "id":4,
         "text":"Air Quality & Noise Monitoring Laboratory",
-        "path":"/environmental-consulting"
+        "path":"/laboratories"
       },
-     
+       {
+        "id":5,
+        "text":"Water and soil laboratory",
+        "path":"/water-and-soil-Lab"
+      },
       {
         "id":7,
         "text":"Soil Testing & Analysis",
@@ -256,7 +250,7 @@
         }
       ],
 
-       "title2": "Get in Touch",
+    "title2": "Get in Touch",
     "description2": "Feel free to contact us. We are happy to answer your inquiries.",
     "name": {
       "label": "Name",
@@ -706,14 +700,10 @@
         ]
     },
       {
-        "subTitle":"Environmental File Management for the Industrial Cities Authority",
-        "slug":"اداره الملف البيئي لهيئة المدن الصناعية"
-
-    },
-      {
         "subTitle":"Environmental File Management for Dhruma Industrial City",
-        "slug":"إدارة الملف البيئي لمدينة ضرماء الصناعية",
+        "slug":"إدارة الملف البيئي لمحطات الكهرباء",
         "content":[
+          "Durmaa Power Station",
           "Alfanar Power Station",
           "Ishbiliyah Power Station",
           "Al-Dar Al-Baida Power Station",
@@ -996,8 +986,8 @@
     },
     {
       "id": 16,
-      "title":"Environmental File Management for Dhurma Industrial City",
-      "slug":"إدارة الملف البيئي لمدينة ضرماء الصناعية",
+      "title":"Durmaa Power Station",
+      "slug":"إدارة الملف البيئي لمحطات الكهرباء",
       "image": "project16.webp",
       "imageStyle": "large",
       "text-Type": "normal",
@@ -1008,6 +998,7 @@
       "intro3":"These activities provide reliable environmental data that support environmental performance monitoring, assessment of environmental quality, identification of potential changes, and informed decision-making to achieve higher levels of environmental compliance and sustainability.",
       "intro4":"Key Power Stations Covered by Our Services:",
       "text": [
+        "Durmaa Power Station",
         "Alfanar Power Station",
         "Ishbiliyah Power Station",
         "Al-Dar Al-Baida Power Station",

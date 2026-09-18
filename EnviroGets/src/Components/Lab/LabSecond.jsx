@@ -13,10 +13,10 @@ export default function LabSecond() {
         {/* parent */}
         <div className="flex flex-col  md:px-8">
           {/* content */}
-          <div className="px-6">
+          <div className="md:px-6">
             <TitleSec
               title={t("lab.labTitle")}
-              className={`text-white pb-4 ${isArabic ? "" : "font-roboto"}`}
+              className={`text-main pb-4 ${isArabic ? "text-3xl! md:text-4xl! font-normal!" : "font-roboto"}`}
             />
 
             <div className="flex flex-col   items-end gap-10 px-8">
@@ -25,7 +25,7 @@ export default function LabSecond() {
                   // <List item={item} index={index} className="" />
                   <p
                     key={index}
-                    className={`${isArabic ? " text-xl" : "font-roboto "} pb-2 text-white font-normal whitespace-break-spaces text-justify`}
+                    className={`${isArabic ? " text-xl" : "font-roboto "} pb-2 text-main font-normal whitespace-break-spaces text-justify`}
                   >
                     {item}
                   </p>

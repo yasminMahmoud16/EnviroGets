@@ -9,7 +9,7 @@ export default function Air() {
     <>
       {/* parent */}
       <div
-        className={`px-8 mb-8 flex flex-col md:flex-row  items-center ${isArabic ? "gap-4" : " gap-14 lg:gap-25"}   py-9 `}
+        className={`pt-30 px-8 mb-8 flex flex-col md:flex-row  items-center ${isArabic ? "gap-5" : " gap-14 lg:gap-25 justify-between "}   pt-9 `}
       >
         {/* content */}
         <div className="">
@@ -20,12 +20,12 @@ export default function Air() {
             </h2> */}
           <TitleSec
             title={t("consulting.airTitle")}
-            className="text-main  text-2xl! md:text-4xl! font-normal! mb-3!"
+            className="text-white  text-2xl! md:text-4xl! font-normal! mb-5!"
           />
 
           <div className=" pr-2 my-2">
             <ul
-              className={`list-inside text-main text-justify ${isArabic ? "font-bold text-base md:text-xl" : "font-roboto font-normal md:text-sm lg:text-base"}`}
+              className={`list-inside text-white  text-justify ${isArabic ? "font-bold text-base md:text-xl" : "font-roboto font-normal md:text-sm lg:text-base"}`}
               style={{ listStyleType: "square" }}
             >
               {airList.map((item, index) => (
@@ -39,7 +39,7 @@ export default function Air() {
         {/* image */}
         <div className={`relative shrink-0 ml-15 ${isArabic ? "" : "my-25"} `}>
           {/* Front image - smaller, overlapping bottom-left */}
-          <div className="w-40 h-40 lg:w-90 md:h-64  border-2 border-[#378BC8] rounded-[32px] overflow-hidden shadow-lg  bg-white">
+          <div className="w-40 h-40 lg:w-90 md:h-64  border-2 border-[#378BC8] rounded-4xl overflow-hidden shadow-lg  bg-white">
             <img
               src={air1}
               alt="air1"

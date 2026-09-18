@@ -26,7 +26,7 @@ export default function LabSwiper() {
             1024: { slidesPerView: 3 },
             1280: { slidesPerView: 3 },
           }}
-          className="py-2  w-full"
+          className="pb-2  w-full"
         >
           <button
             onClick={() => swiperRef.current?.slidePrev()}

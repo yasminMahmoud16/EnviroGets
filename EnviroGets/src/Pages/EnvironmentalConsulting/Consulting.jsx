@@ -1,5 +1,5 @@
 // import TitleSec from "@/Common/TitleSec/TitleSec.jsx";
-import Air from "@/Components/Consulting/Air.jsx";
+// import Air from "@/Components/Consulting/Air.jsx";
 import ConInfo from "@/Components/Consulting/ConInfo.jsx";
 import useJson from "@/Hooks/useJson.js";
 
@@ -26,7 +26,6 @@ export default function Consulting() {
         </div>
 
         <ConInfo />
-        <Air />
       </section>
     </>
   );
