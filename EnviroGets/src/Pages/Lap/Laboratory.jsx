@@ -6,7 +6,7 @@ import LabFirst from "@/Components/Lab/LabFirst.jsx";
 export default function Laboratory() {
     return (
       <>
-        <section className="min-h-screen bg-linear-to-b from-[#14363D] via-[#2E4E48] to-[#829E6D] flex flex-col gap-7">
+        <section className="min-h-screen bg-linear-to-b from-[#14363D] via-[#2E4E48] to-[#829E6D] flex flex-col gap-10">
           <Air />
 
           <LabFirst />

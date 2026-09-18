@@ -9,7 +9,7 @@ export default function Air() {
     <>
       {/* parent */}
       <div
-        className={`pt-30 px-8 mb-8 flex flex-col md:flex-row  items-center ${isArabic ? "gap-5" : " gap-14 lg:gap-25 justify-between "}   pt-9 `}
+        className={`pt-30 px-8 mb-8 flex flex-col md:flex-row  items-center ${isArabic ? "gap-5" : " gap-14 lg:gap-25 justify-between "}   pt-9  `}
       >
         {/* content */}
         <div className="">
@@ -37,7 +37,7 @@ export default function Air() {
           </div>
         </div>
         {/* image */}
-        <div className={`relative shrink-0 ml-15 ${isArabic ? "" : "my-25"} `}>
+        <div className={`relative shrink-0 ml-15 pb-4 mb-4 ${isArabic ? "" : "my-25"}  `}>
           {/* Front image - smaller, overlapping bottom-left */}
           <div className="w-40 h-40 lg:w-90 md:h-64  border-2 border-[#378BC8] rounded-4xl overflow-hidden shadow-lg  bg-white">
             <img
