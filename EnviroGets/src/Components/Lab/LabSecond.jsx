@@ -35,7 +35,7 @@ export default function LabSecond() {
               <div className="group flex justify-center items-center gap-3">
                 <Link
                   to="/lab-details"
-                  className={`text-white text-2xl font-bold  transition-transform duration-300 
+                  className={`text-main text-2xl font-bold  transition-transform duration-300 
 
                                     ${isArabic ? "group-hover:-translate-x-2 " : "font-roboto group-hover:translate-x-2 "}
                                     `}
@@ -45,9 +45,9 @@ export default function LabSecond() {
 
                 <div>
                   {isArabic ? (
-                    <IoMdArrowBack className="text-white text-2xl md:text-3xl transition-transform duration-300 group-hover:-translate-x-2" />
+                    <IoMdArrowBack className="text-main text-2xl md:text-3xl transition-transform duration-300 group-hover:-translate-x-2" />
                   ) : (
-                    <IoMdArrowForward className="text-white text-2xl md:text-3xl transition-transform duration-300 group-hover:translate-x-2" />
+                    <IoMdArrowForward className="text-main text-2xl md:text-3xl transition-transform duration-300 group-hover:translate-x-2" />
                   )}
                 </div>
               </div>

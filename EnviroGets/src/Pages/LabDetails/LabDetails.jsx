@@ -8,7 +8,7 @@ export default function LabDetails() {
     return <>
         <section className="min-h-screen bg-linear-to-b from-[#14363D] via-[#2E4E48] to-[#829E6D]">
             
-            <div className="pt-25 px-8">
+            <div className="pt-30 px-8">
 
                 <TitleSec title={t("labDetails.title")} className="text-white pb-4 text-4xl! " />
                 <LabServices/>
