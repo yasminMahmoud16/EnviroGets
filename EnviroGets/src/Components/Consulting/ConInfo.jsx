@@ -4,11 +4,7 @@ import {consulting1,consulting2,consulting3,consulting4} from "@/assets/Images/I
 
 export default function ConInfo() {
   const { isArabic, t } = useJson();
-
   const list1 = t("consulting.text1", { returnObjects: true });
-  // console.log(list1);
-
-  // const list2 = t("consulting.text2", { returnObjects: true });
   const images = [consulting3, consulting2, consulting4, consulting1];
 
   return (
@@ -33,7 +29,6 @@ export default function ConInfo() {
           </ul>
 
           {/* images  */}
-          {/* <div className="relative hidden md:block"> */}
           <div
             className={`absolute top-16 ${isArabic ? "left-28" : "right-10 md:right-28"} hidden md:flex flex-col  items-center justify-center md:gap-10 lg:gap-5 translate-y-18`}
           >
@@ -57,34 +52,7 @@ export default function ConInfo() {
         <div
           className={` hidden md:flex   items-center  justify-evenly mt-3 ${isArabic ? "" : ""}  bg-red-400 flex px-6 `}
         >
-          {/* <div className="mt-10 lg:mt-20 ">
-                        <ul
-                            className={`list-inside  text-white ${isArabic ? "font-semibold text-xl" : "font-roboto font-normal md:text-sm lg:text-lg"}`}
-                            style={{ listStyleType: "square" }}
-                        >
-                            {list1.map((item, index) => (
-                                <li key={index} className={`${isArabic ? "pb-2" : ""}`}>
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    <div className="mt-10 lg:mt-20">
-                        <ul
-                            className={`list-inside text-white ${isArabic ? "font-semibold text-xl" : "font-roboto font-normal md:text-sm lg:text-lg"}`}
-                            style={{ listStyleType: "square" }}
-                        >
-                            {list2.map((item, index) => (
-                                <li className={`${isArabic ? "pb-2" : ""}`} key={index}>
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div> */}
         </div>
-
-        {/*================================================= mobile ====================================================== */}
       </div>
     </>
   );

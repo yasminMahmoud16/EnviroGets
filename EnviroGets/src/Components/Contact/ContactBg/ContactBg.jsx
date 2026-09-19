@@ -8,7 +8,6 @@ export default function ContactBg() {
         className="relative h-80 w-full bg-cover bg-no-repeat flex  justify-center items-center mb-5"
         style={{
           backgroundImage: `url(${bgContact})`,
-          // backgroundPosition: "center top",
         }}
       >
         {/* Dark overlay for text readability */}

@@ -1,3 +1,5 @@
+import "swiper/css";
+import "swiper/css/effect-fade";
 import {
   carouselImage1,carouselImage2,carouselImage3,carouselImage4,hero,} from "@/assets/Images/Images.js";
 import { Swiper, SwiperSlide } from "swiper/react";

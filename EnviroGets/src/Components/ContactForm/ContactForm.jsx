@@ -1,57 +1,17 @@
-import { useForm } from "react-hook-form";
-import { validationContactSchema } from "../../Utils/Validation/validation.js";
-import { zodResolver } from "@hookform/resolvers/zod";
-// import clipGroup from "../../assets/Images/Clip path group.webp";
-import useJson from "../../Hooks/useJson.js";
-import { useState } from "react";
+
+import useContact from "@/Hooks/useContact.js";
+import useJson from "@/Hooks/useJson.js";
 
 export default function ContactForm() {
+  // const [ isSending,setIsSending] = useState(false);
   const { isArabic ,t} =useJson();
-
-const [status, setStatus] = useState("");
-// const [ isSending,setIsSending] = useState(false);
-
-    const schema = validationContactSchema(t);
-    const {
-        register,
-        handleSubmit,
-        reset,
-        formState: { errors },
-    } = useForm({
-        resolver: zodResolver(schema),
-    });
+  const { status, register, handleSubmit, errors, onSubmit } = useContact();
 
 
-
-  const onSubmit = async (data) => {
-    // setIsSending(true);
-    setStatus("");
-  const response = await fetch("#", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify(data),
-  });
-
-  if (response.ok) {
-    setStatus("success");
-    reset();
-    setTimeout(() => {
-      setStatus("");
-    }, 3000);
-  } else {
-    setStatus("error");
-    setTimeout(() => {
-      setStatus("");
-    }, 3000);
-  }
-};
 
     return (
       <>
-        <div className=" w-full  mx-auto p-6 border border-[#4FA14B] rounded-2xl " dir={`${isArabic?"":"ltr"}`}>
+        <div className=" w-full  mx-auto p-6 border border-[#4FA14B] rounded-2xl shadow-md" dir={`${isArabic?"":"ltr"}`}>
           <h2 className="text-2xl font-normal text-[#1A5C2C] mb-2 leading-none">
             {t("contact.title2")}
           </h2>
@@ -191,22 +151,6 @@ const [status, setStatus] = useState("");
           </form>
         </div>
 
-        <div className="hidden md:block max-w-sm mx-auto w-full relative p-6">
-          {/* <img
-            src={clipGroup}
-            alt="Saudi Arabia"
-            loading="lazy"
-            className="w-full h-auto object-contain"
-          /> */}
-
-          <div className=" absolute inset-0 flex items-center justify-center px-4">
-            <p
-              className={`text-center text-white text-sm sm:text-base ${isArabic ? "md:text-xl lg:text-3xl" : "md:text-lg lg:text-2xl"}   font-bold  leading-none`}
-            >
-              {t("contactInfo.social.map")}
-            </p>
-          </div>
-        </div>
       </>
     );
 

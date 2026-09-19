@@ -19,8 +19,9 @@ export default function AirMentoring() {
         <div className="col-span-2 text-main ">
           {/* title */}
           <div>
-            {airTitles.map((title) => (
+            {airTitles.map((title,index) => (
               <TitleSec
+                key={index}
                 title={title}
                 className={`${isArabic ? "" : "font-roboto"} text-4xl! font-normal! `}
               />
@@ -29,8 +30,9 @@ export default function AirMentoring() {
 
           {/* list */}
           <div className="mt-4 ">
-            {airLists.map((list) => (
+            {airLists.map((list,index) => (
               <List
+                key={index}
                 item={list}
                 className={`text-main!  text-justify ${isArabic ? "font-bold! pr-5 " : "font-semibold! pl-5"}`}
               />

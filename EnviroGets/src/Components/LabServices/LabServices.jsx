@@ -23,9 +23,8 @@ export default function LabServices() {
 
             <div>
               {services.map((service, index) => (
-                <>
+                <div key={index}>
                   <div
-                    key={index}
                     className="bg-[#378BC8] w-fit  flex items-center justify-center rounded-2xl py-3 px-2"
                   >
                     <h2
@@ -47,7 +46,7 @@ export default function LabServices() {
                       ))}
                     </ul>
                   </div>
-                </>
+                </div>
               ))}
             </div>
           </div>

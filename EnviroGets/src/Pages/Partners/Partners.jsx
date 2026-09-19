@@ -1,12 +1,10 @@
 import useJson from "@/Hooks/useJson.js";
 
 import { clientArticle1, clientArticle2 } from "@/assets/Images/Images.js";
-// import { lazy, Suspense } from "react";
-// const ClientsImg = lazy(() => import("@/Components/ClientsImg/ClientsImg.jsx"));
+
 
 export default function Partners() {
   const { isArabic, t } = useJson();
-  // const text = t("clients.description", { returnObjects: true });
   const images = t("clients.images", { returnObjects: true });
   return (
     <>
@@ -39,9 +37,11 @@ export default function Partners() {
               className={`grid grid-cols-1 md:grid-cols-3  lg:grid-cols-4 gap-3 my-10`}
             >
               {images.map((img, index) => (
-                <div className="bg-white w-50 h-30 flex items-center justify-center p-4">
+                <div
+                  key={index}
+                  className="bg-white w-50 h-30 flex items-center justify-center p-4"
+                >
                   <img
-                    key={index}
                     src={img.logo}
                     alt={img.name}
                     loading="lazy"
@@ -49,27 +49,6 @@ export default function Partners() {
                   />
                 </div>
               ))}
-
-              {/* {text.map((desc, index) => (
-                  <p
-                    key={index}
-                    className={`text-main text-justify ${
-                      isArabic
-                        ? "font-semibold text-base md:text-xl"
-                        : "font-roboto font-normal text-base md:text-xl"
-                    }`}
-                  >
-                    {desc.includes("EnviroGets") ? (
-                      <>
-                        {desc.split("EnviroGets")[0]}
-                        <strong className="font-bold">EnviroGets</strong>
-                        {desc.split("EnviroGets")[1]}
-                      </>
-                    ) : (
-                      desc
-                    )}
-                  </p>
-                ))} */}
             </div>
 
             {/* article  */}
@@ -104,12 +83,6 @@ export default function Partners() {
               </div>
             </div>
           </div>
-
-          {/* images */}
-          {/* 
-          <Suspense fallback={null}>
-            <ClientsImg />
-          </Suspense> */}
         </div>
       </section>
     </>

@@ -8,7 +8,6 @@ export default function SoilStudies() {
   const soil = t("soil.soilList", { returnObjects: true });
 
   const soilType = t("soil.soilTypes", { returnObjects: true });
-  console.log(soil);
   return (
     <>
       <section className="min-h-screen  relative ">

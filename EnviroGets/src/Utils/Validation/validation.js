@@ -15,15 +15,15 @@ export const validationContactSchema = (t) =>
 
         email: z
             .string()
-            .min(1, t("contact.email.required"))
-            .email(t("contact.email.invalid")),
+            .min(1, t("contact.email2.required"))
+            .email(t("contact.email2.invalid")),
 
         countryCode: z.string(),
 
         phone: z
             .string()
-            .min(1, t("contact.phone.required"))
-            .regex(/^[0-9]{8,12}$/, t("contact.phone.invalid")),
+            .min(1, t("contact.phone2.required"))
+            .regex(/^[0-9]{8,12}$/, t("contact.phone2.invalid")),
 
         message: z
             .string()

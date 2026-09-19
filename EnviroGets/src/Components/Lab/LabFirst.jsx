@@ -18,7 +18,7 @@ export default function LabFirst() {
 
             <div className="px-8">
               {labText.map((item, index) => (
-                <List item={item} index={index} className="" classList={`pb-8 ${isArabic?"md:text-xl! font-bold!":""}`} />
+                <List item={item} key={index} className="" classList={`pb-8 ${isArabic?"md:text-xl! font-bold!":""}`} />
               ))}
             </div>
           </div>
