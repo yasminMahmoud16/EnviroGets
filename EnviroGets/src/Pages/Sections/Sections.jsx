@@ -1,5 +1,4 @@
 import bgSections from "@/assets/Images/bgSections.webp";
-
 import SectionsDev from "@/Components/SectionsDev/SectionsDev.jsx";
 import useJson from "@/Hooks/useJson.js";
 
@@ -16,7 +15,6 @@ export default function Sections() {
           lg:bg-position-[center_-250px]  bg-no-repeat z-10 min-h-screen flex md:flex-col lg:flex-row items-center md:items-end  lg:items-end md:justify-end lg:justify-between   px-10  lg:pt-25 "
           style={{
             backgroundImage: `url(${bgSections})`,
-            // backgroundPosition: "center -250px",
           }}
         >
           <div className="absolute inset-0 bg-linear-to-b from-[#2c70a034] via-[#2c70a022] to-[#2c70a036] z-0"></div>

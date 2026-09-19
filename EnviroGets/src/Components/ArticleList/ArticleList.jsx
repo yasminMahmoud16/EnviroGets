@@ -43,7 +43,7 @@ export default function ArticleList({
   hover:text-fg-brand focus:outline-none  
   ${
     item.content && activeParentIndex === index
-      ? // (!item.content && activeId === (item.slug || item.subTitle))
+      ? 
         "text-main bg-neutral-secondary-medium"
       : "text-[#1A2E1D]"
   }  

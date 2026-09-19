@@ -28,25 +28,6 @@ export default function Projects() {
     setPrevIsArabic(isArabic);
     setActiveId(getDefaultId(list));
   }
-// const [activeId, setActiveId] = useState(() => {
-//   if (Array.isArray(list) && list.length > 0) {
-//     const first = list[0];
-//     return first.content?.length
-//       ? first.content[0].trim()
-//       : first.slug || first.subTitle;
-//   }
-//   return null;
-// });
-//   useEffect(() => {
-//     if (Array.isArray(list) && list.length > 0) {
-//       const first = list[0];
-//       setActiveId(
-//         first.content?.length
-//           ? first.content[0].trim()
-//           : first.slug || first.subTitle,
-//       );
-//     }
-//   }, [isArabic]);
 
   const activeContent = findContent(content, activeId);
   const isBulleted = activeContent?.["text-Type"] === "bulted";
@@ -133,7 +114,7 @@ export default function Projects() {
                 }  space-y-4 leading-8 text-[#1A2E1D]`}
               >
                 {Object.entries(activeContent).map(([key, value]) => {
-                  // تجاهل البيانات اللي مش محتوى نصي
+                  // ignore the content dose not in the text json 
                   if (
                     ![
                       "intro",
@@ -149,7 +130,7 @@ export default function Projects() {
                     return null;
                   }
 
-                  // لو Array → اعرضها List أو paragraphs
+                  // display the array as list or paragraph
                   if (Array.isArray(value)) {
                     return isBulleted ? (
                       <ul
@@ -170,7 +151,7 @@ export default function Projects() {
                     );
                   }
 
-                  // لو نص عادي
+                  // normal paragraph
                   return value ? <p key={key}>{value}</p> : null;
                 })}
               </div>

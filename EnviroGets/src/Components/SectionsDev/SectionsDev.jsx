@@ -1,8 +1,6 @@
 
-// import { IoArrowBack } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
-import { FaRegArrowAltCircleLeft } from "react-icons/fa";
+import {FaRegArrowAltCircleRight, FaRegArrowAltCircleLeft } from "@/assets/Icons/icon.js"
 import useJson from "@/Hooks/useJson.js";
 
 export default function SectionsDev() {

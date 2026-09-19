@@ -1,11 +1,7 @@
 import map from "@/assets/Images/map.webp";
 import clients from "@/assets/Images/client.webp";
-
-
 import useJson from "@/Hooks/useJson.js";
-
 import { Link } from "react-router-dom";
-// import { socialLinks } from "@/Utils/data/data.js";
 import SocialMedia from "@/Common/SocialMedia/SocialMedia.jsx";
 
 export default function HomeInfo() {
@@ -38,23 +34,6 @@ export default function HomeInfo() {
             <div
               className={`flex gap-8 items-center justify-between z-10 rounded-2xl px-4 py-2 xl:px-5 xl:py-2.5   text-base xl:text-xl text-[#F0EDE6]`}
             >
-              {/* {socialLinks.map((social) => (
-                <div key={social.name}>
-                  <a
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9"
-                  >
-                    <img
-                      src={social.icon}
-                      alt={social.name}
-                      loading="lazy"
-                      className="w-full duration-300 ease-in-out transition-all hover:-translate-y-2"
-                    />
-                  </a>
-                </div>
-              ))} */}
 
               <SocialMedia />
             </div>
@@ -116,87 +95,10 @@ ${
                 </div>
               ))}
             </div>
-            {/* <div>
-              <a href="#" target="_blank" className="w-9">
-                <img
-                  src={whatsApp}
-                  alt="whatsApp"
-                  className="w-full duration-300 ease-in-out transition-all hover:-translate-y-2"
-                />
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.tiktok.com/@gem1_11?_r=1&_t=ZS-94tyzljPCpY"
-                className="w-9"
-                target="_blank"
-              >
-                <img
-                  src={tiktok}
-                  alt="tiktok"
-                  className="w-full duration-300 ease-in-out transition-all hover:-translate-y-2"
-                />
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="https://x.com/GETES662766"
-                target="_blank"
-                className="w-9"
-              >
-                <img
-                  src={instagram}
-                  alt="instagram"
-                  className="w-full duration-300 ease-in-out transition-all hover:-translate-y-2"
-                />
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://x.com/GETES662766"
-                target="_blank"
-                className="w-9"
-              >
-                <img
-                  src={twitter}
-                  alt="twitter"
-                  className="w-full duration-300 ease-in-out transition-all hover:-translate-y-2"
-                />
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="https://www.linkedin.com/company/%D8%AA%D9%82%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%D9%8A%D8%A9-getes/"
-                target="_blank"
-                className="w-9"
-              >
-                <img
-                  src={linkedin}
-                  alt="linkedin"
-                  className="w-full duration-300 ease-in-out transition-all hover:-translate-y-2"
-                />
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/share/18FCEHt6m6/"
-                target="_blank"
-                className="w-9"
-              >
-                <img
-                  src={facebook}
-                  alt="facebook"
-                  className="w-full duration-300 ease-in-out transition-all hover:-translate-y-2"
-                />
-              </a>
-            </div> */}
+            
           </div>
 
-          {/* <div className=" w-full flex items-center justify-center"> */}
 
-          {/* </div> */}
         </div>
         <div className=" flex items-center justify-center px-4 mt-4 w-50 md:w-64">
           <img
@@ -205,58 +107,10 @@ ${
             className="w-full object-contain drop-shadow-xl"
           />
         </div>
-        {/* <SocialMedia  /> */}
 
         <div className="hidden my-2  grid-cols-5 items-center">
-          {/* {socialLinks.map((social) => (
-            <div className="w-20" key={social.name}>
-              <a href={social.link} target="_blank" rel="noopener noreferrer">
-                <img src={social.icon} alt={social.name} />
-              </a>
-            </div>
-          ))} */}
+
           <SocialMedia />
-          {/* <div className="w-20">
-            <img src={whatsApp} alt="whatsApp" />
-          </div> */}
-
-          {/* <div className="w-25">
-            <a
-              href="https://www.tiktok.com/@gem1_11?_r=1&_t=ZS-94tyzljPCpY"
-              target="_blank"
-            >
-              <img src={tiktok} alt="tiktok" />
-            </a>
-          </div>
-          <div className="w-25">
-            <a
-              href="https://www.tiktok.com/@gem1_11?_r=1&_t=ZS-94tyzljPCpY"
-              target="_blank"
-            >
-              <img src={instagram} alt="instagram" />
-            </a>
-          </div>
-
-          <div className="w-25">
-            <a href="https://x.com/GETES662766" target="_blank">
-              <img src={twitter} alt="twitter" />
-            </a>
-          </div>
-
-          <div className="w-25">
-            <a href="https://www.linkedin.com/company/..." target="_blank">
-              <img src={linkedin} alt="linkedin" />
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="https://www.facebook.com/share/18FCEHt6m6/"
-              target="_blank"
-            >
-              <img src={facebook} alt="facebook" />
-            </a>
-          </div> */}
         </div>
       </div>
     </>

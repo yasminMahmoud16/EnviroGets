@@ -1,7 +1,5 @@
 import Air from "@/Components/Consulting/Air.jsx";
 import LabFirst from "@/Components/Lab/LabFirst.jsx";
-// import LabSecond from "@/Components/Lab/LabSecond.jsx";
-// import LabSwiper from "@/Components/Lab/LabSwiper.jsx";
 
 export default function Laboratory() {
     return (
@@ -10,10 +8,7 @@ export default function Laboratory() {
           <Air />
 
           <LabFirst />
-          {/*
-           <LabSecond/>
-                <LabSwiper /> 
-                */}
+
         </section>
       </>
     );

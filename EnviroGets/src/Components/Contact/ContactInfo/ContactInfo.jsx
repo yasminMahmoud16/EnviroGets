@@ -1,12 +1,8 @@
-// import map from "@/assets/Images/map2.webp";
 import {
   MdOutlineMailOutline,MdOutlinePhoneInTalk,
   IoLocationOutline,
 } from "@/assets/Icons/icon.js";
 import { logo } from "@/assets/Images/Images.js";
-
-// import { MdPhoneInTalk } from "react-icons/md";
-// import SocialMedia from "@/Common/SocialMedia/SocialMedia.jsx";
 import useJson from "@/Hooks/useJson.js";
 export default function ContactInfo() {
   const { t, isArabic } = useJson();
@@ -15,7 +11,6 @@ export default function ContactInfo() {
   return (
     <>
       {/* parent container */}
-      {/* <div className="flex flex-col lg:flex-row  items-center justify-between  gap-10 pb-8"> */}
       <div
         className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-25 pb-8 mx-3"
         dir={`${isArabic ? "" : "rtl"}`}
@@ -45,7 +40,6 @@ export default function ContactInfo() {
                   key={index}
                   className={`border border-[#4FA14B] shadow-md w-70 md:w-40 h-15 rounded-2xl flex flex-col items-center justify-center text-center text-[#4FA14B] ${isArabic ? " font-bold text-sm" : "font-roboto font-extrabold text-sm "}`}
                 >
-                  {/* {t("contact.info.clients")} */}
                   <p>{text.name1}</p>
                   <p> {text.name2}</p>
                 </div>

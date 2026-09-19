@@ -22,7 +22,6 @@ export default function LabSecond() {
             <div className="flex flex-col   items-end gap-10 px-8">
               <div>
                 {labText.map((item, index) => (
-                  // <List item={item} index={index} className="" />
                   <p
                     key={index}
                     className={`${isArabic ? " text-xl" : "font-roboto "} pb-2 text-main font-normal whitespace-break-spaces text-justify`}
@@ -53,7 +52,6 @@ export default function LabSecond() {
               </div>
             </div>
           </div>
-          {/* images */}
         </div>
       </>
     );

@@ -1,8 +1,9 @@
-import SocialMedia from "@/Common/SocialMedia/SocialMedia.jsx";
+import { lazy, Suspense } from "react";
 import useJson from "@/Hooks/useJson.js";
 import { logo, branch } from "@/assets/Images/Images.js";
-import ContactBranches from "../ContactBranches/ContactBranches.jsx";
-import ContactForm from "@/Components/ContactForm/ContactForm.jsx";
+const ContactForm = lazy(() => import("@/Components/ContactForm/ContactForm.jsx"),);
+const ContactBranches = lazy(() => import("../ContactBranches/ContactBranches.jsx"),);
+const SocialMedia = lazy(() => import("@/Common/SocialMedia/SocialMedia.jsx"));
 export default function ContactDetails() {
   const { isArabic, t } = useJson();
   return (
@@ -47,7 +48,9 @@ export default function ContactDetails() {
               </div>
             </div>
 
+            <Suspense fallback={null}>
             <ContactBranches />
+            </Suspense>
           </div>
 
           {/* Right column */}
@@ -66,10 +69,14 @@ export default function ContactDetails() {
                 {t("contact.socialAd")}
               </p>
 
-              <SocialMedia />
+              <Suspense fallback={null}>
+                <SocialMedia />
+              </Suspense>
             </div>
 
-            <ContactForm />
+            <Suspense fallback={null}>
+              <ContactForm />
+            </Suspense>
           </div>
         </div>
       </div>

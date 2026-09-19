@@ -1,3 +1,5 @@
+import "swiper/css";
+import "swiper/css/effect-fade";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import img1 from "@/assets/Images/swiper1.webp";
@@ -17,7 +19,6 @@ export default function LabSwiper() {
       <div dir="" className="w-full flex justify-center py-10 px-4 ">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          // loop
           spaceBetween={0}
           slidesPerView={3}
           breakpoints={{
