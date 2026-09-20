@@ -23,7 +23,7 @@ export default function useContact() {
     const onSubmit = async (data) => {
         // setIsSending(true);
         setStatus("");
-        const response = await fetch("#", {
+        const response = await fetch("https://formspree.io/f/mzezdlan", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

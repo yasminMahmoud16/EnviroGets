@@ -28,6 +28,6 @@ export const validationContactSchema = (t) =>
         message: z
             .string()
             .trim()
-            .min(10, t("contact.message.min"))
+            .min(5, t("contact.message.min"))
             .max(1000, t("contact.message.max")),
     });
