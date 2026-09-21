@@ -1,1 +1,0 @@
-var e=`/EnviroGets/assets/Carousel1-BnpKY54y.webp`;export{e as t};

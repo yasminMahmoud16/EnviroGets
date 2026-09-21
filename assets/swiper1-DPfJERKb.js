@@ -1,0 +1,1 @@
+var e=`/assets/swiper1-yOqgZgiF.webp`;export{e as t};
